@@ -241,3 +241,10 @@ h2 {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
+#data {
+    height: 400px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
