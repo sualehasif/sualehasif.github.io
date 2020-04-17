@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../webfonts/unisansdemo-heavycaps-webfont.woff2') format('woff2'),
+         url('../webfonts/unisansdemo-heavycaps-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}   
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../webfonts/unisansdemo-heavyitaliccaps-webfont.woff2') format('woff2'),
+         url('../webfonts/unisansdemo-heavyitaliccaps-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../webfonts/unisansdemo-thincaps-webfont.woff2') format('woff2'),
+         url('../webfonts/unisansdemo-thincaps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../webfonts/unisansdemo-thinitaliccaps-webfont.woff2') format('woff2'),
+         url('../webfonts/unisansdemo-thinitaliccaps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+#header {
+    width: 100vw;
+    background-color: #FFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 20% 70% 10%;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.navbar-logo {
+    font-family: 'Uni Sans';
+    color: #95D3C1;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#navbar-container {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.navigation {
+    list-style-type: none;
+    display: inline;
+}
+
+.navigation li {
+    display: inline;
+    padding: 0 5px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #2E2E2E;
+    font-size: 14px;
+    font-family: 'Uni Sans';
+    font-weight: bold;
+}
+
+.navigation li a.button {
+    color: #FFF;
+}
+
+.language-container {
+    border-left: 1px solid #C9C9C9;
+    padding-left: 20px;
+}
+
+.container {
+    background: #FFF;
+    width: 100vw;
+}
+
+.button { 
+    background-color: #95D3C1;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.button-secondary {
+    background-color: #FFF;
+    color: #95D3C1;
+}
+
+.text-link {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #159700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.background-secondary {
+    background-color: #95D3C1;
+}
+
+.background-tertiary {
+    background: #EEEEEE;
+}
+
+h1 {
+    font-family: 'Uni Sans';
+    font-weight: bold;
+    font-size: 48px;
+}
+
+h1.secondary {
+    color: #95D3C1;
+}
+
+h2 {
+    font-family: Uni Sans Demo;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: #2E2E2E;
+}
+
+.section {
+    padding: 50px 150px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#main {
+    padding: 100px 150px;
+    padding-top: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.main-text h1 {
+    line-height: 48px;
+}
+
+.main-text p {
+    color: #FFF;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px; 
+    max-width: 450px;
+    margin-top: -20px;
+}
+
+.main-text .button {
+    font-size: 16px;
+}
+
+.text-and-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-and-image .text p{
+    margin-top: -20px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2E2E2E;
+}
+
+#call-to-action {
+    padding: 150px;
+}
+
+#footer {
+    background-color: #95D3C1;
+    padding: 18px 24px;
+}
+
+.footer-links {
+    list-style-type: none;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-links li a {
+    color: #FFF;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
