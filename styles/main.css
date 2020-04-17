@@ -60,7 +60,7 @@ body {
 
 .navbar-logo {
     font-family: 'Uni Sans';
-    color: #95D3C1;
+    color: #0DAB76;
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
@@ -103,8 +103,12 @@ body {
     width: 100vw;
 }
 
+.white {
+    color: #FFF;
+}
+
 .button { 
-    background-color: #95D3C1;
+    background-color: #0DAB76;
     border-radius: 8px;
     padding: 12px 24px;
     font-family: Open Sans;
@@ -118,7 +122,7 @@ body {
 
 .button-secondary {
     background-color: #FFF;
-    color: #95D3C1;
+    color: #0DAB76;
 }
 
 .text-link {
@@ -133,7 +137,7 @@ body {
 }
 
 .background-secondary {
-    background-color: #95D3C1;
+    background-color: #0DAB76;
 }
 
 .background-tertiary {
@@ -147,7 +151,7 @@ h1 {
 }
 
 h1.secondary {
-    color: #95D3C1;
+    color: #0DAB76;
 }
 
 h2 {
@@ -213,7 +217,7 @@ h2 {
 }
 
 #footer {
-    background-color: #95D3C1;
+    background-color: #0DAB76;
     padding: 18px 24px;
 }
 
