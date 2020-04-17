@@ -132,9 +132,13 @@ body {
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #159700;
+    color: #147066;
     cursor: pointer;
     text-decoration: none;
+}
+
+.text-link.small {
+    font-size: 10px;
 }
 
 .background-secondary {
@@ -156,7 +160,7 @@ h1.secondary {
 }
 
 h2 {
-    font-family: Uni Sans Demo;
+    font-family: Uni Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -278,7 +282,7 @@ h2 {
 }
 
 .tab {
-    font-family: Uni Sans Demo;
+    font-family: Uni Sans;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -324,7 +328,7 @@ h2 {
 }
 
 .heading {
-    font-family: Uni Sans Demo;
+    font-family: Uni Sans;
     font-style: normal;
     font-weight: 800;
     font-size: 14px;
@@ -339,4 +343,35 @@ h2 {
     font-size: 14px;
     line-height: 19px;
     color: #2E2E2E;
+}
+
+#advisory {
+    padding: 20px;
+}
+
+.advisory-content {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #2E2E2E;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.advisory-content span {
+    display: block;
+}
+
+.advisory-content::before {
+    content: "!";
+    font-family: Uni Sans;
+    color: #A30000;
+    font-weight: bold;
+    position: absolute;
+    font-size: 48px;
+    left: -35px;
+    top: 11px;
 }
