@@ -200,7 +200,20 @@ h2 {
 
 .text-and-image {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.text-and-image .text {
+    padding: 20px;
+}
+
+.text-and-image .image {
+    text-align: center;
+}
+
+.text-and-image .image img {
+    width: 80%;
 }
 
 .text-and-image .text p{
@@ -247,7 +260,7 @@ h2 {
     height: 400px;
     width: 800px;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 .tabs {
@@ -308,4 +321,22 @@ h2 {
 
 .content .image {
     text-align: center;
+}
+
+.heading {
+    font-family: Uni Sans Demo;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 14px;
+    color: #2E2E2E
+}
+
+.numbered-list {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2E2E2E;
 }
