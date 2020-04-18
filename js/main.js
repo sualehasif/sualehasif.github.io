@@ -2,6 +2,11 @@ document.getElementById("navbar-hamburger").addEventListener("click", function()
     document.getElementById("navigation").classList.toggle("active");
 });
 
+new Glide('.glide', {autoplay: 3000,
+    hoverpause: true,
+    type: "carousel"
+   }).mount()
+
 var dataMap = L.map('data').setView([25.8943, 68.5247], 7);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3JhZGVscm9zYXJpbyIsImEiOiJjazk0ZzlmNnUwY3BmM2luMXNydjh3c3NiIn0.EwFfqUXIahSIpJ3CZcpTgw', {
