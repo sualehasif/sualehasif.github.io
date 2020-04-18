@@ -24,13 +24,14 @@
         <link rel="stylesheet" href="styles/main.css" type="text/css"> 
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="styles/leaflet.css" />
+        <link rel="stylesheet" href="styles/glide.core.min.css"/>
+        <link rel="stylesheet" href="styles/glide.theme.min.css"/>
     </head>
     <body>
         <div id="header">
             <nav class="navbar">
                 <a href="#main" class="navbar-logo">
                     <img src="images/Mask Banao Logo long.svg" />
-                    <!-- <span class="dark-green">Mask</span> <span class="grey">Banao</span> -->
                 </a>
                 <button id="navbar-hamburger"></button>
                 <ul id="navigation">
@@ -66,10 +67,30 @@
             </div>
 
             <div id="advisory" class="background-tertiary">
-                <div class="advisory-content">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="advisory-content">
+                                <span>Starting April 18, 2020, Karachi has made it  mandatory for everyone to wear facemasks out of their house</span>
+                                <a href="https://www.dawn.com/news/1550094" target="_blank" class="text-link small">Source</a>
+                            </div>
+                        </li>
+
+                        <li class="glide__slide">
+                            <div class="advisory-content">
+                                <span>Starting April 19, 2020, Balochistan has made it  mandatory for everyone to wear facemasks out of their house</span>
+                                <a href="https://twitter.com/LiaquatShahwani/status/1251408652491259904" target="_blank" class="text-link small">Source</a>
+                            </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                <!-- <div class="advisory-content">
                     <span>Starting April 18, 2020, Karachi has made it  mandatory for everyone to wear facemasks out of their house</span>
                     <a href="https://www.dawn.com/news/1550094" target="_blank" class="text-link small">Source</a>
-                </div>
+                </div> -->
             </div>
 
             <div id="make-a-mask" class="section">
@@ -169,10 +190,16 @@
                 </ul>
             </div>
         </div>
-
         <script src="js/leaflet.js"></script>
         <script src="js/pakistan_data.js"></script>
         <script src="js/pakistan_districts.js"></script>
+        <script src="js/glide.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            new Glide('.glide', {autoplay: 3000,
+                                 hoverpause: true,
+                                 type: "carousel"
+                                }).mount()
+          </script>
     </body>
 </html>
