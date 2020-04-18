@@ -131,11 +131,24 @@ body {
     color: #FFF;
     text-transform: uppercase;
     text-decoration: none;
+    transition: background-color .5s ease-in-out;
+}
+
+.button:hover {
+    background-color: #147066;
+    transition: background-color .5s ease-in-out;
 }
 
 .button-secondary {
     background-color: #FFF;
     color: #0DAB76;
+    transition: color .5s ease-in-out;
+}
+
+.button-secondary:hover {
+    color: #147066;
+    background-color: #FFF;
+    transition: color .5s ease-in-out;
 }
 
 .text-link {
