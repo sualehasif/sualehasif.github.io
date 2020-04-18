@@ -15,14 +15,20 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 L.geoJson(pakistanDistricts).addTo(dataMap);
 
 function getColor(d) {
-    return d > 3000 ? '#DA0404' :
-           d > 500  ? '#FFE600' :
+    return d > 1000 ? '#A10000' :
+           d > 750  ? '#C80000' :
+           d > 500  ? '#FF0000' :
+           d > 250  ? '#FF5800' :
+           d > 100  ? '#FF8C00' :
+           d > 50   ? '#FFB700' :
+           d > 10   ? '#FFD700' :
+           d > 1    ? '#FFE300' :
                       '#EAEAEA';
 }
 
 function style(feature) {
     return {
-        fillColor: getColor(feature.properties.infected),
+        fillColor: getColor(feature.properties.active),
         weight: 2,
         opacity: 1,
         color: 'white',
