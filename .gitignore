@@ -1,0 +1,13 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+.vscode/
+
+# misc
+.DS_Store
+
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
+/venv
+/*.iml
+.test/
+.idea/
+
