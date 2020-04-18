@@ -1,0 +1,97 @@
+#entries {
+    padding: 50px 100px;
+    padding-top: 170px;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 50px;
+}
+
+.card {
+    max-height: 260px;
+    height: 260px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 1fr 40px;
+    border: 1px solid #147066;
+}
+
+.card-share {
+    width: 100%;
+    height: 100%;
+    background: #147066;
+    border-radius: 0px 0px 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.card-share a {
+    margin-right: 10px;
+}
+
+.card-share .fa-twitter:before,
+.fa-facebook-square:before {
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.card-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    max-width: 80%;
+}
+
+.info span {
+    display: block;
+}
+
+.info .date {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.info .header {
+    font-family: Uni Sans Demo;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.info .small-link {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #147066;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 992px) {
+    #cards {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #cards {
+        grid-template-columns: 100%;
+    }
+}

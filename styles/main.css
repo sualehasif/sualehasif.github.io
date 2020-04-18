@@ -56,7 +56,7 @@ body {
     align-content: center;
     grid-template-columns: 20% 70% 10%;
     align-items: center;
-    padding: 30px 20px;
+    padding: 14px 20px;
 }
 
 .navbar-logo {
@@ -93,6 +93,10 @@ body {
     font-size: 14px;
     font-family: 'Uni Sans';
     font-weight: bold;
+}
+
+#navigation li a.active {
+    color: #147066;
 }
 
 #navigation li a:hover {
