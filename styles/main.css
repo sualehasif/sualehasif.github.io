@@ -415,6 +415,61 @@ h2 {
     top: 11px;
 }
 
+.share-container {
+    max-width: 490px;
+    margin: 0 auto;
+}
+
+.share-container p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #2E2E2E;
+}
+
+.share-links {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.share-links .text-link{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #159700;
+    margin-right: 15px;
+}
+
+.share {
+    font-size: 10px;
+}
+
+.share span {
+    display: block;
+}
+
+.share a {
+    margin-right: 15px;
+}
+
+.share .fa-facebook-square:before {
+    content: "\f082";
+    font-size: 24px;
+    line-height: 28px;
+    color: #3B5998;
+}
+
+.share .fa-twitter:before {
+    content: "\f099";
+    font-size: 24px;
+    line-height: 28px;
+    color: #00ACEE;
+}
+
 @media only screen and (min-width: 2400px){
     #main {
         padding: 100px 600px;
