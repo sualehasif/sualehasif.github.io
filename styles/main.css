@@ -162,6 +162,10 @@ body {
     text-decoration: none;
 }
 
+.text-link:hover {
+    text-decoration: underline;
+}
+
 .text-link.small {
     font-size: 10px;
 }
@@ -286,6 +290,10 @@ h2 {
     color: #FFFFFF;
 }
 
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
 #data {
     height: 400px;
     width: 800px;
@@ -400,4 +408,286 @@ h2 {
     font-size: 48px;
     left: -35px;
     top: 11px;
+}
+
+@media only screen and (min-width: 2400px){
+    #main {
+        padding: 100px 600px;
+        padding-top: 180px;
+    }
+
+    .section {
+        padding: 50px 600px;
+    }
+}
+
+@media only screen and (min-width: 2200px) and (max-width: 2400px){
+    #main {
+        padding: 100px 450px;
+        padding-top: 180px;
+    }
+
+    .section {
+        padding: 50px 450px;
+    }
+}
+
+@media only screen and (min-width: 1900px) and (max-width: 2200px){
+    #main {
+        padding: 100px 360px;
+        padding-top: 180px;
+    }
+
+    .section {
+        padding: 50px 360px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #main {
+        padding: 100px 70px;
+        padding-top: 149px;
+    }
+
+    .section {
+        padding: 30px 70px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #main {
+        padding: 70px 50px;
+        padding-top: 114px;
+    }
+
+    .section {
+        padding: 30px 50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #main {
+        padding: 70px 100px;
+        padding-top: 150px;
+        grid-template-columns: 1fr;
+    }
+
+    #main .image {
+        grid-area: 1;
+        text-align: center;
+    }
+
+    #main .image img {
+        width: 300px;
+    }
+
+    #main .main-text {
+        text-align: center;
+    }
+
+    #main .main-text p {
+        max-width: fit-content;
+    }
+
+    .section {
+        padding: 30px 50px;
+    }
+
+    #data {
+        width: 500px;
+    }
+
+    .advisory-content {
+        font-size: 12px;
+        line-height: 18px;
+        max-width: 500px;
+    }
+
+    .advisory-content::before {
+        font-size: 36px;
+        left: -35px;
+        top: 16px;
+    }
+
+    .main-text h1 {
+        line-height: 36px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .main-text p {
+        font-size: 20px;
+        line-height: 29px;
+    }
+
+    .main-text .button {
+        font-size: 12px;
+    }
+
+    .content.active {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .text-and-image {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .text-and-image .image {
+        grid-area: 1;
+    }
+
+    #call-to-action {
+        padding: 90px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .advisory-content {
+        max-width: 400px;
+    }
+
+    .tabs {
+        max-width: 100%;
+    }
+
+    #data {
+        width: 400px;
+        height: 300px;
+    }
+
+    h2 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    #call-to-action {
+        padding: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .advisory-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .advisory-content::before {
+    display: none;
+    }
+
+    .tabs {
+        max-width: 100%;
+    }
+
+    #main {
+        padding: 70px 50px;
+        padding-top: 150px;
+        grid-gap: 20px;
+    }
+
+    #main .image img {
+        width: 250px;
+    }
+
+    .section {
+        padding: 30px 20px;
+    }
+
+    .tab {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    #call-to-action {
+        padding: 50px;
+    }
+
+    #data {
+        width: 300px;
+        height: 400px;
+    }
+
+    #footer {
+        text-align: center;
+        padding: 5px 16px;
+    }
+
+    .numbered-list {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .text-and-image .text p {
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #main {
+        padding: 70px 20px;
+        padding-top: 150px;
+        grid-gap: 10px;
+    }
+
+    #main .image img {
+        width: 150px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .main-text h1 {
+        line-height: 25px;
+    }
+
+    .main-text p {
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: -10px;
+    }
+
+    .text-and-image .text p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .text-link {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    #data {
+        width: 275px;
+        height: 400px;
+    }
+
+    .tab {
+        padding: 12px 12px;
+    }
+
+    h2 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .button {
+        padding: 6px 15px;
+        font-size: 10px;
+    }
+
+    .text-and-image .text p {
+        margin-top: 0px;
+    }
+    
 }
