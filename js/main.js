@@ -37,8 +37,6 @@ document.getElementById("tab-button3").addEventListener("click", function () {op
 
 function openTab(id1, id2) {
 
-    console.log ("HELLO");
-
     var i, tabContents, tabs;
   
     tabContents = document.getElementsByClassName("content");
