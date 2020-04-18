@@ -71,22 +71,23 @@ body {
     width: 150px;
 }
 
-#navbar-container {
+#navbar-hamburger {
+    display: none;
+}
+
+#navigation {
+    list-style-type: none;
+    display: inline;
     text-align: right;
     padding-right: 20px;
 }
 
-.navigation {
-    list-style-type: none;
-    display: inline;
-}
-
-.navigation li {
+#navigation li {
     display: inline;
     padding: 0 5px;
 }
 
-.navigation li a {
+#navigation li a {
     text-decoration: none;
     color: #2E2E2E;
     font-size: 14px;
@@ -94,7 +95,11 @@ body {
     font-weight: bold;
 }
 
-.navigation li a.button {
+#navigation li a:hover {
+    color: #147066;
+}
+
+#navigation li a.button {
     color: #FFF;
 }
 
@@ -545,7 +550,68 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+    #navbar-hamburger {
+        display: block;
+        height: 40px;
+        width: 40px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: auto;
+    }
+
+    #navbar-hamburger:before {
+        content: "\f0c9";
+        color: #0DAB76;
+        font-weight: 600;
+        font-size: 36px;
+        font-family: "Font Awesome 5 Free";
+    }
+
+    #navbar-hamburger:focus {
+        outline: none;
+    }
+
+    .navbar {
+        grid-template-columns: 60% 1fr 65px;
+    }
+
+    .navbar-logo {
+        grid-area: 1;
+    }
+
+    .language-container {
+        grid-area: 1/2;
+        text-align: right;
+        border-left: none;
+        border-right: 1px solid #C9C9C9;
+        padding-left: 0;
+        padding-right: 20px;
+    }
+
+    #navigation {
+        max-height: 0;
+        overflow: hidden;
+        padding-left: 0;
+        transition: max-height .5s ease-in-out;
+        grid-area: 2/1/ span 1 /span 3;
+        text-align: left;
+        margin: 0;
+    }
+
+    #navigation.active {
+        transition: max-height .5s ease-in-out;
+        max-height: 400px;
+    }
+
+
+    #navigation li {
+        display: block;
+        padding: 20px 5px;
+    }
+
     .advisory-content {
         max-width: 400px;
     }
