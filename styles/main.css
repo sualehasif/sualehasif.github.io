@@ -108,6 +108,14 @@ body {
     color: #FFF;
 }
 
+.dark-green {
+    color: #137166;
+}
+
+.grey {
+    color: #2D2D2D;
+}
+
 .button { 
     background-color: #0DAB76;
     border-radius: 8px;
@@ -181,6 +189,7 @@ h2 {
     padding-top: 180px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .main-text h1 {
