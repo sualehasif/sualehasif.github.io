@@ -313,6 +313,34 @@
 
 }
 
+#experts-suggest > div {
+ display: grid;
+ grid-template-columns: 1fr 1fr;   
+ grid-gap: 50px;
+ align-items: center;
+ width: 80%;
+ margin: 0 auto;
+}
+
+#experts-suggest > div p:first-of-type {
+    text-align: right;
+    font-family: Uni Sans Demo;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 36px;
+   }
+
+   #experts-suggest > div p:last-of-type {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #2E2E2E;
+   }
+
 
 @media only screen and (min-width: 2400px){
     #main {
@@ -418,6 +446,11 @@
     #call-to-action {
         padding: 90px;
     }
+
+    #experts-suggest > div p:first-of-type {
+        font-size: 24px;
+        line-height: 24px;
+    }
 }
 
 
@@ -443,6 +476,7 @@
         font-size: 24px;
         font-weight: 800;
     }
+    
 }
 
 @media only screen and (max-width: 500px) {
@@ -503,6 +537,21 @@
     .main-text .button:first-of-type {
         margin-bottom: 10px;
     }
+
+    #experts-suggest > div {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    #experts-suggest > div p:first-of-type {
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    #call-to-action h3 {
+        font-size: 14px;
+        font-weight: 800;
+    }
 }
 
 @media only screen and (max-width: 320px) {
@@ -542,6 +591,15 @@
 
     .text-and-image .text p {
         margin-top: 0px;
+    }
+
+    #experts-suggest > div p:first-of-type {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    #experts-suggest > div {
+        width: 100%;
     }
     
 }
