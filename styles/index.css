@@ -146,6 +146,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    grid-gap: 30px;
 }
 
 .content .text {
@@ -294,6 +295,7 @@
     display: grid;
     grid-template-columns: 50px 1fr;
     grid-gap: 20px;
+    padding: 50px 0;
 }
 
 .news-body .news {
@@ -472,6 +474,7 @@
     .content.active {
         grid-template-columns: 1fr;
         grid-gap: 20px;
+        
     }
 
     #call-to-action {
