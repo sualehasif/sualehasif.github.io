@@ -341,6 +341,10 @@
         width: 500px;
     }
 
+    .columns {
+        flex-direction: column;
+    }
+
     .advisory-content {
         font-size: 12px;
         line-height: 18px;

@@ -113,6 +113,22 @@ body {
     padding-left: 20px;
 }
 
+.alert {
+    border-radius: 8px;
+    background-color: #eeeeee;
+    color: #147066;
+    padding: 5px 10px;
+}
+
+.alert i {
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.alert span {
+    font-size: 10px;
+}
+
 .container {
     background: #FFF;
     width: 100vw;
