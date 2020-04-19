@@ -88,6 +88,8 @@ var pakistanDistricts = {
                 "shape_area": 0.116758,
                 "district_agency": "Bannu",
                 "status": "District",
+                "population": 1167892,
+                "density": 987.6,
                 "cartodb_id": 65,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -280,6 +282,8 @@ var pakistanDistricts = {
                 "shape_area": 0.436281,
                 "district_agency": "Killa Abdullah",
                 "status": "District",
+                "population": 757578,
+                "density": 131.3,
                 "cartodb_id": 25,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -440,6 +444,8 @@ var pakistanDistricts = {
                 "shape_area": 0.133021,
                 "district_agency": "Hangu",
                 "status": "District",
+                "population": 518798,
+                "density": 375.9,
                 "cartodb_id": 71,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -520,6 +526,8 @@ var pakistanDistricts = {
                 "shape_area": 0.247447,
                 "district_agency": "Chiniot",
                 "status": "District",
+                "population": 1369740,
+                "density": 524.9,
                 "cartodb_id": 94,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -596,6 +604,8 @@ var pakistanDistricts = {
                 "shape_area": 0.164167,
                 "district_agency": "Lahore",
                 "status": "District",
+                "population": 11126285,
+                "density": 6606.0,
                 "cartodb_id": 105,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -668,6 +678,8 @@ var pakistanDistricts = {
                 "shape_area": 0.087645,
                 "district_agency": "Islamabad",
                 "status": "District",
+                "population": 2001579,
+                "density": 2210.0,
                 "cartodb_id": 63,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -728,6 +740,8 @@ var pakistanDistricts = {
                 "shape_area": 0.097777,
                 "district_agency": "Charsadda",
                 "status": "District",
+                "population": 1616198,
+                "density": 1630.0,
                 "cartodb_id": 68,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -824,6 +838,8 @@ var pakistanDistricts = {
                 "shape_area": 0.160276,
                 "district_agency": "Mardan",
                 "status": "District",
+                "population": 2373061,
+                "density": 1448.0,
                 "cartodb_id": 80,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -972,6 +988,8 @@ var pakistanDistricts = {
                 "shape_area": 0.124787,
                 "district_agency": "Peshawar",
                 "status": "District",
+                "population": 4269079,
+                "density": 3395.0,
                 "cartodb_id": 82,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -1356,6 +1374,8 @@ var pakistanDistricts = {
                 "shape_area": 0.072524,
                 "district_agency": "Sohbatpur",
                 "status": "District",
+                "population": 200538,
+                "density": 142.0,
                 "cartodb_id": 18,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -1456,6 +1476,8 @@ var pakistanDistricts = {
                 "shape_area": 0.290015,
                 "district_agency": "Sherani",
                 "status": "District",
+                "population": 153116,
+                "density": 51.93,
                 "cartodb_id": 37,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -1544,6 +1566,8 @@ var pakistanDistricts = {
                 "shape_area": 0.133221,
                 "district_agency": "Orakzai Agency",
                 "status": "Agency",
+                "population": 254356,
+                "density": 184.9,
                 "cartodb_id": 54,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -1656,6 +1680,8 @@ var pakistanDistricts = {
                 "shape_area": 0.304225,
                 "district_agency": "Lehri",
                 "status": "District",
+                "population": 118046,
+                "density": 35.93,
                 "cartodb_id": 38,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -2248,6 +2274,8 @@ var pakistanDistricts = {
                 "shape_area": 2.256718,
                 "district_agency": "Awaran",
                 "status": "District",
+                "population": 122011,
+                "density": 4.891,
                 "cartodb_id": 11,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -2352,6 +2380,8 @@ var pakistanDistricts = {
                 "shape_area": 0.328535,
                 "district_agency": "Barkhan",
                 "status": "District",
+                "population": 171556,
+                "density": 49.10,
                 "cartodb_id": 12,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -2604,6 +2634,8 @@ var pakistanDistricts = {
                 "shape_area": 4.117601,
                 "district_agency": "Chaghi",
                 "status": "District",
+                "population": 226008,
+                "density": 5.089,
                 "cartodb_id": 13,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -2761,6 +2793,8 @@ var pakistanDistricts = {
                 "district_agency": "Dera Bugti",
                 "status": "District",
                 "cartodb_id": 14,
+                "population": 312603,
+                "density": 30.44,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
             }
@@ -2936,6 +2970,8 @@ var pakistanDistricts = {
                 "shape_area": 0.71964,
                 "district_agency": "Kohlu",
                 "status": "District",
+                "population": 214350,
+                "density": 27.87,
                 "cartodb_id": 27,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -3180,6 +3216,8 @@ var pakistanDistricts = {
                 "shape_area": 1.038382,
                 "district_agency": "Gwadar",
                 "status": "District",
+                "population": 263514,
+                "density": 23.09,
                 "cartodb_id": 15,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -3300,6 +3338,8 @@ var pakistanDistricts = {
                 "shape_area": 0.286749,
                 "district_agency": "Harnai",
                 "status": "District",
+                "population": 97017,
+                "density": 31.79,
                 "cartodb_id": 16,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -3408,6 +3448,8 @@ var pakistanDistricts = {
                 "shape_area": 0.156419,
                 "district_agency": "Jaffarabad",
                 "status": "District",
+                "population": 513813,
+                "density": 286.1,
                 "cartodb_id": 17,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -3504,6 +3546,8 @@ var pakistanDistricts = {
                 "shape_area": 0.35544,
                 "district_agency": "Jhal Magsi",
                 "status": "District",
+                "population": 149225,
+                "density": 38.85,
                 "cartodb_id": 19,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -3660,6 +3704,8 @@ var pakistanDistricts = {
                 "shape_area": 0.498322,
                 "district_agency": "Kachhi",
                 "status": "District",
+                "population": 237030,
+                "density": 44.47,
                 "cartodb_id": 20,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -3848,6 +3894,8 @@ var pakistanDistricts = {
                 "shape_area": 1.284512,
                 "district_agency": "Kalat",
                 "status": "District",
+                "population": 412232,
+                "density": 29.76,
                 "cartodb_id": 21,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -4120,6 +4168,8 @@ var pakistanDistricts = {
                 "shape_area": 2.201555,
                 "district_agency": "Kech",
                 "status": "District",
+                "population": 909116,
+                "density": 37.75,
                 "cartodb_id": 22,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -4292,6 +4342,8 @@ var pakistanDistricts = {
                 "shape_area": 0.758576,
                 "district_agency": "Kharan",
                 "status": "District",
+                "population": 156152,
+                "density": 14.59,
                 "cartodb_id": 23,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -4464,6 +4516,8 @@ var pakistanDistricts = {
                 "shape_area": 0.762726,
                 "district_agency": "Loralai",
                 "status": "District",
+                "population": 397400,
+                "density": 48.80,
                 "cartodb_id": 29,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -4704,6 +4758,8 @@ var pakistanDistricts = {
                 "shape_area": 2.82625,
                 "district_agency": "Khuzdar",
                 "status": "District",
+                "population": 802207,
+                "density": 25.89,
                 "cartodb_id": 24,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -4892,6 +4948,8 @@ var pakistanDistricts = {
                 "shape_area": 1.171068,
                 "district_agency": "Killa Saifullah",
                 "status": "District",
+                "population": 342814,
+                "density": 27.63,
                 "cartodb_id": 26,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -5184,6 +5242,8 @@ var pakistanDistricts = {
                 "shape_area": 1.265273,
                 "district_agency": "Lasbela",
                 "status": "District",
+                "population": 574292,
+                "density": 40.69,
                 "cartodb_id": 28,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -5400,6 +5460,8 @@ var pakistanDistricts = {
                 "shape_area": 0.439416,
                 "district_agency": "Mastung",
                 "status": "District",
+                "population": 266461,
+                "density": 46.72,
                 "cartodb_id": 30,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -5528,6 +5590,8 @@ var pakistanDistricts = {
                 "shape_area": 0.556523,
                 "district_agency": "Musakhail",
                 "status": "District",
+                "population": 167017,
+                "density": 27.93,
                 "cartodb_id": 31,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -5640,6 +5704,8 @@ var pakistanDistricts = {
                 "shape_area": 0.29747,
                 "district_agency": "Nasirabad",
                 "status": "District",
+                "population": 490538,
+                "density": 151.9,
                 "cartodb_id": 32,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -5728,6 +5794,8 @@ var pakistanDistricts = {
                 "shape_area": 0.545267,
                 "district_agency": "Nushki",
                 "status": "District",
+                "population": 178796,
+                "density": 30.69,
                 "cartodb_id": 33,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -6052,6 +6120,8 @@ var pakistanDistricts = {
                 "shape_area": 1.595175,
                 "district_agency": "Panjgur",
                 "status": "District",
+                "population": 316385,
+                "density": 18.00,
                 "cartodb_id": 34,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -6224,6 +6294,8 @@ var pakistanDistricts = {
                 "shape_area": 0.573222,
                 "district_agency": "Pishin",
                 "status": "District",
+                "population": 736481,
+                "density": 149.4,
                 "cartodb_id": 35,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -6376,6 +6448,8 @@ var pakistanDistricts = {
                 "shape_area": 0.351984,
                 "district_agency": "Quetta",
                 "status": "District",
+                "population": 2275699,
+                "density": 830.3,
                 "cartodb_id": 36,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -6528,6 +6602,8 @@ var pakistanDistricts = {
                 "shape_area": 0.463205,
                 "district_agency": "Sibi",
                 "status": "District",
+                "population": 135572,
+                "density": 27.37,
                 "cartodb_id": 39,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -6640,6 +6716,8 @@ var pakistanDistricts = {
                 "shape_area": 0.330521,
                 "district_agency": "Kurram Agency",
                 "status": "Agency",
+                "population": 619556,
+                "density": 182.8,
                 "cartodb_id": 51,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -6736,6 +6814,8 @@ var pakistanDistricts = {
                 "shape_area": 0.221933,
                 "district_agency": "Mohmand Agency",
                 "status": "Agency",
+                "population": 466984,
+                "density": 206.8,
                 "cartodb_id": 52,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -7076,6 +7156,8 @@ var pakistanDistricts = {
                 "shape_area": 3.573732,
                 "district_agency": "Washuk",
                 "status": "District",
+                "population": 176206,
+                "density": 4.824,
                 "cartodb_id": 40,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -7284,6 +7366,8 @@ var pakistanDistricts = {
                 "shape_area": 1.131691,
                 "district_agency": "Zhob",
                 "status": "District",
+                "population": 310544,
+                "density": 26.03,
                 "cartodb_id": 41,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -7404,6 +7488,8 @@ var pakistanDistricts = {
                 "shape_area": 0.30705,
                 "district_agency": "Ziarat",
                 "status": "District",
+                "population": 160422,
+                "density": 49.13,
                 "cartodb_id": 42,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -7480,6 +7566,8 @@ var pakistanDistricts = {
                 "shape_area": 0.134514,
                 "district_agency": "Bajaur Agency",
                 "status": "Agency",
+                "population": 1093684,
+                "density": 804.7,
                 "cartodb_id": 43,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -7560,6 +7648,8 @@ var pakistanDistricts = {
                 "shape_area": 0.078854,
                 "district_agency": "FR Bannu",
                 "status": "FR",
+                "population": 43114,
+                "density": 52.49,
                 "cartodb_id": 44,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -7808,6 +7898,8 @@ var pakistanDistricts = {
                 "shape_area": 0.805751,
                 "district_agency": "Bhakkar",
                 "status": "District",
+                "population": 1650518,
+                "density": 193.7,
                 "cartodb_id": 92,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -7948,6 +8040,8 @@ var pakistanDistricts = {
                 "shape_area": 0.475396,
                 "district_agency": "North Waziristan Agency",
                 "status": "Agency",
+                "population": 543254,
+                "density": 111.0,
                 "cartodb_id": 53,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -8108,6 +8202,8 @@ var pakistanDistricts = {
                 "shape_area": 0.596064,
                 "district_agency": "South Waziristan Agency",
                 "status": "Agency",
+                "population": 674065,
+                "density": 108.2,
                 "cartodb_id": 55,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -9432,6 +9528,8 @@ var pakistanDistricts = {
                 "shape_area": 0.160185,
                 "district_agency": "Abbottabad",
                 "status": "District",
+                "population": 1332912,
+                "density": 759.1,
                 "cartodb_id": 64,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -9524,6 +9622,8 @@ var pakistanDistricts = {
                 "shape_area": 0.146275,
                 "district_agency": "Batagram",
                 "status": "District",
+                "population": 476612,
+                "density": 351.6,
                 "cartodb_id": 66,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -9612,6 +9712,8 @@ var pakistanDistricts = {
                 "shape_area": 0.168261,
                 "district_agency": "Nowshera",
                 "status": "District",
+                "population": 1518540,
+                "density": 869.8,
                 "cartodb_id": 81,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -9816,6 +9918,8 @@ var pakistanDistricts = {
                 "shape_area": 0.170621,
                 "district_agency": "Buner",
                 "status": "District",
+                "population": 897319,
+                "density": 517.2,
                 "cartodb_id": 67,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -10080,6 +10184,8 @@ var pakistanDistricts = {
                 "shape_area": 1.472802,
                 "district_agency": "Chitral",
                 "status": "District",
+                "population": 447362,
+                "density": 30.32,
                 "cartodb_id": 69,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -10168,6 +10274,8 @@ var pakistanDistricts = {
                 "shape_area": 0.30476,
                 "district_agency": "Gujrat",
                 "status": "District",
+                "population": 2756110,
+                "density": 867.7,
                 "cartodb_id": 98,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -10300,6 +10408,8 @@ var pakistanDistricts = {
                 "shape_area": 0.702401,
                 "district_agency": "Dera Ismail Khan",
                 "status": "District",
+                "population": 1627132,
+                "density": 220.4,
                 "cartodb_id": 70,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -10572,6 +10682,8 @@ var pakistanDistricts = {
                 "shape_area": 0.194115,
                 "district_agency": "Haripur",
                 "status": "District",
+                "population": 1003031,
+                "density": 520.5,
                 "cartodb_id": 72,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -10688,6 +10800,8 @@ var pakistanDistricts = {
                 "shape_area": 0.255925,
                 "district_agency": "Karak",
                 "status": "District",
+                "population": 706299,
+                "density": 266.2,
                 "cartodb_id": 73,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -10820,6 +10934,8 @@ var pakistanDistricts = {
                 "shape_area": 0.289535,
                 "district_agency": "Kohat",
                 "status": "District",
+                "population": 993874,
+                "density": 334.0,
                 "cartodb_id": 74,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -11012,6 +11128,8 @@ var pakistanDistricts = {
                 "shape_area": 0.747198,
                 "district_agency": "Kohistan",
                 "status": "District",
+                "population": 784711,
+                "density": 102.5,
                 "cartodb_id": 75,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -11112,6 +11230,8 @@ var pakistanDistricts = {
                 "shape_area": 0.302895,
                 "district_agency": "Lakki Marwat",
                 "status": "District",
+                "population": 876182,
+                "density": 275.1,
                 "cartodb_id": 76,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -11220,6 +11340,8 @@ var pakistanDistricts = {
                 "shape_area": 0.15815,
                 "district_agency": "Lower Dir",
                 "status": "District",
+                "population": 1435917,
+                "density": 816.8,
                 "cartodb_id": 77,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -11316,6 +11438,8 @@ var pakistanDistricts = {
                 "shape_area": 0.088939,
                 "district_agency": "Malakand",
                 "status": "District",
+                "population": 720295,
+                "density": 760.0,
                 "cartodb_id": 78,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -11392,6 +11516,8 @@ var pakistanDistricts = {
                 "shape_area": 0.262889,
                 "district_agency": "Mandi Bahauddin",
                 "status": "District",
+                "population": 1593292,
+                "density": 577.5,
                 "cartodb_id": 108,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -11548,6 +11674,8 @@ var pakistanDistricts = {
                 "shape_area": 0.396497,
                 "district_agency": "Mansehra",
                 "status": "District",
+                "population": 1556460,
+                "density": 363.1,
                 "cartodb_id": 79,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -11696,6 +11824,8 @@ var pakistanDistricts = {
                 "shape_area": 0.136431,
                 "district_agency": "Shangla",
                 "status": "District",
+                "population": 757810,
+                "density": 545.7,
                 "cartodb_id": 83,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -11852,6 +11982,8 @@ var pakistanDistricts = {
                 "shape_area": 0.144698,
                 "district_agency": "Swabi",
                 "status": "District",
+                "population": 1624616,
+                "density": 1097.0,
                 "cartodb_id": 84,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -11932,6 +12064,8 @@ var pakistanDistricts = {
                 "shape_area": 0.217407,
                 "district_agency": "Hafizabad",
                 "status": "District",
+                "population": 1156957,
+                "density": 508.9,
                 "cartodb_id": 99,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -12244,6 +12378,8 @@ var pakistanDistricts = {
                 "shape_area": 0.529658,
                 "district_agency": "Swat",
                 "status": "District",
+                "population": 2309570,
+                "density": 430.4,
                 "cartodb_id": 85,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -12328,6 +12464,8 @@ var pakistanDistricts = {
                 "shape_area": 0.160773,
                 "district_agency": "Tank",
                 "status": "District",
+                "population": 391885,
+                "density": 234.0,
                 "cartodb_id": 86,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -12400,6 +12538,8 @@ var pakistanDistricts = {
                 "shape_area": 0.04463,
                 "district_agency": "Tor Ghar",
                 "status": "District",
+                "population": 171395,
+                "density": 366.9,
                 "cartodb_id": 87,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -12532,6 +12672,8 @@ var pakistanDistricts = {
                 "shape_area": 0.631147,
                 "district_agency": "Khushab",
                 "status": "District",
+                "population": 1281299,
+                "density": 193.5,
                 "cartodb_id": 104,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -12720,6 +12862,8 @@ var pakistanDistricts = {
                 "shape_area": 0.369738,
                 "district_agency": "Upper Dir",
                 "status": "District",
+                "population": 946421,
+                "density": 263.9,
                 "cartodb_id": 88,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -12892,6 +13036,8 @@ var pakistanDistricts = {
                 "shape_area": 0.670373,
                 "district_agency": "Attock",
                 "status": "District",
+                "population": 1883556,
+                "density": 275.9,
                 "cartodb_id": 89,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -13056,6 +13202,8 @@ var pakistanDistricts = {
                 "shape_area": 0.600341,
                 "district_agency": "Jhang",
                 "status": "District",
+                "population": 2744085,
+                "density": 431.9,
                 "cartodb_id": 100,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -13232,6 +13380,8 @@ var pakistanDistricts = {
                 "shape_area": 0.798843,
                 "district_agency": "Bahawalnagar",
                 "status": "District",
+                "population": 2981919,
+                "density": 348.7,
                 "cartodb_id": 90,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -13436,6 +13586,8 @@ var pakistanDistricts = {
                 "shape_area": 2.215686,
                 "district_agency": "Bahawalpur",
                 "status": "District",
+                "population": 3668106,
+                "density": 153.4,
                 "cartodb_id": 91,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -13708,6 +13860,8 @@ var pakistanDistricts = {
                 "shape_area": 0.625231,
                 "district_agency": "Chakwal",
                 "status": "District",
+                "population": 1495982,
+                "density": 223.9,
                 "cartodb_id": 93,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -13884,6 +14038,8 @@ var pakistanDistricts = {
                 "shape_area": 1.104619,
                 "district_agency": "Dera Ghazi Khan",
                 "status": "District",
+                "population": 2872201,
+                "density": 245.7,
                 "cartodb_id": 95,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -14032,6 +14188,8 @@ var pakistanDistricts = {
                 "shape_area": 0.563082,
                 "district_agency": "Faisalabad",
                 "status": "District",
+                "population": 7874790,
+                "density": 1321.0,
                 "cartodb_id": 96,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -14140,6 +14298,8 @@ var pakistanDistricts = {
                 "shape_area": 0.345989,
                 "district_agency": "Gujranwala",
                 "status": "District",
+                "population": 5014196,
+                "density": 1384.0,
                 "cartodb_id": 97,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -14272,6 +14432,8 @@ var pakistanDistricts = {
                 "shape_area": 0.343704,
                 "district_agency": "Jhelum",
                 "status": "District",
+                "population": 1222650,
+                "density": 341.6,
                 "cartodb_id": 101,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -14396,6 +14558,8 @@ var pakistanDistricts = {
                 "shape_area": 0.376719,
                 "district_agency": "Kasur",
                 "status": "District",
+                "population": 3454996,
+                "density": 887.2,
                 "cartodb_id": 102,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -14524,6 +14688,8 @@ var pakistanDistricts = {
                 "shape_area": 0.408744,
                 "district_agency": "Khanewal",
                 "status": "District",
+                "population": 2921986,
+                "density": 669.8,
                 "cartodb_id": 103,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -14660,6 +14826,8 @@ var pakistanDistricts = {
                 "shape_area": 0.605496,
                 "district_agency": "Layyah",
                 "status": "District",
+                "population": 1824230,
+                "density": 286.0,
                 "cartodb_id": 106,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -14756,6 +14924,8 @@ var pakistanDistricts = {
                 "shape_area": 0.248495,
                 "district_agency": "Lodhran",
                 "status": "District",
+                "population": 1700620,
+                "density": 638.9,
                 "cartodb_id": 107,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -14908,6 +15078,8 @@ var pakistanDistricts = {
                 "shape_area": 0.572989,
                 "district_agency": "Mianwali",
                 "status": "District",
+                "population": 1546094,
+                "density": 256.4,
                 "cartodb_id": 109,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -15036,6 +15208,8 @@ var pakistanDistricts = {
                 "shape_area": 0.340893,
                 "district_agency": "Multan",
                 "status": "District",
+                "population": 4745109,
+                "density": 1302.0,
                 "cartodb_id": 110,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -15212,6 +15386,8 @@ var pakistanDistricts = {
                 "shape_area": 0.719198,
                 "district_agency": "Muzaffargarh",
                 "status": "District",
+                "population": 4325483,
+                "density": 564.1,
                 "cartodb_id": 111,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -15344,6 +15520,8 @@ var pakistanDistricts = {
                 "shape_area": 0.208192,
                 "district_agency": "Nankana Sahib",
                 "status": "District",
+                "population": 1356374,
+                "density": 489.0,
                 "cartodb_id": 112,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -15424,6 +15602,8 @@ var pakistanDistricts = {
                 "shape_area": 0.227294,
                 "district_agency": "Narowal",
                 "status": "District",
+                "population": 1709757,
+                "density": 735.8,
                 "cartodb_id": 113,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -15548,6 +15728,8 @@ var pakistanDistricts = {
                 "shape_area": 0.417819,
                 "district_agency": "Okara",
                 "status": "District",
+                "population": 3039139,
+                "density": 688.4,
                 "cartodb_id": 114,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -15648,6 +15830,8 @@ var pakistanDistricts = {
                 "shape_area": 0.270477,
                 "district_agency": "Pakpattan",
                 "status": "District",
+                "population": 1823687,
+                "density": 631.4,
                 "cartodb_id": 115,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -15840,6 +16024,8 @@ var pakistanDistricts = {
                 "shape_area": 1.183237,
                 "district_agency": "Rahim Yar Khan",
                 "status": "District",
+                "population": 4814006,
+                "density": 373.6,
                 "cartodb_id": 116,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -16016,6 +16202,8 @@ var pakistanDistricts = {
                 "shape_area": 1.16711,
                 "district_agency": "Rajanpur",
                 "status": "District",
+                "population": 1995958,
+                "density": 159.3,
                 "cartodb_id": 117,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -16212,6 +16400,8 @@ var pakistanDistricts = {
                 "shape_area": 0.506857,
                 "district_agency": "Rawalpindi",
                 "status": "District",
+                "population": 5405633,
+                "density": 1039.0,
                 "cartodb_id": 118,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -16328,6 +16518,8 @@ var pakistanDistricts = {
                 "shape_area": 0.303529,
                 "district_agency": "Sahiwal",
                 "status": "District",
+                "population": 2517560,
+                "density": 781.0,
                 "cartodb_id": 119,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -16452,6 +16644,8 @@ var pakistanDistricts = {
                 "shape_area": 0.558525,
                 "district_agency": "Sargodha",
                 "status": "District",
+                "population": 3703588,
+                "density": 640.7,
                 "cartodb_id": 120,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -16580,6 +16774,8 @@ var pakistanDistricts = {
                 "shape_area": 0.345331,
                 "district_agency": "Sheikhupura",
                 "status": "District",
+                "population": 3460426,
+                "density": 1142.0,
                 "cartodb_id": 121,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -16696,6 +16892,8 @@ var pakistanDistricts = {
                 "shape_area": 0.294125,
                 "district_agency": "Sialkot",
                 "status": "District",
+                "population": 3893672,
+                "density": 1259.0,
                 "cartodb_id": 122,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -16820,6 +17018,8 @@ var pakistanDistricts = {
                 "shape_area": 0.290667,
                 "district_agency": "Toba Tek Singh",
                 "status": "District",
+                "population": 2190015,
+                "density": 712.8,
                 "cartodb_id": 123,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -16952,6 +17152,8 @@ var pakistanDistricts = {
                 "shape_area": 0.420731,
                 "district_agency": "Vehari",
                 "status": "District",
+                "population": 2897446,
+                "density": 645.9,
                 "cartodb_id": 124,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -17107,11 +17309,9 @@ var pakistanDistricts = {
                 "shape_leng": 5.007686,
                 "shape_area": 0.586687,
                 "district_agency": "Badin",
-                "total_cases" : 4,
-                "recovered" : 0,
-                "deaths" : 0,
-                "active" : 4,
                 "status": "District",
+                "population": 1804516,
+                "density": 278.9,
                 "cartodb_id": 125,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -17263,11 +17463,9 @@ var pakistanDistricts = {
                 "shape_leng": 4.366533,
                 "shape_area": 0.728184,
                 "district_agency": "Dadu",
-                "total_cases" : 11,
-                "recovered" : 0,
-                "deaths" : 0,
-                "active" : 11,
                 "status": "District",
+                "population": 1550266,
+                "density": 193.0,
                 "cartodb_id": 126,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -17427,11 +17625,9 @@ var pakistanDistricts = {
                 "shape_leng": 4.126686,
                 "shape_area": 0.583194,
                 "district_agency": "Ghotki",
-                "total_cases" : 126,
-                "recovered" : 0,
-                "deaths" : 0,
-                "active" : 126,
                 "status": "District",
+                "population": 1647239,
+                "density": 253.2,
                 "cartodb_id": 127,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -17507,11 +17703,9 @@ var pakistanDistricts = {
                 "shape_leng": 1.526741,
                 "shape_area": 0.091366,
                 "district_agency": "Hyderabad",
-                "total_cases" : 197,
-                "recovered" : 108,
-                "deaths" : 3,
-                "active" : 86,
                 "status": "District",
+                "population": 2201079,
+                "density": 2155.0,
                 "cartodb_id": 128,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -17671,11 +17865,9 @@ var pakistanDistricts = {
                 "shape_leng": 3.019249,
                 "shape_area": 0.247358,
                 "district_agency": "Jacobabad",
-                "total_cases" : 1,
-                "recovered" : 0,
-                "deaths" : 0,
-                "active" : 1,
                 "status": "District",
+                "population": 1006297,
+                "density": 363.1,
                 "cartodb_id": 129,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -18000,11 +18192,9 @@ var pakistanDistricts = {
                 "shape_leng": 5.594898,
                 "shape_area": 1.010348,
                 "district_agency": "Jamshoro",
-                "total_cases" : 4,
-                "recovered" : 0,
-                "deaths" : 0,
-                "active" : 4,
                 "status": "District",
+                "population": 993142,
+                "density": 88.28,
                 "cartodb_id": 130,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
@@ -18229,11 +18419,9 @@ var pakistanDistricts = {
                 "shape_leng": 5.688215,
                 "shape_area": 0.344323,
                 "district_agency": "Karachi",
-                "total_cases" : 1290,
-                "recovered" : 200,
-                "deaths" : 43,
-                "active" : 1047,
                 "status": "District",
+                "population": 4269079,
+                "density": 3395.0,
                 "cartodb_id": 132,
                 "created_at": "2015-07-06T09:49:19Z",
                 "updated_at": "2015-07-06T09:49:19Z"
