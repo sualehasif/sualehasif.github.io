@@ -358,6 +358,10 @@
     color: #00ACEE;
 }
 
+.float-right {
+    float: right;
+}
+
 .slide {
     max-width: 500px;
     margin: 0 auto;
