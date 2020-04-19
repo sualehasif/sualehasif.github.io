@@ -7,6 +7,12 @@ axios.get('https://covidapi.info/api/v1/country/PAK/latest').then(function (res)
     console.log('Total active cases in Paksitan on day ' + Object.keys(result)[0] + ': ' + activeCases);
 });
 
+axios.get('https://storage.googleapis.com/static-covid/static/data-main-v4.json').then(function (res) {
+    var pakistanData = res && res.data && res.data.regions && res.data.regions.PK;
+    var estimatedCases = pakistanData && pakistanData.CurrentEstimate;
+    console.log('Current estimated cases in Pakistan from epidemicforecasting.org: ' + estimatedCases);
+});
+
 var dataMap = L.map('data').setView([25.8943, 68.5247], 7);
 
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia3JhZGVscm9zYXJpbyIsImEiOiJjazk0ZzlmNnUwY3BmM2luMXNydjh3c3NiIn0.EwFfqUXIahSIpJ3CZcpTgw', {
