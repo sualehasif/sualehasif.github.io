@@ -4,7 +4,6 @@ axios.get('https://covidapi.info/api/v1/country/PAK/latest').then(function (res)
     var result = res && res.data && res.data.result;
     var cases = result && result[Object.keys(result)[0]];    // result has only 1 key, the date of the last update
     var activeCases = cases && cases.confirmed - cases.recovered - cases.deaths;
-    console.log('Total active cases in Paksitan on day ' + Object.keys(result)[0] + ': ' + activeCases);
 
     if (cases.confirmed) {
         document.getElementById('confirmed-cases-num').innerText = cases.confirmed;
@@ -35,7 +34,6 @@ axios.get('https://storage.googleapis.com/static-covid/static/data-main-v4.json'
             document.getElementById('estimated-infections-date').innerText = `${dateParts[1]}/${dateParts[2]}/${dateParts[0]}`;
         }
     }
-    console.log('Current estimated cases in Pakistan from epidemicforecasting.org: ' + estimatedCases);
 });
 
 var dataMap = L.map('data').setView([25.8943, 68.5247], 7);
