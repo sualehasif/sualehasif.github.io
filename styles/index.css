@@ -341,7 +341,24 @@
     color: #2E2E2E;
    }
 
-   #parosi h2 {
+   #why-make-at-home,
+   #parosi {
+       padding-top: 100px;
+       padding-bottom: 100px;
+   }
+
+   #why-make-at-home div {
+       max-width: 70%;
+       margin: 0 auto;
+   }
+
+   #why-make-at-home p {
+    margin-bottom: 10px;
+    margin-top: 0;
+    }
+
+   #parosi h2,
+   #why-make-at-home h1 {
        margin-bottom: 0;
    }
 
@@ -349,7 +366,8 @@
        margin-bottom: 10px;
    }
 
-   #parosi a {
+   #parosi a,
+   #why-make-at-home a {
     display: block;
     max-width: fit-content;
     margin: 0 auto;
