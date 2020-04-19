@@ -247,7 +247,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20%;
+    margin: 40px 0;
 }
 
 #counts h1, #counts h2, #counts h3 {
@@ -269,6 +269,7 @@
 #counts .count-section .count-per-type {
     display: flex;
     justify-content: space-between;
+    white-space: nowrap;
 }
 
 #counts .count-section .count-per-type span {
