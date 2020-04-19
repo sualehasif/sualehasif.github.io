@@ -184,6 +184,14 @@
     color: #2E2E2E;
 }
 
+.quote-credit {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 19px;
+  color: #2E2E2E;
+}
+
 #advisory {
     padding: 20px;
 }
@@ -419,6 +427,20 @@
 #news-carousel .glide__bullet:focus {
     border: 2px solid #0DAB76;
     background-color: #0DAB76;
+}
+
+#news-carousel .glide__arrows .glide__arrow {
+        font-size: 1.5rem;
+        background: #454545;
+        color: #f4f4f4;
+        margin-top: 1rem;
+        width: 3rem;
+        height: 3rem;
+        line-height: 3rem;
+        border-radius: 50%;
+        padding: 0;
+        opacity: 50%;
+        border-color: #454545
 }
 
 #experts-suggest > div {

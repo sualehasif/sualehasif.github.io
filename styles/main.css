@@ -4,7 +4,7 @@
          url('../webfonts/unisansdemo-heavycaps-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-}   
+}
 
 @font-face {
     font-family: 'Uni Sans';
@@ -167,7 +167,7 @@ body {
     font-size: 10px;
 }
 
-.button { 
+.button {
     background-color: #0DAB76;
     border-radius: 8px;
     padding: 12px 24px;
@@ -442,6 +442,10 @@ h2 {
         font-size: 18px;
         line-height: 20px;
     }
+
+    #news-carousel .glide__arrows .glide__arrow {
+            display: none;
+    }
 }
 
 
@@ -501,5 +505,5 @@ h2 {
         padding: 6px 15px;
         font-size: 10px;
     }
-    
+
 }
