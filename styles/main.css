@@ -154,6 +154,10 @@ body {
     color: #970303;
 }
 
+.small {
+    font-size: 10px;
+}
+
 .button { 
     background-color: #0DAB76;
     border-radius: 8px;

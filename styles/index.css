@@ -408,6 +408,10 @@
     margin: 0 auto;
    }
 
+   #map-container h1 {
+       margin-bottom: 0;
+   }
+
 @media only screen and (min-width: 2400px){
     #main {
         padding: 100px 600px;
