@@ -166,6 +166,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     transition: background-color .5s ease-in-out;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -191,7 +192,7 @@ body {
 }
 
 .button-secondary-outline:hover {
-    color: #147066;
+    color: #0DAB76;
     background-color: #FFF;
 }
 
