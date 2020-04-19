@@ -87,3 +87,49 @@
 .legend li:nth-child(8):before {
     background-color: #FFE300;
 }
+
+.graph-title {
+    margin: 50px 0 20px 0;
+}
+
+.graph-source {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.epidemic-graph {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.epidemic-graph iframe {
+    border: 0px none;
+    margin-left: -36px;
+    height: 1150px;
+    margin-top: -275px;
+    width: 80%;
+}
+
+@media (max-width: 1200px) {
+    .epidemic-graph, .epidemic-graph iframe {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1590px) {
+    .epidemic-graph iframe {
+        margin-top: -335px;
+        height: 1000px;
+    }
+}
+
+
+@media (max-width: 589px) {
+    .epidemic-graph iframe {
+        margin-top: -335px;
+        height: 1135px;
+    }
+}
