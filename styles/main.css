@@ -127,6 +127,15 @@ body {
 
 .alert span {
     font-size: 10px;
+    line-height: 24px;
+}
+
+.divider {
+    width: 60%;
+    max-width: 733px;
+    border: 1px solid #000;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .container {

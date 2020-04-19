@@ -218,6 +218,7 @@
 .columns {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .columns > div {
@@ -229,9 +230,67 @@
     width: 100%;
 }
 
-
 .columns > div + div{
     text-align: center;
+}
+
+#counts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20%;
+}
+
+#counts h1, #counts h2, #counts h3 {
+    margin: 0;
+    font-family: 'Uni Sans';
+}
+
+#counts .section-divider {
+    height: 50px;
+    border-left: 1px solid #000;
+    margin: 0 50px;
+}
+
+#counts .count-section h3 {
+    display: inline-block;
+    font-size: 24px;
+}
+
+#counts .count-section .count-per-type {
+    display: flex;
+    justify-content: space-between;
+}
+
+#counts .count-section .count-per-type span {
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+#counts .count-section .estimated-date {
+    font-size: 12px;
+}
+
+#counts .count-section .estimated-infections {
+    font-size: 24px;
+}
+
+#counts .city-cases {
+    display: flex;
+    text-align: center;
+}
+
+#counts .city-cases div + div {
+    padding-left: 20px;
+}
+
+#counts .city-cases span {
+    font-size: 20px;
+}
+
+#counts .city-cases h3 {
+    display: block;
+    font-size: 24px;
 }
 
 .share-container {
@@ -480,6 +539,17 @@
         width: 500px;
     }
 
+    #counts {
+        flex-direction: column;
+    }
+
+    #counts .section-divider {
+        height: 1px;
+        width: 150px;
+        border-bottom: 1px solid #000;
+        margin: 20px 0;
+    }
+
     .columns {
         flex-direction: column;
     }
@@ -516,7 +586,6 @@
     .content.active {
         grid-template-columns: 1fr;
         grid-gap: 20px;
-        
     }
 
     #call-to-action {

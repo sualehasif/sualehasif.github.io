@@ -5,11 +5,36 @@ axios.get('https://covidapi.info/api/v1/country/PAK/latest').then(function (res)
     var cases = result && result[Object.keys(result)[0]];    // result has only 1 key, the date of the last update
     var activeCases = cases && cases.confirmed - cases.recovered - cases.deaths;
     console.log('Total active cases in Paksitan on day ' + Object.keys(result)[0] + ': ' + activeCases);
+
+    if (cases.confirmed) {
+        document.getElementById('confirmed-cases-num').innerText = cases.confirmed;
+    }
+
+    if (cases.deaths) {
+        document.getElementById('confirmed-deaths-num').innerText = cases.deaths;
+    }
+
+    if (cases.recovered) {
+        document.getElementById('confirmed-recovered-num').innerText = cases.recovered;
+    }
 });
 
 axios.get('https://storage.googleapis.com/static-covid/static/data-main-v4.json').then(function (res) {
     var pakistanData = res && res.data && res.data.regions && res.data.regions.PK;
+    var dates = pakistanData && pakistanData.data && pakistanData.data.JohnsHopkins && pakistanData.data.JohnsHopkins.Date;
+    var lastDate = dates && dates[dates.length - 1];
     var estimatedCases = pakistanData && pakistanData.CurrentEstimate;
+
+    if (estimatedCases) {
+        document.getElementById('estimated-infections-num').innerText = estimatedCases;
+    }
+
+    if (lastDate) {
+        var dateParts = lastDate.split('-');
+        if (dateParts.length === 3) {
+            document.getElementById('estimated-infections-date').innerText = `${dateParts[1]}/${dateParts[2]}/${dateParts[0]}`;
+        }
+    }
     console.log('Current estimated cases in Pakistan from epidemicforecasting.org: ' + estimatedCases);
 });
 
