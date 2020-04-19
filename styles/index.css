@@ -59,7 +59,34 @@
 
 
 #call-to-action {
-    padding: 150px;
+    padding: 50px;
+}
+
+#call-to-action h2 {
+    margin-bottom: 15px;
+}
+
+#call-to-action h3 {
+    margin-top: 0;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+#call-to-action .social-icons {
+    margin-top: 40px;
+}
+
+#call-to-action .social-icons a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#call-to-action .social-icons a + a {
+    margin-left: 10px;
+}
+
+#call-to-action .social-icons i {
+    font-size: 24px;
 }
 
 #data {
@@ -366,6 +393,11 @@
 
     #call-to-action {
         padding: 100px;
+    }
+
+    #call-to-action h3 {
+        font-size: 24px;
+        font-weight: 800;
     }
 }
 

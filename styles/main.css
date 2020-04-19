@@ -391,6 +391,11 @@ h2 {
         font-size: 22px;
         line-height: 22px;
     }
+
+    h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
 }
 
 
@@ -423,6 +428,11 @@ h2 {
     h2 {
         font-size: 14px;
         line-height: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+        line-height: 12px;
     }
 
     .button {
