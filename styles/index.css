@@ -383,7 +383,7 @@
    }
 
    #why-make-at-home div {
-       max-width: 70%;
+       max-width: 50%;
        margin: 0 auto;
    }
 
@@ -440,6 +440,11 @@
     #main {
         padding: 70px 50px;
         padding-top: 114px;
+    }
+
+
+    #why-make-at-home div {
+        max-width: 65%;
     }
 }
 
@@ -517,6 +522,10 @@
     #experts-suggest > div p:first-of-type {
         font-size: 24px;
         line-height: 24px;
+    }
+
+    #why-make-at-home div {
+        max-width: 70%;
     }
 }
 
