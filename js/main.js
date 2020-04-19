@@ -7,6 +7,11 @@ new Glide('.glide', {autoplay: 5000,
     type: "carousel"
    }).mount()
 
+new Glide('.news-carousel', {
+            hoverpause: true,
+            type: "carousel"
+            }).mount()
+
 document.getElementById("tab-button1").addEventListener("click", function () {openTab("tab-button1","option1")});
 document.getElementById("tab-button2").addEventListener("click", function () {openTab("tab-button2","option2")});
 document.getElementById("tab-button3").addEventListener("click", function () {openTab("tab-button3","option3")});
