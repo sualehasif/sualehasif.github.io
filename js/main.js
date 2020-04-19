@@ -33,7 +33,7 @@ function getColor(d) {
 
 function style(feature) {
     return {
-        fillColor: getColor(feature.properties.active),
+        fillColor: getColor(feature.properties.density),
         weight: 2,
         opacity: 1,
         color: 'white',
@@ -66,4 +66,11 @@ function openTab(id1, id2) {
 
     document.getElementById(id1).className  += " active";
     document.getElementById(id2).className  += " active";
-  }
+}
+
+axios.get('https://covidapi.info/api/v1/country/PAK/latest').then(function (res) {
+    var result = res && res.data && res.data.result;
+    var cases = result && result[Object.keys(result)[0]];    // result has only 1 key, the date of the last update
+    var activeCases = cases && cases.confirmed - cases.recovered - cases.deaths;
+    console.log('Total active cases in Paksitan on day ' + Object.keys(result)[0] + ': ' + activeCases);
+});
