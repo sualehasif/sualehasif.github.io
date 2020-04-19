@@ -598,6 +598,11 @@
         line-height: 15px;
     }
 
+    .text-and-image {
+        grid-template-columns: 100%;
+    }
+    
+
     .text-and-image .text p {
         margin-top: -10px;
     }
@@ -643,6 +648,7 @@
 
     .main-text h1 {
         line-height: 25px;
+        margin-bottom: 10px;
     }
 
     .main-text p {

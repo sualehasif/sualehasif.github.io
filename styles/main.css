@@ -449,6 +449,18 @@ h2 {
     .container {
         overflow-x: hidden;
     }
+
+    #navbar-hamburger {
+        margin-left: 10px;
+    }
+
+    #navbar-hamburger:before {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 320px) {
