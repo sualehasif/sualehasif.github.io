@@ -284,27 +284,28 @@ h2 {
 
 #footer {
     background-color: #0DAB76;
-    padding: 18px 24px;
+    padding: 10px 24px;
 }
 
 .footer-links {
     list-style-type: none;
+    color: #ffffff;
 }
 
 .footer-links li {
     display: inline;
     margin-right: 10px;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    color: #FFFFFF;
 }
 
 .footer-links li a {
-    color: #FFF;
     text-decoration: none;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-    text-transform: uppercase;
     color: #FFFFFF;
 }
 

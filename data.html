@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+    <head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163901291-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163901291-1');
+        </script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:url" content="https://maskbanao.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://maskbanao.com/images/Web-Preview.jpg" />
+        <meta property="og:image:alt" content="https://maskbanao.com" />
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:image" content="https://maskbanao.com/images/Web-Preview.jpg" />
+        <meta property="twitter:image:alt" content="https://maskbanao.com" />
+        <meta name="title" content="Mask Banao">
+        <meta name="description" content="Here’s how you can use ten minutes, a piece of cloth and an old sewing machine to save someone's life.">
+        <title>Mask Banao - The Science</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="styles/font-awesome-all.min.css" type="text/css">  
+        <link rel="stylesheet" href="styles/leaflet.css" />
+        <link rel="stylesheet" href="styles/main.css" type="text/css">
+        <link rel="stylesheet" href="styles/data.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="header">
+            <nav class="navbar">
+                <a href="index.html" class="navbar-logo">
+                    <img src="images/Mask Banao Logo long.svg" />
+                </a>
+                <button id="navbar-hamburger"></button>
+                <ul id="navigation">
+                    <li><a href="https://www.change.org/p/government-face-masks-in-public-should-be-made-mandatory-by-the-government-to-prevent-covid-19-spread" target="_blank">Request Mask Laws</a></li>
+                    <li><a href="science.html">The Science</a></li>
+                    <li><a href="data.html" class="active">Data</a></li>
+                    <li><a href="social.html">Social Media</a></li>
+                    <li><a href="index.html#make-a-mask" class="button">Make a mask</a></li>
+                </ul>
+                <div class="language-container">
+                    <div class="language-switcher">
+                        English 
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    
+        <div class="container">
+            <div id="map-container">
+                <div class="legend">
+                    <h3>Current Active Cases</h3>
+                    <ul>
+                        <li>More than 1000</li>
+                        <li>More than 750</li>
+                        <li>More than 500</li>
+                        <li>More than 250</li>
+                        <li>More than 100</li>
+                        <li>More than 50</li>
+                        <li>More than 10</li>
+                        <li>More than 1</li>
+                        <li>Unknown</li>
+                    </ul>
+                </div>
+                <div class="map" id="data"></div>
+            </div>
+        </div>
+        <script src="js/axios.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/pakistan_data.js"></script>
+        <script src="js/pakistan_districts.js"></script>   
+        <script src="js/map.js"></script>
+    </body>
+</html>
