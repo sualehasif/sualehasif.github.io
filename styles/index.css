@@ -16,7 +16,7 @@
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
-    line-height: 33px; 
+    line-height: 33px;
     max-width: 450px;
     margin-top: -20px;
 }
@@ -167,6 +167,15 @@
 }
 
 .numbered-list {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #2E2E2E;
+}
+
+.credit {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -399,9 +408,9 @@
 
 #news-carousel .glide__bullet--active {
     background-color: #0DAB76;
-} 
+}
 
-#news-carousel .glide__bullet:hover, 
+#news-carousel .glide__bullet:hover,
 #news-carousel .glide__bullet:focus {
     border: 2px solid #0DAB76;
     background-color: #0DAB76;
@@ -409,7 +418,7 @@
 
 #experts-suggest > div {
  display: grid;
- grid-template-columns: 1fr 1fr;   
+ grid-template-columns: 1fr 1fr;
  grid-gap: 50px;
  align-items: center;
  width: 80%;
@@ -634,7 +643,7 @@
         font-size: 16px;
         line-height: 18px;
     }
-    
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -683,7 +692,7 @@
     .text-and-image {
         grid-template-columns: 100%;
     }
-    
+
 
     .text-and-image .text p {
         margin-top: -10px;
@@ -765,5 +774,5 @@
     #experts-suggest > div {
         width: 100%;
     }
-    
+
 }
