@@ -21,8 +21,9 @@
         <title>Mask Banao - The Science</title>
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="styles/font-awesome-all.min.css" type="text/css">  
+        <link rel="stylesheet" href="styles/leaflet.css" />
         <link rel="stylesheet" href="styles/main.css" type="text/css">
-        <link rel="stylesheet" href="styles/science.css" type="text/css">
+        <link rel="stylesheet" href="styles/data.css" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
     </head>
     <body>
@@ -47,23 +48,28 @@
 
     
         <div class="container">
-            <div id="entries">
-                <div id="cards">
-                    <div class="card">
-                        <div class="card-information">
-                            <div class="info">
-                                <span class="date">4/19/2020</span>
-                                <span class="header">Some really important facts will be placed here</span>
-                                <a class="small-link" href="#">source</a>
-                            </div>
-                        </div>
-                        <div class="card-share">
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://maskbanao.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                            <a href="http://twitter.com/share?&url=https://maskbanao.com"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
+            <div id="map-container">
+                <div class="legend">
+                    <h3>Current Active Cases</h3>
+                    <ul>
+                        <li>More than 1000</li>
+                        <li>More than 750</li>
+                        <li>More than 500</li>
+                        <li>More than 250</li>
+                        <li>More than 100</li>
+                        <li>More than 50</li>
+                        <li>More than 10</li>
+                        <li>More than 1</li>
+                        <li>Unknown</li>
+                    </ul>
                 </div>
+                <div class="map" id="data"></div>
             </div>
         </div>
+        <script src="js/axios.js"></script>
+        <script src="js/leaflet.js"></script>
+        <script src="js/pakistan_data.js"></script>
+        <script src="js/pakistan_districts.js"></script>   
+        <script src="js/map.js"></script>
     </body>
 </html>
