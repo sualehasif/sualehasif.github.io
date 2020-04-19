@@ -178,6 +178,24 @@
     top: 11px;
 }
 
+#why-make-a-mask h2 {
+    margin: 0 10px 0 0;
+}
+
+#why-make-a-mask h3 {
+    font-family: 'Uni Sans';
+    font-weight: 100;
+}
+
+.columns {
+    display: flex;
+    align-items: center;
+}
+
+.columns > div {
+    padding: 0px 50px 50px 50px;
+}
+
 .share-container {
     max-width: 490px;
     margin: 0 auto;

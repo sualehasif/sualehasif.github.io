@@ -4,7 +4,6 @@
          url('../webfonts/unisansdemo-heavycaps-webfont.woff') format('woff');
     font-weight: bold;
     font-style: normal;
-
 }   
 
 @font-face {
@@ -13,7 +12,6 @@
          url('../webfonts/unisansdemo-heavyitaliccaps-webfont.woff') format('woff');
     font-weight: bold;
     font-style: italic;
-
 }
 
 
@@ -23,7 +21,6 @@
          url('../webfonts/unisansdemo-thincaps-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -32,7 +29,6 @@
          url('../webfonts/unisansdemo-thinitaliccaps-webfont.woff') format('woff');
     font-weight: normal;
     font-style: italic;
-
 }
 
 body {
@@ -126,12 +122,20 @@ body {
     color: #FFF;
 }
 
+.green {
+    color: #0DAB76;
+}
+
 .dark-green {
-    color: #137166;
+    color: #147066;
 }
 
 .grey {
     color: #2D2D2D;
+}
+
+.danger {
+    color: #970303;
 }
 
 .button { 
@@ -209,7 +213,7 @@ h1 {
 }
 
 h1.secondary {
-    color: #0DAB76;
+    color: #147066;
 }
 
 h2 {
@@ -223,6 +227,10 @@ h2 {
 
 .section {
     padding: 50px 150px;
+}
+
+.section h1 {
+    margin: 0 0 40px 0;
 }
 
 .center-text {
