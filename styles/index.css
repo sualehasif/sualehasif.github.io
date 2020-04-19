@@ -440,7 +440,8 @@
         border-radius: 50%;
         padding: 0;
         opacity: 50%;
-        border-color: #454545
+        border-color: #454545;
+        margin: 0;
 }
 
 #experts-suggest > div {
