@@ -2,7 +2,7 @@ document.getElementById("navbar-hamburger").addEventListener("click", function()
     document.getElementById("navigation").classList.toggle("active");
 });
 
-new Glide('.glide', {autoplay: 3000,
+new Glide('.glide', {autoplay: 5000,
     hoverpause: true,
     type: "carousel"
    }).mount()
