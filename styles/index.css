@@ -1,3 +1,7 @@
+.container {
+    width: 100% !important;
+}
+
 #main {
     padding: 100px 230px;
     padding-top: 180px;
@@ -59,7 +63,7 @@
 
 
 #call-to-action {
-    padding: 50px;
+    padding: 50px 0;
 }
 
 #call-to-action h2 {
@@ -525,6 +529,23 @@
     display: none;
 }
 
+#call-to-action h2 em {
+    color: #ee2d2d;
+}
+
+#call-to-action h2 table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#call-to-action h2 table tr td:first-of-type {
+    text-align: right;
+}
+
+#call-to-action h2 table tr td:last-of-type {
+    text-align: left;
+}
+
 @media screen and (max-width: 768px) {
     .tweet {
         min-width: 100px;
@@ -639,6 +660,8 @@
     .main-text p {
         font-size: 20px;
         line-height: 29px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .main-text .button {
@@ -651,7 +674,7 @@
     }
 
     #call-to-action {
-        padding: 90px;
+        padding: 90px 0;
     }
 
     #experts-suggest > div p:first-of-type {
@@ -680,7 +703,7 @@
     }
 
     #call-to-action {
-        padding: 100px;
+        padding: 100px 0;
     }
 
     #call-to-action h3 {
@@ -729,7 +752,7 @@
     }
 
     #call-to-action {
-        padding: 50px;
+        padding: 50px 0;
     }
 
     #data {
@@ -775,6 +798,11 @@
 
     #call-to-action h3 {
         font-size: 14px;
+        font-weight: 800;
+    }
+
+    #call-to-action h2 {
+        font-size: 18px !important;
         font-weight: 800;
     }
 }

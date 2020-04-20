@@ -50,7 +50,8 @@ body {
 .navbar {
     display: grid;
     align-content: center;
-    grid-template-columns: 20% 70% 10%;
+    /* grid-template-columns: 20% 70% 10%; */
+    grid-template-columns: 20% 80%;
     align-items: center;
     padding: 14px 20px;
 }
