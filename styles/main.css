@@ -371,7 +371,7 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 904px) {
     #navbar-hamburger {
         display: block;
         height: 40px;

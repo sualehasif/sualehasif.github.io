@@ -1,24 +1,60 @@
-#main {
+.container h1 {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.tweets {
+    text-align: center;
+}
+
+.tweet {
+    display: inline-block;
+    max-width: 500px;
+    min-width: 200px;
+    width: 30%;
+    margin: 20px;
+    vertical-align: top;
+}
+
+.tweet blockquote {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px) {
+    .tweets {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tweet {
+        min-width: 100px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+#footer {
     height: 300px;
     color: #ffffff;
 }
 
-#main h1 {
-    margin-top: 130px;
+#footer h1 {
+    margin-top: 100px;
     color: #ffffff;
 }
 
-#main .social-icons {
+#footer .social-icons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#main i {
+#footer i {
     font-size: 40px;
     color: #ffffff;
 }
 
-#main a+a {
+#footer a+a {
     margin-left: 40px;
 }
