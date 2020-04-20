@@ -1,0 +1,129 @@
+#entries {
+    padding: 50px;
+    padding-top: 170px;
+}
+
+.card-row {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    background-color: #FFF;
+    min-height: 265px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+    border-radius: 8px;
+    border: 1px solid #147066;
+    vertical-align: top;
+    margin: 10px 0;
+}
+
+.card + .card {
+    margin-left: 20px;
+}
+
+.card .card-content.social {
+    padding-top: -10px;
+}
+
+.card .card-content.social blockquote {
+    display: none;
+}
+
+.card .card-content.social .twitter-tweet {
+    margin: 0 !important;
+    border: 0 !important;
+}
+
+.card .card-content:not(.social) {
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+    height: calc(100% - 40px);
+    text-align: left;
+}
+
+.card .card-content:not(.social) .author {
+    font-size: 13px;
+}
+
+.card .card-content:not(.social) .author .name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.card .card-content:not(.social):hover {
+    color: #147066;
+}
+
+.card .card-content:not(.social) div {
+    margin-bottom: 10px;
+}
+
+.card .card-content:not(.social) a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.card .card-content:not(.social) a:hover {
+    text-decoration: underline;
+}
+
+.card .card-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #147066;
+    border-radius: 0 0 6px 6px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card .card-footer a {
+    margin-right: 10px;
+}
+
+.card .card-footer .fa-twitter:before,
+.card .card-footer .fa-facebook-square:before {
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.footer {
+    height: 150px;
+    background-color: #0DAB76;
+    color: #FFF;
+    text-align: center;
+    padding: 150px 0;
+}
+
+@media only screen and (max-width: 1438px) {
+    .card {
+        margin-top: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 1120px) {
+    .card {
+        vertical-align: inherit;
+        margin: 10px 0 !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #entries {
+        padding: 50px;
+        padding-top: 170px;
+    }
+}

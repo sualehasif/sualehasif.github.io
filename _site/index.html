@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="title" content="Mask Banao">
+    <meta name="description" content="Here’s how you can use ten minutes, a piece of cloth and an old sewing machine to save someone's life.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #2D2D2D;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 90% 10%;
+            height: 100vh;
+        }
+
+        .text-container {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .animated-text span {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 65px;
+            color: #B1A9A9;
+        }
+
+        .call-to-action a {
+            text-decoration: none;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            margin: 0 20px;
+            transition: color .5s linear;
+        }
+
+        .call-to-action a:hover {
+            color: #E2B65F;
+            transition: color .3s linear;
+        }
+
+        #footer {
+            display: flex;
+            justify-content: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #B1A9A9;
+        }
+
+        .animate-me {
+            display: block;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+        <div class="text-container">
+            <div class="call-to-action">
+                <div class="animated-text">
+                    <span class="animate-me">over 70000 Pakistani are at risk</span>
+                </div>
+                <a href="#">make a mask</a>
+                <a href="#">share campaign</a>
+            </div>
+        </div>
+        <div id="footer">
+            <div>#maskbanao</div>
+            <div><a href=""></a><a href=""></a></div>
+        </div>
+      </div>
+      <script src="js/anime.min.js"></script>
+      <script>
+          var animateMe = document.querySelector('.animate-me');
+
+          var changeCount = 0;
+
+          anime({
+            targets: animateMe,
+            opacity: 0,
+            duration: 2000,
+            scale: 1.1,
+            loop: 4,
+            easing: 'easeInOutSine',
+            changeComplete: function(anim) {
+                        changeCount++;
+                        switch(changeCount) {
+                        case 1:
+                            animateMe.innerHTML = "New information here";
+                            break;
+                        case 2:
+                            animateMe.innerHTML = "Another information here";
+                            break;
+                        case 3:
+                            animateMe.innerHTML = "Hello World!";
+                        default:
+                            animateMe.innerHTML = "Last info";
+                        }
+                    }
+            });
+      </script>
+  </body>
+</html>
