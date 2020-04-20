@@ -1,9 +1,17 @@
 # See https://help.github.com/ignore-files/ for more about ignoring files.
 
+node_modules
+
 .vscode/
 
 # misc
 .DS_Store
+
+# Jekyll stuff
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 /venv
