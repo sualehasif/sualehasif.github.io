@@ -89,7 +89,7 @@
 }
 
 .graph-title {
-    margin: 50px 0 20px 0;
+    margin: 150px 0 20px 0;
 }
 
 .graph-source {
@@ -125,7 +125,6 @@
         height: 1000px;
     }
 }
-
 
 @media (max-width: 589px) {
     .epidemic-graph iframe {

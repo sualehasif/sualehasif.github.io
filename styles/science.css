@@ -1,5 +1,5 @@
 #entries {
-    padding: 50px 100px;
+    padding: 50px;
     padding-top: 170px;
 }
 
@@ -12,6 +12,7 @@
     display: inline-block;
     position: relative;
     width: 400px;
+    max-width: 100%;
     background-color: #FFF;
     min-height: 265px;
     border-radius: 8px;
@@ -20,6 +21,7 @@
     border-radius: 8px;
     border: 1px solid #147066;
     vertical-align: top;
+    margin: 10px 0;
 }
 
 .card + .card {
@@ -105,10 +107,16 @@
     padding: 150px 0;
 }
 
+@media only screen and (max-width: 1438px) {
+    .card {
+        margin-top: 0 !important;
+    }
+}
+
 @media only screen and (max-width: 1120px) {
     .card {
         vertical-align: inherit;
-        margin: 20px 0 !important;
+        margin: 10px 0 !important;
     }
 }
 
