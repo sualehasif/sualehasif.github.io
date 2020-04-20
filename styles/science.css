@@ -26,17 +26,38 @@
     margin-left: 20px;
 }
 
-.card .card-content {
+.card .card-content.social {
     padding-top: -10px;
 }
 
-.card .card-content blockquote {
+.card .card-content.social blockquote {
     display: none;
 }
 
-.card .card-content .twitter-tweet {
+.card .card-content.social .twitter-tweet {
     margin: 0 !important;
     border: 0 !important;
+}
+
+.card .card-content:not(.social) {
+    padding: 20px;
+    cursor: pointer;
+    position: absolute;
+    height: calc(100% - 40px);
+}
+
+.card .card-content:not(.social):hover {
+    color: #147066;
+}
+
+.card .card-content:not(.social) a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.card .card-content:not(.social) a:hover {
+    text-decoration: underline;
 }
 
 .card .card-footer {
