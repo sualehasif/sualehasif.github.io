@@ -44,10 +44,24 @@
     cursor: pointer;
     position: absolute;
     height: calc(100% - 40px);
+    text-align: left;
+}
+
+.card .card-content:not(.social) .author {
+    font-size: 13px;
+}
+
+.card .card-content:not(.social) .author .name {
+    font-weight: bold;
+    margin: 0;
 }
 
 .card .card-content:not(.social):hover {
     color: #147066;
+}
+
+.card .card-content:not(.social) div {
+    margin-bottom: 10px;
 }
 
 .card .card-content:not(.social) a {
@@ -83,9 +97,16 @@
     color: #FFFFFF;
 }
 
+.footer {
+    height: 150px;
+    background-color: #0DAB76;
+    color: #FFF;
+    text-align: center;
+    padding: 150px 0;
+}
+
 @media only screen and (max-width: 1120px) {
     .card {
-        width: 90% !important;
         vertical-align: inherit;
         margin: 20px 0 !important;
     }
