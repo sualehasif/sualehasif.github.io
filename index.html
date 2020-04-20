@@ -67,6 +67,10 @@
             line-height: 22px;
             color: #B1A9A9;
         }
+
+        .animate-me {
+            display: block;
+        }
     </style>
   </head>
   <body>
@@ -74,7 +78,7 @@
         <div class="text-container">
             <div class="call-to-action">
                 <div class="animated-text">
-                    <span>over 70000 Pakistani are at risk</span>
+                    <span class="animate-me">over 70000 Pakistani are at risk</span>
                 </div>
                 <a href="#">make a mask</a>
                 <a href="#">share campaign</a>
@@ -87,13 +91,32 @@
       </div>
       <script src="js/anime.min.js"></script>
       <script>
+          var animateMe = document.querySelector('.animate-me');
+
+          var changeCount = 0;
+
           anime({
-            targets: '.animated-text',
+            targets: animateMe,
             opacity: 0,
             duration: 2000,
             scale: 1.1,
-            loop: true,
-            easing: 'easeInOutSine'
+            loop: 4,
+            easing: 'easeInOutSine',
+            changeComplete: function(anim) {
+                        changeCount++;
+                        switch(changeCount) {
+                        case 1:
+                            animateMe.innerHTML = "New information here";
+                            break;
+                        case 2:
+                            animateMe.innerHTML = "Another information here";
+                            break;
+                        case 3:
+                            animateMe.innerHTML = "Hello World!";
+                        default:
+                            animateMe.innerHTML = "Last info";
+                        }
+                    }
             });
       </script>
   </body>
