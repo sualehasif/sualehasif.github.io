@@ -84,7 +84,7 @@ function makeAMaskEvent (e) {
   //   behavior: "smooth",
   //   block: 'start'
   // });
-  scrollTo(element - 50, 4000);
+  scrollTo(element - 50, 2000);
   removeNavActiveClass();
 }
 
