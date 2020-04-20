@@ -1,477 +1,100 @@
 <!doctype html>
 <html>
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163901291-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+  <head>
+    <meta charset="utf-8">
+    <meta name="title" content="Mask Banao">
+    <meta name="description" content="Here’s how you can use ten minutes, a piece of cloth and an old sewing machine to save someone's life.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="manifest" href="/site.webmanifest">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #2D2D2D;
+        }
 
-        gtag('config', 'UA-163901291-1');
-        </script>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:url" content="https://maskbanao.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://maskbanao.com/images/Web-Preview.jpg" />
-        <meta property="og:image:alt" content="https://maskbanao.com" />
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:image" content="https://maskbanao.com/images/Web-Preview.jpg" />
-        <meta property="twitter:image:alt" content="https://maskbanao.com" />
-        <meta name="msapplication-TileColor" content="#00aba9">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="title" content="Mask Banao">
-        <meta name="description" content="Here’s how you can use ten minutes, a piece of cloth and an old sewing machine to save someone's life.">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="stylesheet" href="styles/font-awesome-all.min.css" type="text/css">
-        <link rel="stylesheet" href="styles/main.css" type="text/css">
-        <link rel="stylesheet" href="styles/index.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/leaflet.css" />
-        <link rel="stylesheet" href="styles/glide.core.min.css"/>
-        <link rel="stylesheet" href="styles/glide.theme.min.css"/>
-        <title>Mask Banao</title>
-    </head>
-    <body>
-        <div id="header">
-            <nav class="navbar">
-                <a href="index.html" class="navbar-logo">
-                    <img src="images/Mask Banao Logo long.svg" />
-                </a>
-                <button id="navbar-hamburger"></button>
-                <ul id="navigation">
-                    <li><a href="https://www.change.org/p/government-face-masks-in-public-should-be-made-mandatory-by-the-government-to-prevent-covid-19-spread" target="_blank">Request Mask Laws</a></li>
-                    <li><a href="science.html">The Science</a></li>
-                    <li><a href="data.html">Data</a></li>
-                    <li><a href="social.html">Social Media</a></li>
-                    <li><a href="#make-a-mask" class="button">Make a mask</a></li>
-                </ul>
-                <div class="language-container">
-                    <div class="language-switcher">
-                        English
-                    </div>
+        .container {
+            display: grid;
+            grid-template-rows: 90% 10%;
+            height: 100vh;
+        }
+
+        .text-container {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .animated-text span {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 65px;
+            color: #B1A9A9;
+        }
+
+        .call-to-action a {
+            text-decoration: none;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+            margin: 0 20px;
+            transition: color .5s linear;
+        }
+
+        .call-to-action a:hover {
+            color: #E2B65F;
+            transition: color .3s linear;
+        }
+
+        #footer {
+            display: flex;
+            justify-content: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            color: #B1A9A9;
+        }
+    </style>
+  </head>
+  <body>
+      <div class="container">
+        <div class="text-container">
+            <div class="call-to-action">
+                <div class="animated-text">
+                    <span>over 70000 Pakistani are at risk</span>
                 </div>
-            </nav>
-        </div>
-
-        <div class="container">
-            <div id="main" class="section background-secondary">
-                <div class="main-text">
-                    <h1>Mask Banao
-                        <br />Jaan Bachao
-                    </h1>
-                    <p>
-                        Here’s how you can use ten minutes, a piece of cloth and an old sewing machine to save <u>someone's life</u>.
-                    </p>
-                    <a class="button button-secondary" href="#make-a-mask">Make a Mask</a>
-                    <a class="button button-secondary-outline"
-                       href="https://www.change.org/p/government-face-masks-in-public-should-be-made-mandatory-by-the-government-to-prevent-covid-19-spread"
-                       target="_blank">
-                        Request Mask Laws
-                    </a>
-                </div>
-                <div class="image">
-                    <img src="images/Mask Banao Logo white.svg" />
-                </div>
-            </div>
-
-            <div id="advisory" class="background-tertiary">
-                <div class="glide">
-                    <div class="glide__track" data-glide-el="track">
-                      <ul class="glide__slides">
-                        <li class="glide__slide">
-                            <div class="advisory-content">
-                                <span>Starting April 18, 2020, Karachi has made it  mandatory for everyone to wear facemasks out of their house</span>
-                                <a href="https://www.dawn.com/news/1550094" target="_blank" class="text-link small">Source</a>
-                            </div>
-                        </li>
-
-                        <li class="glide__slide">
-                            <div class="advisory-content">
-                                <span>Starting April 19, 2020, Balochistan has made it  mandatory for everyone to wear facemasks out of their house</span>
-                                <a href="https://twitter.com/LiaquatShahwani/status/1251408652491259904" target="_blank" class="text-link small">Source</a>
-                            </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-            </div>
-
-            <div id="why-make-a-mask" class="section">
-                <div class="center-text">
-                    <h1 class="secondary">Why make a mask?</h1>
-                </div>
-
-                <div class="columns">
-                    <div>
-                        <h2>The problem is <span class="danger">very</span> real</h2>
-                        <h3>Going out is <span class="danger">not</span> an option</h3>
-                        <p>
-                            COVID-19 spreads fast and has <i>affected people of all ages around the world</i>.
-                            When you step out of the house, you may bring the virus back to your children.
-                            When you go to buy vegetables, you may make the grocer sick.
-                            Your life is so intertwined with the lives of your neighbors that now, as cases
-                            in Pakistan rise rapidly, it is your actions that will affect your community.
-                            <b class="green">Stay at home</b>. If you absolutely have to go outside, keep yourself and others
-                            safe by wearing a mask.
-                        </p>
-
-                        <div class="alert">
-                            <i class="far fa-lightbulb"></i>
-                            <span>Please donate professional masks (N95 and surgical masks) to doctors. Apna Mask Khud Banao!</span>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="images/the-problem-is-real.png"/>
-                        <a href="http://covid.gov.pk/stats/pakistan" class="small-link" target="_blank">find out more</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="divider"></div>
-
-            <div id="counts">
-                <div class="count-section" style="text-align: right">
-                    <div class="estimated-infections">Estimated Infections</div>
-                    <h1 id="estimated-infections-num" class="danger">16559</h1>
-                    <div class="estimated-date">as of <span id="estimated-infections-date">4/19/2020</span></div>
-                </div>
-
-                <div class="section-divider"></div>
-
-                <div class="count-section">
-                    <div class="count-per-type">
-                        <span>Confirmed Infected</span>
-                        <h3 id="confirmed-cases-num">8348</h3>
-                    </div>
-                    <div class="count-per-type">
-                        <span>Confirmed Deaths</span>
-                        <h3 id="confirmed-deaths-num" class="danger">168</h3>
-                    </div>
-                    <div class="count-per-type">
-                        <span>Total Recovered</span>
-                        <h3 id="confirmed-recovered-num" class="green">1868</h3>
-                    </div>
-                </div>
-
-                <div class="section-divider"></div>
-
-                <div class="count-section">
-                    <div class="city-cases">
-                        <div>
-                            <span>Karachi</span>
-                            <h3>1209</h3>
-                        </div>
-
-                        <div>
-                            <span>Lahore</span>
-                            <h3>1756</h3>
-                        </div>
-
-                        <div>
-                            <span>Peshawar</span>
-                            <h3>267</h3>
-                        </div>
-
-                        <div>
-                            <span>Quetta</span>
-                            <h3>210</h3>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-            <div id="experts-suggest" class="section background-tertiary">
-                <div>
-                    <p>Experts suggest that <span class="danger">without a mask,
-                        you could spread</span> the coronavirus without showing any symptoms</p>
-                    <p>Not only coughing but simple actions such as breathing and talking can spread droplets into your surroundings. Coronavirus can then latch onto those droplets and make its way to the people around you. Worse, those droplets could stick to that grocery counter and sicken the next person who touches it.</p>
-                </div>
-            </div>
-
-            <div id="masks-are-effective" class="section">
-                <div class="text-and-image">
-                    <div class="image">
-                        <img src="images/the-problem-is-real.png"/>
-                    </div>
-                    <div class="text">
-                        <h2 class="dark-green">Masks are Effective</h2>
-                        <p>Scientific studies show that a simple, homemade face mask reduces the spread of the virus. Countries such as Vietnam, Singapore, and Taiwan are among many others worldwide which have passed mask laws. Masks have also been made mandatory in parts of Pakistan. So you heard it ghar betho aur Mask Banao.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="parosi" class="section background-secondary">
-                <div class="center-text">
-                    <h2 class="white">You are as safe as your <i>parosi</i></h2>
-                    <p class="white">This includes the <i>Doodh Wala</i> who makes that delicious <i>meethi lassi.</i><br/>
-                        The <i>Kachray Waala</i> who makes sure your house doesn’t start smelling.<br/>
-                        And the <i>Sabzi Wala</i> who sells those fresh red tomatoes.<br/>
-                        In short, we are not just talking about the friendly <i>parosi</i> next door.<br/>
-                        </p>
-                        <a class="button button-secondary-outline">Donate a mask</a>
-                </div>
-            </div>
-
-            <div id="make-a-mask" class="section">
-                <div class="center-text">
-                    <h1 class="secondary">How to make a mask</h1>
-                </div>
-                <div class="tabs">
-                    <div class="tab-options">
-                        <ul>
-                            <li><button class="tab active" id="tab-button1">Option 1</button></li>
-                            <li><button class="tab" id="tab-button2">Option 2</button></li>
-                            <li><button class="tab" id="tab-button3">Option 3</button></li>
-                        </ul>
-                    </div>
-                    <div class="tab-content">
-                        <div id="option1" class="content active">
-                            <div class="text">
-                                <span class="heading">Things you Need</span>
-                                <ol class="numbered-list" type="1">
-                                    <li>Scissors</li>
-                                    <li>T-shirt</li>
-                                    <li>Tissue paper or clean cloth</li>
-                                </ol>
-
-                                <span class="heading">Instructions</span>
-                                <ol class="numbered-list" type="1">
-                                    <li>Cut across the T-shirt in the indicated pattern.</li>
-                                    <li>This will form a hollow ‘mask’ with two sets of straps.</li>
-                                    <li>Take a piece of tissue paper. A clean square of cloth will also work.</li>
-                                    <li>Place the tissue paper between the front and back of the shirt.</li>
-                                    <li>The two upper straps will be placed behind your neck and the two lower straps will be placed at the back of your head.</li>
-                                    <li>Tie the straps accordingly to form a mask which covers your nose and mouth.</li>
-                                </ol>
-                            </div>
-                            <div class="image">
-                                <img src="images/T Shirt Mask illustrations.png" alt="how to make a mask from a t-shirt" width="100%" />
-                            </div>
-                        </div>
-
-                        <div id="option2" class="content">
-                          <div class="text">
-                              <span class="heading">Things you Need</span>
-                              <ol class="numbered-list" type="1">
-                                  <li>Bandana, scarf or square cotton cloth</li>
-                                  <li>Rubber bands (or hair ties)</li>
-                                  <li>Scissors</li>
-                              </ol>
-
-                              <span class="heading">Instructions</span>
-                              <ol class="numbered-list" type="1">
-                                  <li>Fold the bandana in half.</li>
-                                  <li>Fold top down. Fold bottom up.</li>
-                                  <li>Place rubber bands or hair ties about 15 cm apart.</li>
-                                  <li>Fold both sides to the middle and tuck.</li>
-                                  <li>The mask is done. Place it over your nose and mouth.</li>
-                              </ol>
-                              <p class="credit">[Credit: <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">CDC</a>]</p>
-                          </div>
-                          <div class="image">
-                              <img src="images/option-2.png" alt="how to make a mask from a t-shirt" width="100%" />
-                          </div>
-                        </div>
-
-                        <div id="option3" class="content">
-                          <div class="text">
-                              <span class="heading">Things you Need</span>
-                              <ol class="numbered-list" type="1">
-                                  <li>Two 25cm x 15cm rectangles of cotton fabric</li>
-                                  <li>Two 15cm pieces of elastic (or rubber bands, string, cloth strips, or hair ties)</li>
-                                  <li>Needle and thread (or bobby pin)</li>
-                                  <li>Scissors</li>
-                                  <li>Sewing machine</li>
-                              </ol>
-
-                              <span class="heading">Instructions</span>
-                              <ol class="numbered-list" type="1">
-                                  <li>Cut out two 25-by-15-centimetre rectangles of cotton fabric. Use tightly woven cotton, such as quilting fabric or cotton sheets. T-shirt fabric will work if needed. Stack the two rectangles; you will sew the mask as if it was a single piece of fabric.</li>
-                                  <li>Fold over the long sides about 6 mm and hem them. Then fold the double layer of fabric over 1cm along the short sides and stitch down.</li>
-                                  <li>Run a 15-centimetre length of elastic through the wider hem on each side of the mask. These will be the ear loops. Use a large needle or a bobby pin to thread it through. Tie the ends tight. Don't have elastic? Use hair ties or elastic head bands. If you only have string, you can make the ties longer and tie the mask behind your head.</li>
-                                  <li>Gently pull on the elastic so that the knots are tucked inside the hem. Gather the sides of the mask on the elastic and adjust so the mask fits your face. Then securely stitch the elastic in place to keep it from slipping.</li>
-                              </ol>
-                              <p class="credit">[Credit: <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/diy-cloth-face-coverings.html">CDC</a>]</p>
-                          </div>
-                          <div class="image">
-                              <img src="images/option-3.png" alt="how to make a mask from a t-shirt" width="100%" />
-                          </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div id="tutorials" class="center-text">
-                <h2>Easy-to-follow tutorials</h2>
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/CbRsb0T7Oz8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/hVEVve-3QeM?start=401" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VgHrnS6n4iA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-
-            <div id="why-make-at-home" class="section background-secondary">
-                <div class="center-text">
-                    <h1 class="white">Why make one at home?</h1>
-                    <p class="white">Medical-grade masks are necessary for our doctors and nurses who are working tirelessly for our health. By making your own masks at home, you keep professional masks available for medical workers, and you keep them safe as well. A mask is really simple to make at home from any cloth and sewing materials which you own.
-                        </p>
-                    <a href="science.html" class="button button-secondary-outline">See the Science</a>
-                </div>
-            </div>
-
-            <div id="the-science" class="section background-tertiary">
-                <div class="center-text">
-                    <h1 class="dark-green">Homemade masks are<br/>
-                        our greatest weapon</h1>
-                </div>
-
-                <div class="text-and-image">
-                    <div class="text">
-                        <h2>A Mask stops viral<br/>droplets from spreading</h2>
-                        <p>Not only coughing but simple actions such as breathing and talking can spread droplets into your surroundings. Coronavirus can then latch onto those droplets and make its way to the people around you. Worse, those droplets could stick to that grocery counter and sicken the next person who touches it.
-                        </p>
-                        <a href="science.html" class="text-link">Learn more</a>
-                    </div>
-                    <div class="image">
-                        <img src="images/guys-in-store.png" />
-                    </div>
-                </div>
-            </div>
-
-            <!--<div id="map-container" class="section">-->
-                <!--<div class="center-text">-->
-                    <!--<h1>Corona Virus Heatmap</h1>-->
-                    <!--<a href="data.html" class="text-link">learn more</a>-->
-                <!--</div>-->
-                <!--<div class="map" id="data"></div>-->
-                <!--<div class="center-text"><span class="small">current active cases in Pakistan</span></div>-->
-            <!--</div>-->
-
-            <div id="instagram" class="section">
-                <div class="center-text">
-                    <h1>Some Awesome Homemade Masks</h1>
-                </div>
-
-                <div class="tweets">
-                    <div class="tweet">
-                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">My homemade mask is so cute 👸🏼 <a href="https://t.co/AGRhNiZnhe">pic.twitter.com/AGRhNiZnhe</a></p>&mdash; Courtney Slack (@CourtneySlack10) <a href="https://twitter.com/CourtneySlack10/status/1250851483106639872?ref_src=twsrc%5Etfw">April 16, 2020</a></blockquote>
-                    </div>
-
-                    <div class="tweet">
-                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">These ladies are SEW awesome! <br>Meet Marilyn Jennings &amp; Barbara Felton, who work at the HRBT. They bought fabric with their own money &amp; sewed cloth face masks for all their coworkers. How thoughtful! And we love the mask + PPE color coordination! <a href="https://twitter.com/hashtag/HeroesOfCovid19?src=hash&amp;ref_src=twsrc%5Etfw">#HeroesOfCovid19</a> <a href="https://twitter.com/hashtag/safety?src=hash&amp;ref_src=twsrc%5Etfw">#safety</a> <a href="https://twitter.com/VaDOT?ref_src=twsrc%5Etfw">@VaDOT</a> <a href="https://t.co/NCQ26ihj6Z">pic.twitter.com/NCQ26ihj6Z</a></p>&mdash; VDOT Hampton Roads (@VaDOTHR) <a href="https://twitter.com/VaDOTHR/status/1250157709229424640?ref_src=twsrc%5Etfw">April 14, 2020</a></blockquote>
-                    </div>
-
-                    <div class="tweet">
-                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Received another drop of some awesome cloth masks - thank you so much for thinking of us! ❤️❤️❤️ <a href="https://twitter.com/hashtag/COVID19?src=hash&amp;ref_src=twsrc%5Etfw">#COVID19</a> <a href="https://twitter.com/hashtag/coronavirus?src=hash&amp;ref_src=twsrc%5Etfw">#coronavirus</a> <a href="https://twitter.com/hashtag/midwives?src=hash&amp;ref_src=twsrc%5Etfw">#midwives</a> <a href="https://t.co/TrwjKVp1ql">pic.twitter.com/TrwjKVp1ql</a></p>&mdash; Metro Midwifery (@MetroMidwifery) <a href="https://twitter.com/MetroMidwifery/status/1250461367636840449?ref_src=twsrc%5Etfw">April 15, 2020</a></blockquote>
-                    </div>
-
-                    <div class="tweet">
-                        <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The new CDC guidance on cloth face masks was a great excuse to break out the sewing machine. Stash now prepped for our awesome <a href="https://twitter.com/CHOP_ID?ref_src=twsrc%5Etfw">@CHOP_ID</a> fellows and nurses (to use *outside* the hospital)! 🧵😷 <a href="https://t.co/Xv5VoRFwU2">pic.twitter.com/Xv5VoRFwU2</a></p>&mdash; Audrey Odom John MD PhD (@odomjohnlab) <a href="https://twitter.com/odomjohnlab/status/1246592334399225856?ref_src=twsrc%5Etfw">April 5, 2020</a></blockquote>
-                    </div>
-                </div>
-            </div>
-
-            <div id="news-carousel" class="section background-tertiary">
-                <div class="news-carousel glide hero">
-                    <div class="glide__track" data-glide-el="track">
-                      <ul class="glide__slides">
-                        <li class="glide__slide">
-                          <div class="slide general-quote">
-                            <span>The U.S. “CDC (Center for Disease Control) recommends wearing cloth face coverings in public settings” because “a significant portion of individuals with coronavirus lack symptoms” and they can be contagious spreaders of the virus.<br><a class="quote-credit" href="https://www.cdc.gov/">United States CDC (Center for Disease Control)</a></span>
-                          </div>
-                        </li>
-                        <li class="glide__slide">
-                            <div class="slide general-quote">
-                                  <!-- <img class="quote-img" src="https://149421589.v2.pressablecdn.com/wp-content/uploads/2020/03/quote-icon.png"/> -->
-                                  <span>"If everybody [wears homemade masks], we're protecting each other." <br><a class="quote-credit" href="https://www.cnn.com/2020/03/31/politics/public-wearing-masks-coronavirus-anthony-fauci-cnntv/index.html">- Dr. Anthony Fauci, U.S. director of the National Institute of Allergy and Infectious Diseases</a></span>
-                            </div>
-                        </li>
-
-                        <li class="glide__slide">
-                            <div class="slide general-quote">
-                                <!-- <img class="quote-img" src="https://149421589.v2.pressablecdn.com/wp-content/uploads/2020/03/quote-icon.png"/> -->
-                                <span>"I think that wearing a mask is equally effective or more effective than distancing."<br><a class="quote-credit" href="https://twitter.com/johnmcclean_ie/status/1245663285791330304">- Professor David Heymann, World Health Organization (WHO) advisor</a><span>
-                            </div>
-                        </li>
-
-                        <li class="glide__slide">
-                            <div class="slide general-quote">
-                                <span> Special thanks to <a href="https://masks4all.co" target="_blank" class="dark-green">masks4all.co</a> for the information, data, and visual aids. Please check out their website for more!</span>
-                            </div>
-                        </li>
-
-                      </ul>
-
-                    </div>
-
-                    <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-
-
-                    <div class="glide__bullets" data-glide-el="controls[nav]">
-                        <button class="glide__bullet" data-glide-dir="=0"></button>
-                        <button class="glide__bullet" data-glide-dir="=1"></button>
-                        <button class="glide__bullet" data-glide-dir="=2"></button>
-                        <button class="glide__bullet" data-glide-dir="=3"></button>
-                      </div>
-
-
-                  </div>
-            </div>
-
-            <div id="call-to-action" class="background-secondary section center-text">
-                <h2 class="white">
-                    It’s on you to save yourself.<br/>
-                    On you to save your family.<br/>
-                    On you to save your neighbors.<br/>
-                    On you to save your country.
-                </h2>
-                <h3>#MaskBanaoJaanBachao</h3>
-                <div class="center-text">
-                    <a class="button button-secondary" href="#make-a-mask">Make a mask</a>
-                </div>
-
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/maskbanao" target="_blank">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
-                    <a href="https://www.instagram.com/maskbanao/" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://twitter.com/maskbanao" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-
-                    <a href="https://www.linkedin.com/company/maskbanao/" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div id="footer">
-                <ul class="footer-links">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#make-a-mask">Make A Mask Now</a></li>
-                    <li class="float-right">Special thanks to <a href="https://masks4all.co/">masks4all.co</a></li>
-                </ul>
+                <a href="#">make a mask</a>
+                <a href="#">share campaign</a>
             </div>
         </div>
-        <script src="js/axios.js"></script>
-        <!--<script src="js/leaflet.js"></script>-->
-        <!--<script src="js/pakistan_data.js"></script>-->
-        <!--<script src="js/pakistan_districts.js"></script>-->
-        <script src="js/glide.js"></script>
-        <script src="js/navbar.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/index.js"></script>
-        <!--<script src="js/map.js"></script>-->
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </body>
+        <div id="footer">
+            <div>#maskbanao</div>
+            <div><a href=""></a><a href=""></a></div>
+        </div>
+      </div>
+      <script src="js/anime.min.js"></script>
+      <script>
+          anime({
+            targets: '.animated-text',
+            opacity: 0,
+            duration: 2000,
+            scale: 1.1,
+            loop: true,
+            easing: 'easeInOutSine'
+            });
+      </script>
+  </body>
 </html>

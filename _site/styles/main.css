@@ -1,0 +1,509 @@
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../webfonts/unisansdemo-heavycaps-webfont.woff2') format('woff2'),
+         url('../webfonts/unisansdemo-heavycaps-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../webfonts/unisansdemo-heavyitaliccaps-webfont.woff2') format('woff2'),
+         url('../webfonts/unisansdemo-heavyitaliccaps-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../webfonts/unisansdemo-thincaps-webfont.woff2') format('woff2'),
+         url('../webfonts/unisansdemo-thincaps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../webfonts/unisansdemo-thinitaliccaps-webfont.woff2') format('woff2'),
+         url('../webfonts/unisansdemo-thinitaliccaps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+#header {
+    width: 100vw;
+    background-color: #FFF;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+
+.navbar {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 20% 70% 10%;
+    align-items: center;
+    padding: 14px 20px;
+}
+
+.navbar-logo {
+    font-family: 'Uni Sans';
+    color: #0DAB76;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-logo {
+    width: 150px;
+}
+
+#navbar-hamburger {
+    display: none;
+}
+
+#navigation {
+    list-style-type: none;
+    display: inline;
+    text-align: right;
+    padding-right: 20px;
+}
+
+#navigation li {
+    display: inline;
+    padding: 0 5px;
+}
+
+#navigation li a {
+    text-decoration: none;
+    color: #2E2E2E;
+    font-size: 14px;
+    font-family: 'Uni Sans';
+    font-weight: bold;
+}
+
+#navigation li a.active {
+    color: #147066;
+}
+
+#navigation li a:hover {
+    color: #147066;
+}
+
+#navigation li a.button {
+    color: #FFF;
+}
+
+#tutorials iframe {
+    width: 30%;
+    margin: 0 10px 30px 0;
+}
+
+.language-container {
+    border-left: 1px solid #C9C9C9;
+    padding-left: 20px;
+}
+
+.alert {
+    border-radius: 8px;
+    background-color: #eeeeee;
+    color: #147066;
+    padding: 5px 10px;
+}
+
+.alert i {
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+.alert span {
+    font-size: 10px;
+    line-height: 24px;
+}
+
+.divider {
+    width: 60%;
+    max-width: 733px;
+    border: 1px solid #000;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container {
+    background: #FFF;
+    width: 100vw;
+}
+
+.white {
+    color: #FFF;
+}
+
+.green {
+    color: #0DAB76;
+}
+
+.dark-green {
+    color: #147066;
+}
+
+.grey {
+    color: #2D2D2D;
+}
+
+.danger {
+    color: #970303;
+}
+
+.small {
+    font-size: 10px;
+}
+
+.button {
+    background-color: #0DAB76;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color .5s ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #147066;
+    transition: background-color .5s ease-in-out;
+}
+
+.button-secondary {
+    background-color: #FFF;
+    color: #0DAB76;
+    transition: color .5s ease-in-out;
+}
+
+.button-secondary:hover {
+    color: #147066;
+    background-color: #FFF;
+    transition: color .5s ease-in-out;
+}
+
+.button-secondary-outline {
+    border: 1px solid #FFF;
+    transition: color .5s ease-in-out;
+}
+
+.button-secondary-outline:hover {
+    color: #0DAB76;
+    background-color: #FFF;
+}
+
+.text-link {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #147066;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+}
+
+.text-link.small {
+    font-size: 10px;
+}
+
+.small-link {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    color: #147066;
+    text-decoration: none;
+}
+
+.small-link:hover {
+    text-decoration: underline;
+}
+
+
+.background-secondary {
+    background-color: #0DAB76;
+}
+
+.background-tertiary {
+    background: #EEEEEE;
+}
+
+h1 {
+    font-family: 'Uni Sans';
+    font-weight: bold;
+    font-size: 48px;
+}
+
+h1.secondary {
+    color: #147066;
+}
+
+h2 {
+    font-family: Uni Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+    color: #2E2E2E;
+}
+
+.section {
+    padding: 50px 150px;
+}
+
+.section h1 {
+    margin: 0 0 40px 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+#footer {
+    background-color: #0DAB76;
+    padding: 10px 24px;
+}
+
+.footer-links {
+    list-style-type: none;
+    color: #ffffff;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 2400px){
+    .section {
+        padding: 50px 600px;
+    }
+}
+
+@media only screen and (min-width: 2200px) and (max-width: 2400px){
+    .section {
+        padding: 50px 450px;
+    }
+}
+
+@media only screen and (min-width: 1900px) and (max-width: 2200px){
+    .section {
+        padding: 50px 360px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .section {
+        padding: 30px 70px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .section {
+        padding: 30px 50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .section {
+        padding: 30px 50px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .text-and-image {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .text-and-image .image {
+        grid-area: 1;
+    }
+
+    #call-to-action {
+        padding: 90px;
+    }
+
+    #tutorials iframe {
+        width: 80%;
+        margin: 10px 40px;
+    }
+}
+
+@media only screen and (max-width: 904px) {
+    #navbar-hamburger {
+        display: block;
+        height: 40px;
+        width: 40px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-left: 20px;
+        margin-right: auto;
+    }
+
+    #navbar-hamburger:before {
+        content: "\f0c9";
+        color: #0DAB76;
+        font-weight: 600;
+        font-size: 36px;
+        font-family: "Font Awesome 5 Free";
+    }
+
+    #navbar-hamburger:focus {
+        outline: none;
+    }
+
+    .navbar {
+        grid-template-columns: 60% 1fr 65px;
+    }
+
+    .navbar-logo {
+        grid-area: 1;
+    }
+
+    .language-container {
+        grid-area: 1/2;
+        text-align: right;
+        border-left: none;
+        border-right: 1px solid #C9C9C9;
+        padding-left: 0;
+        padding-right: 20px;
+    }
+
+    #navigation {
+        max-height: 0;
+        overflow: hidden;
+        padding-left: 0;
+        transition: max-height .5s ease-in-out;
+        grid-area: 2/1/ span 1 /span 3;
+        text-align: left;
+        margin: 0;
+    }
+
+    #navigation.active {
+        transition: max-height .5s ease-in-out;
+        max-height: 400px;
+    }
+
+
+    #navigation li {
+        display: block;
+        padding: 20px 5px;
+    }
+
+    h2 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    #news-carousel .glide__arrows .glide__arrow {
+            display: none;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    h2 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    .section {
+        padding: 30px 20px;
+    }
+
+    #footer {
+        text-align: center;
+        padding: 5px 16px;
+    }
+
+    .container {
+        overflow-x: hidden;
+    }
+
+    #navbar-hamburger {
+        margin-left: 10px;
+    }
+
+    #navbar-hamburger:before {
+        font-size: 26px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .text-link {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    h2 {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .button {
+        padding: 6px 15px;
+        font-size: 10px;
+    }
+
+}
