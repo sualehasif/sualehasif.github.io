@@ -47,7 +47,7 @@
     width: 80%;
 }
 
-.text-and-image .text p{
+.text-and-image .text p {
     margin-top: -20px;
     font-family: Open Sans;
     font-style: normal;
@@ -185,11 +185,11 @@
 }
 
 .quote-credit {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 19px;
-  color: #2E2E2E;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 19px;
+    color: #2E2E2E;
 }
 
 #advisory {
@@ -243,11 +243,11 @@
     width: 50%;
 }
 
-.columns > div + div img{
+.columns > div + div img {
     width: 100%;
 }
 
-.columns > div + div{
+.columns > div + div {
     text-align: center;
 }
 
@@ -330,7 +330,7 @@
     margin-bottom: 20px;
 }
 
-.share-links .text-link{
+.share-links .text-link {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
@@ -430,27 +430,27 @@
 }
 
 #news-carousel .glide__arrows .glide__arrow {
-        font-size: 1.5rem;
-        background: #454545;
-        color: #f4f4f4;
-        margin-top: 1rem;
-        width: 3rem;
-        height: 3rem;
-        line-height: 3rem;
-        border-radius: 50%;
-        padding: 0;
-        opacity: 50%;
-        border-color: #454545;
-        margin: 0;
+    font-size: 1.5rem;
+    background: #454545;
+    color: #f4f4f4;
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    padding: 0;
+    opacity: 50%;
+    border-color: #454545;
+    margin: 0;
 }
 
 #experts-suggest > div {
- display: grid;
- grid-template-columns: 1fr 1fr;
- grid-gap: 50px;
- align-items: center;
- width: 80%;
- margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #experts-suggest > div p:first-of-type {
@@ -460,76 +460,101 @@
     font-weight: 800;
     font-size: 36px;
     line-height: 36px;
-   }
+}
 
-   #experts-suggest > div p:last-of-type {
+#experts-suggest > div p:last-of-type {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 19px;
-
     color: #2E2E2E;
-   }
+}
 
-   #why-make-at-home,
-   #parosi {
-       padding-top: 100px;
-       padding-bottom: 100px;
-   }
+#why-make-at-home,
+#parosi {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
-   #why-make-at-home div {
-       max-width: 50%;
-       margin: 0 auto;
-   }
+#why-make-at-home div {
+    max-width: 50%;
+    margin: 0 auto;
+}
 
-   #why-make-at-home p {
+#why-make-at-home p {
     margin-bottom: 10px;
     margin-top: 0;
-    }
+}
 
-   #parosi h2,
-   #why-make-at-home h1 {
-       margin-bottom: 0;
-   }
+#parosi h2,
+#why-make-at-home h1 {
+    margin-bottom: 0;
+}
 
-   #parosi p {
-       margin-bottom: 10px;
-   }
+#parosi p {
+    margin-bottom: 10px;
+}
 
-   #parosi a,
-   #why-make-at-home a {
+#parosi a,
+#why-make-at-home a {
     display: block;
     max-width: fit-content;
     margin: 0 auto;
-   }
+}
 
-   #map-container h1 {
-       margin-bottom: 0;
-   }
+#map-container h1 {
+    margin-bottom: 0;
+}
 
-@media only screen and (min-width: 2400px){
+.tweets {
+    text-align: center;
+    width: 100%;
+}
+
+.tweet {
+    display: inline-block;
+    max-width: 500px;
+    min-width: 200px;
+    width: 40%;
+    margin: 20px;
+    vertical-align: top;
+}
+
+.tweet blockquote {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .tweet {
+        min-width: 100px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 2400px) {
     #main {
         padding: 100px 600px;
         padding-top: 180px;
     }
 }
 
-@media only screen and (min-width: 2200px) and (max-width: 2400px){
+@media only screen and (min-width: 2200px) and (max-width: 2400px) {
     #main {
         padding: 100px 450px;
         padding-top: 180px;
     }
 }
 
-@media only screen and (min-width: 1900px) and (max-width: 2200px){
+@media only screen and (min-width: 1900px) and (max-width: 2200px) {
     #main {
         padding: 100px 360px;
         padding-top: 180px;
     }
 }
 
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1200px) {
     #main {
         padding: 100px 70px;
         padding-top: 149px;
@@ -591,7 +616,7 @@
         flex-direction: column;
     }
 
-    .columns > div{
+    .columns > div {
         width: 100%;
     }
 
@@ -681,7 +706,7 @@
     }
 
     .advisory-content::before {
-    display: none;
+        display: none;
     }
 
     .tabs {
