@@ -11,7 +11,7 @@
 .card {
     display: inline-block;
     position: relative;
-    min-width: 400px;
+    width: 400px;
     background-color: #FFF;
     min-height: 265px;
     border-radius: 8px;
@@ -19,10 +19,24 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
     border-radius: 8px;
     border: 1px solid #147066;
+    vertical-align: top;
 }
 
 .card + .card {
     margin-left: 20px;
+}
+
+.card .card-content {
+    padding-top: -10px;
+}
+
+.card .card-content blockquote {
+    display: none;
+}
+
+.card .card-content .twitter-tweet {
+    margin: 0 !important;
+    border: 0 !important;
 }
 
 .card .card-footer {
