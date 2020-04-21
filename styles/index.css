@@ -462,7 +462,7 @@
     width: 3rem;
     height: 3rem;
     /* line-height: 3rem; */
-    border-radius: 50%;
+    /* border-radius: 50%; */
     padding: 0;
     opacity: 50%;
     border-color: #454545;
@@ -470,12 +470,16 @@
     transition: background-color .2s ease-in-out;
 }
 
+#news-carousel .glide__arrows .glide__arrow {
+    border-radius: 50%;
+}
+
 #instagram .glide__arrows .glide__arrow {
-    position: absolute;
-    top: -63px;
+    opacity: 70%;
 }
 
 #instagram .glide__arrows .glide__arrow:hover {
+    opacity: 100%;
     background-color: #555;
 }
 
@@ -486,7 +490,6 @@
 #instagram .glide__arrows .glide__arrow.glide__arrow--right {
     right: 0;
 }
-
 
 #instagram .button {
     font-size: 1.5rem;
@@ -578,7 +581,7 @@
     /* width: 40%; */
     width: 100%;
     /* margin: 20px 0; */
-    margin: 20px 0 0 0;
+    /* margin: 20px 0 0 0; */
     vertical-align: top;
 }
 
