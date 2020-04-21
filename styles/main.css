@@ -315,6 +315,81 @@ h2 {
     text-decoration: underline;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  z-index: 99;
+  border: 1px solid #aeaeae;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+  transition: background-color .2s ease-in-out;
+}
+
+#scrollToTop i {
+    font-size: 2em;
+}
+
+#scrollToTop:hover {
+  background-color: #aeaeae;
+}
+
 @media only screen and (min-width: 2400px){
     .section {
         padding: 50px 600px;
