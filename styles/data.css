@@ -107,9 +107,9 @@
 
 .epidemic-graph iframe {
     border: 0px none;
-    margin-left: -36px;
+    /* margin-left: -36px; */
     height: 1150px;
-    margin-top: -275px;
+    /* margin-top: -275px; */
     width: 80%;
 }
 
@@ -121,14 +121,14 @@
 
 @media (min-width: 1300px) and (max-width: 1590px) {
     .epidemic-graph iframe {
-        margin-top: -335px;
+        /* margin-top: -335px; */
         height: 1000px;
     }
 }
 
 @media (max-width: 589px) {
     .epidemic-graph iframe {
-        margin-top: -335px;
+        /* margin-top: -335px; */
         height: 1135px;
     }
 }

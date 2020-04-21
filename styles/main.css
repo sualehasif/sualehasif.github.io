@@ -141,7 +141,7 @@ body {
 
 .container {
     background: #FFF;
-    width: 100vw;
+    width: 100% !important;
 }
 
 .white {

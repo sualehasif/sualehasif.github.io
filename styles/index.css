@@ -1,7 +1,3 @@
-.container {
-    width: 100% !important;
-}
-
 #main {
     padding: 100px 230px;
     padding-top: 180px;
@@ -459,19 +455,38 @@
 
 #news-carousel .glide__arrows .glide__arrow,
 #instagram .glide__arrows .glide__arrow {
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
     background: #454545;
     color: #f4f4f4;
     margin-top: 1rem;
     width: 3rem;
     height: 3rem;
-    line-height: 3rem;
+    /* line-height: 3rem; */
     border-radius: 50%;
     padding: 0;
     opacity: 50%;
     border-color: #454545;
     margin: 0;
+    transition: background-color .2s ease-in-out;
 }
+
+#instagram .glide__arrows .glide__arrow {
+    position: absolute;
+    top: -63px;
+}
+
+#instagram .glide__arrows .glide__arrow:hover {
+    background-color: #555;
+}
+
+#instagram .glide__arrows .glide__arrow.glide__arrow--left {
+    left: 0;
+}
+
+#instagram .glide__arrows .glide__arrow.glide__arrow--right {
+    right: 0;
+}
+
 
 #instagram .button {
     font-size: 1.5rem;
