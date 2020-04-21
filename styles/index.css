@@ -56,8 +56,11 @@
     font-family: Open Sans;
     font-style: normal;
     font-weight: 300;
-    font-size: 14px;
     line-height: 19px;
+    color: #2E2E2E;
+}
+
+.text-and-image a {
     color: #2E2E2E;
 }
 
