@@ -10,6 +10,34 @@ new Glide('.news-carousel', {
     autoplay: 8000
 }).mount()
 
+var tweetsGlide = new Glide('.tweets', {
+  autoplay: 8000,
+  type: "carousel",
+  perView: 3,
+}).mount()
+tweetsGlideResize();
+window.addEventListener('resize', function () {
+  tweetsGlideResize();
+});
+
+function tweetsGlideResize () {
+  if (window.innerWidth < 768) {
+    tweetsGlide.update({
+      perView: 1
+    })
+  }
+  else if (window.innerWidth < 1342) {
+    tweetsGlide.update({
+      perView: 2
+    })
+  }
+  else {
+    tweetsGlide.update({
+      perView: 3
+    })
+  }
+}
+
 document.getElementById("tab-button1").addEventListener("click", function () {openTab("tab-button1","option1")});
 document.getElementById("tab-button2").addEventListener("click", function () {openTab("tab-button2","option2")});
 document.getElementById("tab-button3").addEventListener("click", function () {openTab("tab-button3","option3")});

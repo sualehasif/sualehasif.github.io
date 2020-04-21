@@ -454,7 +454,23 @@
     background-color: #0DAB76;
 }
 
-#news-carousel .glide__arrows .glide__arrow {
+#news-carousel .glide__arrows .glide__arrow,
+#instagram .glide__arrows .glide__arrow {
+    font-size: 1.5rem;
+    background: #454545;
+    color: #f4f4f4;
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    padding: 0;
+    opacity: 50%;
+    border-color: #454545;
+    margin: 0;
+}
+
+#instagram .button {
     font-size: 1.5rem;
     background: #454545;
     color: #f4f4f4;
@@ -541,8 +557,10 @@
     display: inline-block;
     max-width: 500px;
     min-width: 200px;
-    width: 40%;
-    margin: 20px;
+    /* width: 40%; */
+    width: 100%;
+    /* margin: 20px 0; */
+    margin: 20px 0 0 0;
     vertical-align: top;
 }
 

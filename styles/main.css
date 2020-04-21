@@ -291,6 +291,7 @@ h2 {
 .footer-links {
     list-style-type: none;
     color: #ffffff;
+    padding-left: 10px;
 }
 
 .footer-links li {
