@@ -179,6 +179,27 @@
     color: #2E2E2E;
 }
 
+.image {
+  height: 100%;
+}
+
+.tutorial-video {
+  text-align: center;
+  grid-column-end: span 2;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.tutorial-video iframe {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .credit {
     font-family: Open Sans;
     font-style: normal;
@@ -684,6 +705,10 @@
 
     #why-make-at-home div {
         max-width: 70%;
+    }
+
+    .tutorial-video {
+      grid-column-end: span 1;
     }
 }
 
