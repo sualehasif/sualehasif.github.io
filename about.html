@@ -1,96 +1,784 @@
 <!doctype html>
 <html>
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163901291-1"></script>
-        <script>
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163901291-1"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
         gtag('config', 'UA-163901291-1');
         </script>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:url" content="https://maskbanao.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://maskbanao.com/images/Web-Preview.jpg" />
-        <meta property="og:image:alt" content="https://maskbanao.com" />
-        <meta property="twitter:card" content="summary_large_image">
-        <meta property="twitter:image" content="https://maskbanao.com/images/Web-Preview.jpg" />
-        <meta property="twitter:image:alt" content="https://maskbanao.com" />
-        <meta name="msapplication-TileColor" content="#00aba9">
-        <meta name="theme-color" content="#ffffff">
-        <meta name="title" content="Mask Banao">
-        <meta name="description" content="Here’s how you can use ten minutes, a piece of cloth and an old sewing machine to save someone's life.">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-        <link rel="stylesheet" href="styles/font-awesome-all.min.css" type="text/css">
-        <link rel="stylesheet" href="styles/main.css" type="text/css">
-        <link rel="stylesheet" href="styles/index.css" type="text/css">
-        <link rel="stylesheet" href="styles/about.css" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/leaflet.css" />
-        <link rel="stylesheet" href="styles/glide.core.min.css"/>
-        <link rel="stylesheet" href="styles/glide.theme.min.css"/>
-        <title>Mask Banao</title>
-    </head>
-    <body>
-        <div id="header">
-            <nav class="navbar">
-                <a href="index.html" class="navbar-logo">
-                    <img src="images/Mask Banao Logo long.svg" />
-                </a>
-                <button id="navbar-hamburger"></button>
-                <ul id="navigation">
-                    <li><a onclick="removeNavActiveClass();" href="https://www.change.org/p/government-face-masks-in-public-should-be-made-mandatory-by-the-government-to-prevent-covid-19-spread" target="_blank">Request Mask Laws</a></li>
-                    <li><a href="science.html">The Science</a></li>
-                    <li><a href="data.html">Data</a></li>
-                    <li><a href="social.html">Social Media</a></li>
-                    <li><a href="#make-a-mask" class="button">Make a mask</a></li>
-                </ul>
-                <div class="language-container">
-                    <!-- <div class="language-switcher">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:url" content="https://maskbanao.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://maskbanao.com/images/Web-Preview.jpg" />
+    <meta property="og:image:alt" content="https://maskbanao.com" />
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:image" content="https://maskbanao.com/images/Web-Preview.jpg" />
+    <meta property="twitter:image:alt" content="https://maskbanao.com" />
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="title" content="Mask Banao">
+    <meta name="description" content="Here’s how you can use ten minutes, a piece of cloth and an old sewing machine to save someone's life.">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="styles/font-awesome-all.min.css" type="text/css">
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="stylesheet" href="styles/index.css" type="text/css">
+    <link rel="stylesheet" href="styles/about.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/leaflet.css" />
+    <link rel="stylesheet" href="styles/glide.core.min.css" />
+    <link rel="stylesheet" href="styles/glide.theme.min.css" />
+    <title>Mask Banao</title>
+</head>
+
+<body>
+    <div id="header">
+        <nav class="navbar">
+            <a href="index.html" class="navbar-logo">
+                <img src="images/Mask Banao Logo long.svg" />
+            </a>
+            <button id="navbar-hamburger"></button>
+            <ul id="navigation">
+                <li><a onclick="removeNavActiveClass();" href="https://www.change.org/p/government-face-masks-in-public-should-be-made-mandatory-by-the-government-to-prevent-covid-19-spread" target="_blank">Request Mask Laws</a></li>
+                <li><a href="science.html">The Science</a></li>
+                <li><a href="data.html">Data</a></li>
+                <li><a href="social.html">Social Media</a></li>
+                <li><a href="#make-a-mask" class="button">Make a mask</a></li>
+            </ul>
+            <div class="language-container">
+                <!-- <div class="language-switcher">
                         English
                     </div> -->
-                </div>
-            </nav>
-        </div>
-
-        <div class="container">
-            <!-- <div class="section general-about" id="main">
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <!-- <div class="section general-about" id="main">
               <div>
                 <h1 class="white">About Us</h1>
                 <p class="white">MaskBanao, inspired by the successful campaign of <a href="https://masks4all.co" target="_blank">masks4all.co</a>, is a social campaign to promote the use of homemade masks in Pakistan during the COVID-19 pandemic. The mission is to spread awareness about the importance of masks, push for stronger mask laws from the government, and increase mask production through homemade masks and factories. The vision is a country and community where a majority of the population is using masks, protecting each other from COVID-19. Our team includes students and professionals from around the world. To join us, write to us at <a href="mailto:maskbanao@gmail.com">maskbanao@gmail.com</a>.</p>
               </div>
             </div> -->
-
-            <div id="main" class="section background-secondary">
-                <div class="main-text">
-                    <h1>About Us</h1>
-                    <p>MaskBanao, inspired by the successful campaign of <a href="https://masks4all.co" target="_blank">masks4all.co</a>, is a social campaign to promote the use of homemade masks in Pakistan during the COVID-19 pandemic. The mission is to spread awareness about the importance of masks, push for stronger mask laws from the government, and increase mask production through homemade masks and factories. The vision is a country and community where a majority of the population is using masks, protecting each other from COVID-19. Our team includes students and professionals from around the world. To join us, write to us at <a href="mailto:maskbanao@gmail.com">maskbanao@gmail.com</a>.</p>
-                </div>
-                <div class="image">
-                    <img src="images/Mask Banao Logo white.svg" />
-                </div>
-
-
-
-
+        <div id="main" class="section background-secondary">
+            <div class="main-text">
+                <h1>About Us</h1>
+                <p>MaskBanao, inspired by the successful campaign of <a href="https://masks4all.co" target="_blank">masks4all.co</a>, is a social campaign to promote the use of homemade masks in Pakistan during the COVID-19 pandemic. The mission is to spread awareness about the importance of masks, push for stronger mask laws from the government, and increase mask production through homemade masks and factories. The vision is a country and community where a majority of the population is using masks, protecting each other from COVID-19. Our team includes students and professionals from around the world. To join us, write to us at <a href="mailto:maskbanao@gmail.com">maskbanao@gmail.com</a>.</p>
+            </div>
+            <div class="image">
+                <img src="images/Mask Banao Logo white.svg" />
+            </div>
         </div>
-        <button onclick="scrollToTopFn()" id="scrollToTop" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
-        <script src="js/pagescroll.js"></script>
-        <script src="js/axios.js"></script>
-        <!--<script src="js/leaflet.js"></script>-->
-        <!--<script src="js/pakistan_data.js"></script>-->
-        <!--<script src="js/pakistan_districts.js"></script>-->
-        <script src="js/glide.js"></script>
-        <script src="js/navbar.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/index.js"></script>
-        <!--<script src="js/map.js"></script>-->
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </body>
+    </div>
+    <div class="container team_wrapper " id="">
+        <h2 class="team_header">Our Team</h2>
+        <div class="team">
+            <div class="team_box">
+                <div class="team_img">
+                    <a href='#' data-target="teambox_1" data-toggle="modal">
+                        <img data-target="teambox_1" data-toggle="modal" src="images/team/AmarLal.png" alt="">
+                    </a>
+                </div>
+                <div class="team_title">
+                    <a href='#' data-target="teambox_1" data-toggle="modal">Amar Lal</a>
+                </div>
+                <div class="team_position">
+                    <a href='#' data-target="teambox_1" data-toggle="modal">Head of Public Relations and Quality Assurance</a>
+                </div>
+            </div>
+            <div class="team_box">
+                <div class="team_img">
+                    <a href='#' data-target="teambox_2" data-toggle="modal">
+                        <img data-target="teambox_2" data-toggle="modal" src="images/team/TurabAbbass.png" alt="">
+                    </a>
+                </div>
+                <div class="team_title">
+                    <a href='#' data-target="teambox_2" data-toggle="modal">Turab Abbass</a>
+                </div>
+                <div class="team_position">
+                    <a href='#' data-target="teambox_2" data-toggle="modal">Head of Marketing and Promotions</a>
+                </div>
+            </div>
+            <div class="team_box">
+                <div class="team_img">
+                    <a href='#' data-target="teambox_3" data-toggle="modal">
+                        <img data-target="teambox_3" data-toggle="modal" src="images/team/SualehAsif.png" alt="">
+                    </a>
+                </div>
+                <div class="team_title">
+                    <a href='#' data-target="teambox_3" data-toggle="modal">Sualeh Asif</a>
+                </div>
+                <div class="team_position">
+                    <a href='#' data-target="teambox_3" data-toggle="modal">Project Manager</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_4' data-toggle='modal'>
+                        <img data-target='teambox_4' data-toggle='modal' src='images/team/AdanAli.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_4' data-toggle='modal'>Adan Ali</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_4' data-toggle='modal'>Head of Marketing and Promotions</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_5' data-toggle='modal'>
+                        <img data-target='teambox_5' data-toggle='modal' src='images/team/AliSulaiman.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_5' data-toggle='modal'>Ali Sulaiman</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_5' data-toggle='modal'>Head of Content Development</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_6' data-toggle='modal'>
+                        <img data-target='teambox_6' data-toggle='modal' src='images/team/SaadAftab.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_6' data-toggle='modal'>Saad Aftab</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_6' data-toggle='modal'>Marketing</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_7' data-toggle='modal'>
+                        <img data-target='teambox_7' data-toggle='modal' src='images/team/ZeeshanKhan.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_7' data-toggle='modal'>Zeeshan Khan</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_7' data-toggle='modal'>Public Relations and Quality Assurance</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_8' data-toggle='modal'>
+                        <img data-target='teambox_8' data-toggle='modal' src='images/team/MoosaHashim.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_8' data-toggle='modal'>Moosa Hashim</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_8' data-toggle='modal'>Public Relations and Quality Assurance</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_9' data-toggle='modal'>
+                        <img data-target='teambox_9' data-toggle='modal' src='images/team/MuhammadShaheer.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_9' data-toggle='modal'>Muhammad Shaheer</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_9' data-toggle='modal'>Team Member- Content Development</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_10' data-toggle='modal'>
+                        <img data-target='teambox_10' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_10' data-toggle='modal'>Tim Chu</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_10' data-toggle='modal'>Advisor</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_11' data-toggle='modal'>
+                        <img data-target='teambox_11' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_11' data-toggle='modal'>Wasay Anwer</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_11' data-toggle='modal'>Engineering Advisor</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_12' data-toggle='modal'>
+                        <img data-target='teambox_12' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_12' data-toggle='modal'>Talha</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_12' data-toggle='modal'>Marketing and Promotions</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_13' data-toggle='modal'>
+                        <img data-target='teambox_13' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_13' data-toggle='modal'>Del Rosario</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_13' data-toggle='modal'>Website Developer</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_14' data-toggle='modal'>
+                        <img data-target='teambox_14' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_14' data-toggle='modal'>Mateo Simonovic</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_14' data-toggle='modal'>Website Developer</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_15' data-toggle='modal'>
+                        <img data-target='teambox_15' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_15' data-toggle='modal'>Diya</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_15' data-toggle='modal'>Content Developer</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_16' data-toggle='modal'>
+                        <img data-target='teambox_16' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_16' data-toggle='modal'>Duha</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_16' data-toggle='modal'>Content Developer</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_17' data-toggle='modal'>
+                        <img data-target='teambox_17' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_17' data-toggle='modal'>Qurat</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_17' data-toggle='modal'>Web Developer </a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_18' data-toggle='modal'>
+                        <img data-target='teambox_18' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_18' data-toggle='modal'>Tayyab</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_18' data-toggle='modal'>Web Developer</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_19' data-toggle='modal'>
+                        <img data-target='teambox_19' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_19' data-toggle='modal'>Kaira</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_19' data-toggle='modal'>Web Developer</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_20' data-toggle='modal'>
+                        <img data-target='teambox_20' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_20' data-toggle='modal'>Rujul Gandhi</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_20' data-toggle='modal'>Head of Content Development</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_21' data-toggle='modal'>
+                        <img data-target='teambox_21' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_21' data-toggle='modal'>Parnav Patil</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_21' data-toggle='modal'>Web Development</a>
+                </div>
+            </div>
+            <div class='team_box'>
+                <div class='team_img'>
+                    <a href='#' data-target='teambox_22' data-toggle='modal'>
+                        <img data-target='teambox_22' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                    </a>
+                </div>
+                <div class='team_title'>
+                    <a href='#' data-target='teambox_22' data-toggle='modal'>Ulan Seitkaliyev</a>
+                </div>
+                <div class='team_position'>
+                    <a href='#' data-target='teambox_22' data-toggle='modal'>Web Development</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODALS -->
+    <div id="teambox_1" class="modal">
+        <div class="modal-window">
+            <span class="close" data-dismiss="modal">&times;</span>
+            <div class="modal-content">
+                <div class="team_img">
+                    <img data-target="teambox_1" data-toggle="modal" src="images/team/AmarLal.png" alt="">
+                </div>
+                <div class="modal-text">
+                    <h2>Amar Lal</h2>
+                    <h4>Head of Public Relations and Quality Assurance</h4>
+                    <p align="justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="teambox_2" class="modal">
+        <div class="modal-window">
+            <span class="close" data-dismiss="modal">&times;</span>
+            <div class="modal-content">
+                <div class="team_img">
+                    <img data-target="teambox_2" data-toggle="modal" src="images/team/TurabAbbass.png" alt="">
+                </div>
+                <div class="modal-text">
+                    <h2>Turab Abbass</h2>
+                    <h4>Head of Marketing and Promotions</h4>
+                    <p align="justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="teambox_3" class="modal">
+        <div class="modal-window">
+            <span class="close" data-dismiss="modal">&times;</span>
+            <div class="modal-content">
+                <div class="team_img">
+                    <img data-target="teambox_3" data-toggle="modal" src="images/team/SualehAsif.png" alt="">
+                </div>
+                <div class="modal-text">
+                    <h2>Sualeh Asif</h2>
+                    <h4>Project manager</h4>
+                    <p align="justify"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_4' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_4' data-toggle='modal' src='images/team/AdanAli.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Adan Ali</h2>
+                    <h4>Head of Marketing and Promotions</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_5' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_5' data-toggle='modal' src='images/team/AliSulaiman.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Ali Sulaiman</h2>
+                    <h4>Head of Content Development</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_6' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_6' data-toggle='modal' src='images/team/SaadAftab.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Saad Aftab</h2>
+                    <h4>Marketing</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_7' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_7' data-toggle='modal' src='images/team/ZeeshanKhan.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Zeeshan Khan</h2>
+                    <h4>Public Relations and Quality Assurance</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_8' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_8' data-toggle='modal' src='images/team/MoosaHashim.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Moosa Hashim</h2>
+                    <h4>Public Relations and Quality Assurance</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_9' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_9' data-toggle='modal' src='images/team/MuhammadShaheer.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Muhammad Shaheer</h2>
+                    <h4>Team Member- Content Development</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_10' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_10' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Tim Chu</h2>
+                    <h4>Advisor</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_11' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_11' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Wasay Anwer</h2>
+                    <h4>Engineering Advisor</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_12' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_12' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Talha</h2>
+                    <h4>Marketing and Promotions</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_13' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_13' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Del Rosario</h2>
+                    <h4>Website Developer</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_14' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_14' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Mateo Simonovic</h2>
+                    <h4>Website Developer</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_15' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_15' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Diya</h2>
+                    <h4>Content Developer</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_16' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_16' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Duha</h2>
+                    <h4>Content Developer</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_17' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_17' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Qurat</h2>
+                    <h4>Web Developer </h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_18' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_18' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Tayyab</h2>
+                    <h4>Web Developer</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_19' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_19' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Kaira</h2>
+                    <h4>Web Developer</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_20' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_20' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Rujul Gandhi</h2>
+                    <h4>Head of Content Development</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_21' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_21' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Parnav Patil</h2>
+                    <h4>Web Development</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id='teambox_22' class='modal'>
+        <div class='modal-window'>
+            <span class='close' data-dismiss='modal'>&times;</span>
+            <div class='modal-content'>
+                <div class='team_img'>
+                    <img data-target='teambox_22' data-toggle='modal' src='images/team/placeholder.png' alt=''>
+                </div>
+                <div class='modal-text'>
+                    <h2>Ulan Seitkaliyev</h2>
+                    <h4>Web Development</h4>
+                    <p align='justify'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button onclick="scrollToTopFn()" id="scrollToTop" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+    <script src="js/pagescroll.js"></script>
+    <script src="js/axios.js"></script>
+    <!--<script src="js/leaflet.js"></script>-->
+    <!--<script src="js/pakistan_data.js"></script>-->
+    <!--<script src="js/pakistan_districts.js"></script>-->
+    <script src="js/glide.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <!--<script src="js/map.js"></script>-->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <!-- For modal windows -->
+    <script type="text/javascript" src="js/modal.js"></script>
+</body>
+
 </html>
