@@ -355,6 +355,10 @@
     margin-bottom: 20px;
 }
 
+#stats {
+    padding-top: 0px;
+}
+
 .share-links .text-link {
     font-family: Open Sans;
     font-style: normal;
