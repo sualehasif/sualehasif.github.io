@@ -29,6 +29,7 @@ body {
     font-size: 48px;
     line-height: 65px;
     color: #B1A9A9;
+    word-break: break-word;
 }
 
 .call-to-action .links {
