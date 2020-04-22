@@ -760,6 +760,7 @@
 
     .tutorial-video {
       grid-column-end: span 1;
+      grid-row: 3;
     }
 }
 
