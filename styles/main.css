@@ -121,6 +121,10 @@ body {
     padding: 5px 10px;
 }
 
+.share-button {
+    cursor: pointer;
+}
+
 .alert i {
     font-size: 12px;
     margin: 0 5px;
