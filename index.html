@@ -10,78 +10,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="manifest" href="/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
     <title>Home</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #2D2D2D;
-        }
 
-        .container {
-            display: grid;
-            grid-template-rows: 90% 10%;
-            height: 100vh;
-        }
-
-        .text-container {
-            display: grid;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .animated-text span {
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 48px;
-            line-height: 65px;
-            color: #B1A9A9;
-        }
-
-        .call-to-action a {
-            text-decoration: none;
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 16px;
-            line-height: 22px;
-            color: #FFFFFF;
-            margin: 0 20px;
-            transition: color .5s linear;
-        }
-
-        .call-to-action a:hover {
-            color: #E2B65F;
-            transition: color .3s linear;
-        }
-
-        #footer {
-            display: flex;
-            justify-content: center;
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 22px;
-            color: #B1A9A9;
-        }
-
-        .animate-me {
-            display: block;
-        }
-    </style>
   </head>
   <body>
       <div class="container">
         <div class="text-container">
             <div class="call-to-action">
                 <div class="animated-text">
-                    <span class="animate-me">over 70000 Pakistani are at risk</span>
+                    <span class="animate-me"></span>
                 </div>
-                <a href="#">make a mask</a>
-                <a href="#">share campaign</a>
+                <div class="links">
+                    <a href="#">make a mask</a>
+                    <a href="#">share campaign</a>
+                </div>
             </div>
         </div>
         <div id="footer">
@@ -92,32 +35,34 @@
       <script src="js/anime.min.js"></script>
       <script>
           var animateMe = document.querySelector('.animate-me');
-
           var changeCount = 0;
 
           anime({
-            targets: animateMe,
-            opacity: 0,
-            duration: 2000,
-            scale: 1.1,
-            loop: 4,
-            easing: 'easeInOutSine',
-            changeComplete: function(anim) {
-                        changeCount++;
-                        switch(changeCount) {
-                        case 1:
-                            animateMe.innerHTML = "New information here";
-                            break;
-                        case 2:
-                            animateMe.innerHTML = "Another information here";
-                            break;
-                        case 3:
-                            animateMe.innerHTML = "Hello World!";
-                        default:
-                            animateMe.innerHTML = "Last info";
-                        }
-                    }
-            });
+              targets: animateMe,
+              opacity: 0,
+              duration: 3000,
+              scale: 1.1,
+              loop: true,
+              easing: 'easeInOutSine',
+              changeComplete: function (anim) {
+                  switch (changeCount) {
+                      case 0:
+                          animateMe.innerHTML = "COVID-19 could kill 1 million Pakistanis";
+                          break;
+                      case 1:
+                          animateMe.innerHTML = "Imagine all of Islamabad dead";
+                          break;
+                      case 2:
+                          animateMe.innerHTML = "Don’t put your loved ones at risk";
+                          break;
+                      case 3:
+                          animateMe.innerHTML = "#MaskBanaoJaanBachao";
+                          break;
+                  }
+
+                  changeCount = (changeCount + 1) % 4;
+              }
+          });
       </script>
   </body>
 </html>
