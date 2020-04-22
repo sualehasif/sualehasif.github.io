@@ -1,25 +1,35 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="title" content="Mask Banao">
-    <meta name="description" content="Here’s how you can use ten minutes, a piece of cloth and an old sewing machine to save someone's life.">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="manifest" href="/site.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="index.css" rel="stylesheet">
-    <title>Mask Banao</title>
-
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta property="og:url" content="https://maskbanao.com" />
+      <meta property="og:type" content="website" />
+      <meta property="og:image" content="https://maskbanao.com/images/Web-Preview.jpg" />
+      <meta property="og:image:alt" content="https://maskbanao.com" />
+      <meta property="twitter:card" content="summary_large_image">
+      <meta property="twitter:image" content="https://maskbanao.com/images/Web-Preview.jpg" />
+      <meta property="twitter:image:alt" content="https://maskbanao.com" />
+      <meta name="msapplication-TileColor" content="#00aba9">
+      <meta name="theme-color" content="#ffffff">
+      <meta name="title" content="Mask Banao">
+      <meta name="description" content="Here’s how you can use ten minutes, a piece of cloth and an old sewing machine to save someone's life.">
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <link rel="stylesheet" href="styles/font-awesome-all.min.css" type="text/css">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+      <link href="index.css" rel="stylesheet">
+      <title>Mask Banao</title>
   </head>
   <body>
       <div class="container">
         <div class="text-container">
             <div class="call-to-action">
                 <div class="animated-text">
-                    <span class="animate-me"></span>
+                    <span class="animate-me">COVID-19 could kill 1 million Pakistanis</span>
                 </div>
                 <div class="links">
                     <a href="#">make a mask</a>
@@ -40,23 +50,29 @@
           anime({
               targets: animateMe,
               opacity: 0,
-              duration: 3000,
+              duration: 3500,
               scale: 1.1,
-              loop: true,
-              easing: 'easeInOutSine',
+              loop: 4,
+              easing: 'easeInSine',
+              update: function (anim) {
+                  if (changeCount > 2 && anim.progress > 50.0 && anim.progress < 100.0) {
+                      anim.pause();
+                  }
+              },
               changeComplete: function (anim) {
                   switch (changeCount) {
                       case 0:
-                          animateMe.innerHTML = "COVID-19 could kill 1 million Pakistanis";
-                          break;
-                      case 1:
                           animateMe.innerHTML = "Imagine all of Islamabad dead";
                           break;
-                      case 2:
+                      case 1:
                           animateMe.innerHTML = "Don’t put your loved ones at risk";
                           break;
-                      case 3:
+                      case 2:
                           animateMe.innerHTML = "#MaskBanaoJaanBachao";
+                          break;
+                      default:
+                          animateMe.innerHTML = "#MaskBanaoJaanBachao";
+                          animateMe.style.opacity = 1;
                           break;
                   }
 
