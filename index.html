@@ -33,7 +33,7 @@
                 </div>
                 <div class="links">
                     <a href="#">make a mask</a>
-                    <a href="#">share campaign</a>
+                    <a href="#" onclick="shareWebsite()">share campaign</a>
                 </div>
             </div>
         </div>
@@ -67,20 +67,27 @@
                       case 1:
                           animateMe.innerHTML = "Don’t put your loved ones at risk";
                           break;
-                      case 2:
-                          animateMe.innerHTML = screen.width < 400 ? "#Mask Banao Jaan Bachao" :
-                              screen.width < 655 ? "#MaskBanao JaanBachao" : "#MaskBanaoJaanBachao";
-                          break;
                       default:
-                          animateMe.innerHTML = screen.width < 400 ? "#Mask Banao Jaan Bachao" :
-                              screen.width < 655 ? "#MaskBanao JaanBachao" : "#MaskBanaoJaanBachao";
-                          animateMe.style.opacity = 1;
-                          break;
+                          animateMe.innerHTML = screen.width < 655 ? "#MaskBanao JaanBachao" : "#MaskBanaoJaanBachao";
                   }
 
                   changeCount = (changeCount + 1) % 4;
               }
           });
+      </script>
+
+      <script>
+            function shareWebsite() {
+                if (navigator.share) {
+                    navigator.share({
+                        title: 'Mask Banao',
+                        url: document.URL
+                    }).then(() => {
+                        console.log('Website shared!');
+                    })
+                        .catch(console.error);
+                }
+            }
       </script>
   </body>
 </html>
