@@ -158,6 +158,7 @@
 
 .content .image {
     text-align: center;
+    grid-column-end: span 2;
 }
 
 .heading {
@@ -184,7 +185,7 @@
 
 .tutorial-video {
   text-align: center;
-  grid-column-end: span 2;
+  /* grid-column-end: span 2; */
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px; height: 0; overflow: hidden;
@@ -535,11 +536,11 @@
 
 #why-make-at-home,
 #parosi {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 
 #parosi {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 #why-make-at-home div {
