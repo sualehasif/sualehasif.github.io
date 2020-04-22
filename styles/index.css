@@ -535,8 +535,11 @@
 
 #why-make-at-home,
 #parosi {
-    padding-top: 100px;
     padding-bottom: 100px;
+}
+
+#parosi {
+    padding-top: 100px;
 }
 
 #why-make-at-home div {

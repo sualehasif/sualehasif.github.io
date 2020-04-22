@@ -258,7 +258,8 @@ h1 {
     font-size: 48px;
 }
 
-h1.secondary {
+h1.secondary,
+h2.secondary {
     color: #147066;
 }
 
@@ -388,6 +389,14 @@ h2 {
 
 #scrollToTop:hover {
   background-color: #aeaeae;
+}
+
+.mb-0, .my-0 {
+    margin-bottom: 0 !important;
+}
+
+.mt-0, .my-0 {
+    margin-top: 0 !important;
 }
 
 @media only screen and (min-width: 2400px){
