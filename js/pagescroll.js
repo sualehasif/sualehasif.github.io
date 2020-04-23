@@ -4,6 +4,7 @@ var scrollAnimation = false;
 window.addEventListener('load', () => scrollFunction());
 window.addEventListener('scroll', () => scrollFunction());
 window.addEventListener('wheel', () => scrollFunction(true));
+window.addEventListener('touchmove', () => scrollFunction(true));
 
 function scrollFunction (mouseScrolling = false) {
   if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
