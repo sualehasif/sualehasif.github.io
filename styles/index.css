@@ -618,6 +618,10 @@
     text-align: left;
 }
 
+#scrollToTop:focus {
+    outline: none;
+}
+
 @media screen and (max-width: 768px) {
     .tweet {
         min-width: 100px;
