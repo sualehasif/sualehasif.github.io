@@ -5,10 +5,34 @@ body {
     height: 100vh;
 }
 
-.container {
-    display: grid;
-    grid-template-rows: 90% 10%;
-    height: 100vh;
+.slides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slides .slide {
+    display: flex;
+    width: 500px;
+    height: 200px;
+    color: #ffffff;
+    background: #373737;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+
+.call-to-action {
+    position: fixed;
+    bottom: 300px;
+}
+
+.footer {
+    position: fixed;
+    color: #B1A9A9;
+    bottom: 50px;
 }
 
 .text-container {
