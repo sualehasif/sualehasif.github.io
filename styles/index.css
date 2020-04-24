@@ -318,6 +318,11 @@
     font-size: 24px;
 }
 
+#counts .count-section .confirmed-date {
+    font-size: 14px;
+    text-align: right;
+}
+
 #counts .city-cases {
     display: flex;
     text-align: center;
