@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Make file
-      run: echo '${{ steps.dataimport.outputs.jsondata }}' > data/gov_data.json
+      run: echo '${{ steps.dataimport.outputs.jsondata }}' > files/gov_data.json
     
     - name: Add and commit
       uses: EndBug/add-and-commit@v4
