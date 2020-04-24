@@ -407,6 +407,17 @@ h2 {
     margin-top: 0 !important;
 }
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10000;
+    display: none;
+}
+
 @media only screen and (min-width: 2400px){
     .section {
         padding: 50px 600px;
@@ -681,7 +692,7 @@ h2 {
 
 #share-section .share-dialog.is-open {
   display: block;
-  z-index: 2;
+  z-index: 10001;
 }
 
 #share-section header {

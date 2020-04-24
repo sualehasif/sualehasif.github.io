@@ -2,13 +2,93 @@
     color: #fff;
 }
 
+#footer {
+    height: 300px;
+    color: #ffffff;
+}
+
+#footer h1 {
+    margin-top: 100px;
+    color: #ffffff;
+}
+
+#footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer i {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+#footer a+a {
+    margin-left: 40px;
+}
+
+#our-mission {
+    text-align: justify;
+}
+
+@media only screen and (min-width: 2400px) {
+    #our-mission {
+        padding: 50px 600px;
+    }
+}
+
+@media only screen and (min-width: 2200px) and (max-width: 2400px) {
+    #our-mission {
+        padding: 50px 450px;
+    }
+}
+
+@media only screen and (min-width: 1900px) and (max-width: 2200px) {
+    #our-mission {
+        padding: 50px 360px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #our-mission {
+        padding: 50px 70px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #our-mission {
+        padding: 50px 50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #our-mission {
+        padding: 50px 100px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    #our-mission {
+        padding: 50px 50px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #our-mission {
+        padding: 50px 20px;
+        /* padding-top: 150px; */
+        grid-gap: 10px;
+    }
+}
+
 .team_header{
 	text-align: center;
 }
 .team{
 	width: 80%;
     /* margin-left: 10%; */
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 	padding: 0 1em;
 	overflow: hidden;
 	display: flex;

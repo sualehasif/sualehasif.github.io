@@ -107,6 +107,91 @@
     padding: 150px 0;
 }
 
+/* DIRT FIXES */
+.card.card-2 {
+    height: 285px
+}
+
+@media screen and (min-width: 455px) and (max-width: 532px) {
+    .card.card-2 {
+        height: 350px;
+    }
+}
+
+@media screen and (min-width: 412px) and (max-width: 455px) {
+    .card.card-2 {
+        height: 380px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .card.card-2 {
+        height: 425px;
+    }
+}
+
+.card.card-4 {
+    min-height: 210px;;
+}
+
+@media screen and (max-width: 412px) {
+    .card.card-4 {
+        height: 245px;
+    }
+}
+
+.card.card-6 {
+    min-height: 240px;
+}
+
+@media screen and (max-width: 445px) {
+    .card.card-6 {
+        height: 275px;
+    }
+}
+
+@media screen and (min-width: 471px) and (max-width: 557px) {
+    .card.card-7 {
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 409px) and (max-width: 471px) {
+    .card.card-7 {
+        height: 330px;
+    }
+}
+
+@media screen and (max-width: 409px) {
+    .card.card-7 {
+        height: 350px;
+    }
+}
+
+.card.card-8 {
+    min-height: 230px
+}
+
+@media screen and (min-width: 460px) and (max-width: 500px) {
+    .card.card-8 {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .card.card-8 {
+        height: 320px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .card.card-11 {
+        height: 330px;
+    }
+}
+
+/* END DIRTY FIXES */
+
 @media only screen and (max-width: 1438px) {
     .card {
         margin-top: 0 !important;
