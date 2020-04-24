@@ -114,6 +114,12 @@
     padding: 10px 0;
     transition: all 0.5s;
     text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .team_box:hover {
@@ -123,6 +129,8 @@
 .team_box:active {
     box-shadow: 0 0.1rem .1rem rgba(0,0,0,0.15) !important;
     transition: unset;
+    -webkit-tap-highlight-color: transparent;
+    outline: none !important;
 }
 
 .team_title {
