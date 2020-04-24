@@ -7,7 +7,9 @@ new Glide('.glide', {
 new Glide('.news-carousel', {
     hoverpause: true,
     type: "carousel",
-    autoplay: 8000
+    autoplay: 8000,
+    swipeThreshold: false,
+    dragThreshold: false
 }).mount()
 
 var tweetsGlide = new Glide('.tweets', {
