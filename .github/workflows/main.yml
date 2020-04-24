@@ -1,0 +1,29 @@
+name: COVID Data Update
+
+on:
+  schedule:
+    - cron:  '*/15 * * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Import data
+      id: dataimport
+      uses: eohomegrownapps/masks-update-action@v0.1.2
+    
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Make file
+      run: echo '${{ steps.dataimport.outputs.jsondata }}' > files/gov_data.json
+    
+    - name: Add and commit
+      uses: EndBug/add-and-commit@v4
+      with:
+        add: '.'
+        cwd: '.'
+        message: 'DataBot: Updated COVID data'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
