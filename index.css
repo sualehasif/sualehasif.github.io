@@ -44,6 +44,7 @@ a {
     font-size: 12px;
     text-decoration: none;
     color: #B1A9A9;
+    text-transform: uppercase;
 }
 
 a:hover {
