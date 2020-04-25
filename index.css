@@ -3,6 +3,41 @@
     height: 700vh;
     background: #2D2D2D;
     color: #B1A9A9;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.container.primary {
+    background: #ffffff;
+}
+
+.container.primary #counter {
+    color: #2D2D2D;
+}
+
+/*.container {*/
+    /*max-height: 100vh;*/
+    /*overflow-y: scroll;*/
+    /*border: 1px solid gray;*/
+    /*scroll-snap-type: mandatory;*/
+    /*scroll-snap-points-y: repeat(3rem);*/
+    /*scroll-snap-type: y mandatory;*/
+/*}*/
+
+li {
+    border-bottom: 1px solid white;
+    padding: 1rem;
+    height: 500px;
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
 }
 
 a {
@@ -30,6 +65,20 @@ a:hover {
     margin-left: 20px;
 }
 
+.header #main-btn {
+    border-radius: 5px;
+    border: 1px solid #B1A9A9;
+    padding: 10px;
+    color: #B1A9A9;
+    display: none;
+}
+
+.header #main-btn:hover {
+    border: 1px solid #cfc7c7;
+    color: #cfc7c7;
+    background: #373737;
+}
+
 .frames {
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(3rem);
@@ -38,6 +87,7 @@ a:hover {
 
 .frame {
     height: 100vh;
+    /*border: 5px solid red;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -50,31 +100,32 @@ a:hover {
     text-align: center;
     font-size: 48px;
     font-weight: bold;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .frame .frame-content.visible {
     opacity: 1;
 }
 
-.skip-btn {
-    font-size: 16px;
-    font-weight: normal;
+.num-infected {
+    color: #AA4C4C;
+    font-size: 88px;
+    margin-bottom: 10px;
 }
 
 #arrows {
     position: absolute;
     bottom: 7%;
     opacity: 0;
-    -webkit-transition: all 1.5s ease-in-out;
-    -moz-transition: all 1.5s ease-in-out;
-    -ms-transition: all 1.5s ease-in-out;
-    -o-transition: all 1.5s ease-in-out;
-    transition: all 1.5s ease-in-out;
+    -webkit-transition: opacity 1.5s ease-in-out;
+    -moz-transition: opacity 1.5s ease-in-out;
+    -ms-transition: opacity 1.5s ease-in-out;
+    -o-transition: opacity 1.5s ease-in-out;
+    transition: opacity 1.5s ease-in-out;
     cursor: pointer;
 }
 
@@ -92,7 +143,7 @@ a:hover {
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    position: fixed;
+    /*position: fixed;*/
     top: 0;
     left: 0;
 }
@@ -102,7 +153,11 @@ a:hover {
 }
 
 .man-with-mask {
-    background-image: url('images/man-with-mask.png');
+    background-image: url('images/man-with-mask.jpeg');
+}
+
+.beautiful-man {
+    background-image: url('images/beautiful-man.png');
 }
 
 #counter, #counter-seconds {
@@ -110,11 +165,11 @@ a:hover {
 }
 
 #counter {
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -ms-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 #counter.c-danger {
@@ -124,4 +179,17 @@ a:hover {
 #counter-seconds {
     display: none;
     font-size: 64px;
+}
+
+.counter-additional {
+    opacity: 0;
+    -webkit-transition: opacity 2s ease-in-out;
+    -moz-transition: opacity 2s ease-in-out;
+    -ms-transition: opacity 2s ease-in-out;
+    -o-transition: opacity 2s ease-in-out;
+    transition: opacity 2s ease-in-out;
+}
+
+.counter-additional.visible {
+    opacity: 1;
 }

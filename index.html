@@ -28,24 +28,24 @@
 <body>
     <div class="container">
         <div class="header">
-            <a href="#">share this campaign</a>
+            <a href="#">share campaign</a>
             <a href="#">learn more</a>
+            <a href="/main" id="main-btn">visit main page</a>
         </div>
         <div class="frames">
             <div class="frame">
                 <div class="frame-content visible">
                     <div>
-                        <span class="c-danger">1000</span>
-                        <span>Pakistani people are currently infected</span>
+                        <div class="num-infected">12,644</div>
+                        <div>Pakistani people are currently infected</div>
                     </div>
-                    <a href="#" class="skip-btn">Skip</a>
                 </div>
                 <div id="arrows" class="visible">
                     <img src="images/arrows-explore.svg" />
                 </div>
             </div>
             <div class="frame">
-                <div class="frame-content" animation-threshold="150">
+                <div class="frame-content" animation-threshold="-150">
                     <div class="frame-image recovery-center"></div>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                 </div>
             </div>
             <div class="frame">
-                <div class="frame-content" animation-threshold="150">
+                <div class="frame-content" animation-threshold="-150">
                     <div class="frame-image man-with-mask"></div>
                 </div>
             </div>
@@ -71,8 +71,21 @@
             </div>
             <div class="frame">
                 <div class="frame-content">
+                    <div class="counter-additional">with just</div>
                     <div id="counter">&nbsp;</div>
                     <div id="counter-seconds">seconds</div>
+                    <div class="counter-additional">you can save a life</div>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="frame-content" animation-threshold="-150">
+                    <div class="frame-image beautiful-man"></div>
+                </div>
+            </div>
+            <div class="frame">
+                <div class="frame-content">
+                    <div>CAROUSEL</div>
+                    <div>social links</div>
                 </div>
             </div>
         </div>
@@ -84,31 +97,58 @@
 <script src="js/counter.js"></script>
 <script src="js/util.js"></script>
 <script>
+    if (localStorage.getItem('session-id')) {
+        $('#main-btn').show();
+    }
+
+    var counterAnimationStarted = false;
     var counterAnimationCompleted = false;
+    var activeIndex = 0;
+
     function counterDone() {
         $('#counter').addClass('c-danger');
         setTimeout(function() {
             $('#counter-seconds').fadeIn(1000).css("display", "inline-block");
+            setTimeout(function() {
+                $('.counter-additional').addClass('visible');
+                counterAnimationCompleted = true;
+            }, 2000)
         }, 2000)
     }
 
     function showVisible() {
         $('.frame-content').each(function(index, frame) {
             if(isElementInView(frame, true, parseInt($(frame).attr('animation-threshold')) || 200)) {
+                activeIndex = index;
+
                 $(frame).addClass('visible');
                 if (index === 0) {
                     $('#arrows').addClass('visible');
-                } else if (index === 5 && !counterAnimationCompleted) {
-                    counterAnimationCompleted = true;
+                    return;
+                }
+
+                if (index === 5 && !counterAnimationStarted) {
+                    counterAnimationStarted = true;
                     animateCounter('counter', 0, 40, 3000, counterDone);
+                    return;
                 }
-            } else {
-                $(frame).removeClass('visible');
-                if (index === 0) {
-                    $('#arrows').removeClass('visible');
-                }
+
+                return;
+            }
+
+            $(frame).removeClass('visible');
+            if (index === 0) {
+                $('#arrows').removeClass('visible');
+                return;
             }
         });
+
+        if (activeIndex > 5) {
+            $('.container').addClass('primary');
+            localStorage.setItem('session-id', 'maskbanao')
+        } else {
+            $('.container').removeClass('primary');
+        }
     }
 
     $(window).scroll(showVisible);
