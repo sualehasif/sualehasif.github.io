@@ -23,9 +23,7 @@ $(window).scroll(function (event) {
     var pos = Math.floor(scroll/halfHeight);
     var newPos = pos+1;
 
-    console.log("new Post " + newPos)
     if ((pos > 0) && (pos < 10)) {
-        console.log(newPos);
         $('.image-container img').attr("src","images/mask/"+ newPos +".png");
     }
     else if (pos >= 10) {
@@ -34,5 +32,4 @@ $(window).scroll(function (event) {
     else {
         $('.image-container img').attr("src","images/mask/1.png");
     }
-    console.log("old pos" + pos);
 });
