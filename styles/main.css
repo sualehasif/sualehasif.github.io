@@ -437,7 +437,7 @@ h2 {
     }
 
     .navbar {
-        grid-template-columns: 60% 1fr 65px;
+        grid-template-columns: 90% auto;
     }
 
     .navbar-logo {
