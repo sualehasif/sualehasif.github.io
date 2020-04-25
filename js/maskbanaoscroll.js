@@ -24,7 +24,7 @@ $(window).scroll(function (event) {
     var newPos = pos+1;
 
     console.log("new Post " + newPos)
-    if ((pos != 0) && (pos != 10)) {
+    if ((pos != 0) && (pos < 10)) {
         console.log(newPos);
         $('.image-container img').attr("src","images/mask/"+ newPos +".png");
     }
