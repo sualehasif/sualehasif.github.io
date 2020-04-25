@@ -53,7 +53,7 @@ var teamArr = [
         position: 'Web Developer',
         location: 'Zagreb, Croatia',
         credentials: "",
-        img: '',
+        img: 'Mateo.png',
         linkedin: 'https://www.linkedin.com/in/mateosimonovic/'
     },
     {
@@ -117,7 +117,7 @@ var teamArr = [
         position: 'Marketing',
         location: 'Karachi, Pakistan',
         credentials: "Institute of Business Administration'23",
-        img: '',
+        img: 'Talha.png',
         linkedin: ''
     },
     {
@@ -125,7 +125,7 @@ var teamArr = [
         position: 'Illustrator',
         location: 'Karachi, Pakistan',
         credentials: "Indus Valley School of Art and Architecture'22",
-        img: '',
+        img: 'Zoya.png',
         linkedin: 'https://www.linkedin.com/in/zoya-shah-b54979173/'
     },
     {
@@ -181,7 +181,7 @@ var teamArr = [
         position: 'Content Writer',
         location: 'Karachi, Pakistan',
         credentials: "Institute of Business Administration'22",
-        img: '',
+        img: 'Irtiza.png',
         linkedin: ''
     },
     {
