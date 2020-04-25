@@ -78,6 +78,10 @@ body {
     background: #FFFFFF;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 #header {
     width: 100vw;
     background-color: #FFF;
