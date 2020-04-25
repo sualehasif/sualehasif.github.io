@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+    <head>
+        {% include head.html %}
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+                integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+                crossorigin="anonymous"></script>
+        <title>Make a Mask | Mask Banao</title>
+        <style>
+            .container {
+                padding-top: 300px;
+            }
+
+            .masks-container {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            .mask-header {
+                grid-column: 1 / span 3;
+                text-align: center;
+                margin-bottom: 30px;
+                font-family: Uni Sans Demo;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 36px;
+                line-height: 36px;
+                color: #2D2D2D;
+            }
+
+            .mask-container {
+                margin-bottom: 20px;
+                display: block;
+            }
+
+            .mask {
+                text-align: center;
+            }
+
+            .mask-inner {
+                height: 300px;
+                width: 300px;
+                margin: 0 auto;
+                background-color: #356E67;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .mask-inner span {
+                color: #FFF;
+                text-align: left;
+                opacity: 0;
+                transition: opacity .5s ease-in-out;
+            }
+            
+
+            .mask-container:hover .mask-inner span {
+                opacity: 1;
+                transition: opacity .5s ease-in-out;
+            }
+
+            .mask a {
+                text-decoration: none;
+            }
+
+            .mask-link {
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 27px;
+                color: #000000;
+            }
+            
+            @media only screen and (max-width: 1300px) {
+                .mask-inner {
+                    height: 200px;
+                    width: 200px;
+                }
+            }
+
+            @media only screen and (max-width: 992px) {
+                .mask-inner {
+                    height: 150px;
+                    width: 150px;
+                }
+
+                .masks-container {
+                    width: 90%;
+                }
+
+                .mask-inner span {
+                    font-size: 14px;
+                }
+            
+
+                .mask-link {
+                    font-size: 16px;
+                }
+            }
+
+            @media only screen and (max-width: 565px) {
+                .masks-container {
+                    width: 70%;
+                    grid-gap: 30px;
+                    grid-template-columns: 100%;
+                }
+
+                .mask-header {
+                grid-column: 1;
+                font-size: 36px;
+                }
+
+                .mask-inner {
+                    height: 200px;
+                    width: 200px;
+                }
+
+                .mask-inner span {
+                opacity: 1;
+                }
+
+                .container {
+                    padding-top: 150px;
+                }   
+            }
+
+        </style>
+    </head>
+    <body>
+        {% include navigation.html %}
+    <div class="container">
+        <div class="masks-container">
+            <div class="mask-header">
+                Get Started
+            </div>
+            <div class="mask">
+                <a class="mask-container" href="#">
+                    <div class="mask-inner">
+                        <span>
+                            Difficulty: Easy <br/>
+                            Time: 40 seconds
+                        </span>
+                    </div>
+                </a>
+
+                <a class="mask-link" href="#">Scarf Mask</a>
+            </div>
+
+            <div class="mask">
+                <a class="mask-container" href="#">
+                    <div class="mask-inner">
+                        <span>
+                            Difficulty: Easy <br/>
+                            Time: 40 seconds
+                        </span>
+                    </div>
+                </a>
+
+                <a class="mask-link" href="#">Scarf Mask</a>
+            </div>
+
+            <div class="mask">
+                <a class="mask-container" href="#">
+                    <div class="mask-inner">
+                        <span>
+                            Difficulty: Easy <br/>
+                            Time: 40 seconds
+                        </span>
+                    </div>
+                </a>
+
+                <a class="mask-link" href="#">Scarf Mask</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

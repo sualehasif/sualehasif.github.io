@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../webfonts/unisansdemo-heavycaps-webfont.woff2') format('woff2'),
+         url('../webfonts/unisansdemo-heavycaps-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../webfonts/unisansdemo-heavyitaliccaps-webfont.woff2') format('woff2'),
+         url('../webfonts/unisansdemo-heavyitaliccaps-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../webfonts/unisansdemo-thincaps-webfont.woff2') format('woff2'),
+         url('../webfonts/unisansdemo-thincaps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Uni Sans';
+    src: url('../webfonts/unisansdemo-thinitaliccaps-webfont.woff2') format('woff2'),
+         url('../webfonts/unisansdemo-thinitaliccaps-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+}
+
+.scroll-container {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    margin: 0 auto;
+}
+
+.view {
+    height: 100vh;
+    max-height: 100vh;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+}
+
+.view-header {
+    margin-bottom: 40px;
+}
+
+.view-header h1 {
+    font-family: 'Uni Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 20px;
+    color: #356E67;
+    margin-bottom: 0;
+}
+
+.view-header .links a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #356E67;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.view-content {
+    padding-left: 150px; 
+}
+
+.instructions-container h2 {  
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #356E67;
+}
+
+.instructions-container ol,
+.instructions-container p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #2D2D2D;
+}
+
+.image-container {
+    height: 100vh;
+    width: 50vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 70%;
+}
