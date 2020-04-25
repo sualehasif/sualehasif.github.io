@@ -36,7 +36,47 @@ body {
     padding: 0;
     background-color: #FFF;
     font-family: 'Open Sans', sans-serif;
-    }
+}
+
+.c-primary {
+    color: #147066;
+}
+
+.bg-primary {
+    background: #147066;
+}
+
+.c-secondary {
+    color: #E8B44C;
+}
+
+.bg-secondary {
+    background: #E8B44C;
+}
+
+.c-danger {
+    color: #AA4C4C;
+}
+
+.bg-danger {
+    background: #AA4C4C;
+}
+
+.c-dark {
+    color: #2D2D2D;
+}
+
+.bg-dark {
+    background: #2D2D2D;
+}
+
+.c-light {
+    color: #FFFFFF;
+}
+
+.bg-light {
+    background: #FFFFFF;
+}
 
 #header {
     width: 100vw;
