@@ -213,7 +213,7 @@ var teamArr = [
         position: 'Advisor',
         location: '',
         credentials: "Carnegie Mellon University",
-        img: '',
+        img: 'Timothy Chu.png',
         linkedin: ''
     },
     {
