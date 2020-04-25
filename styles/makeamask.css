@@ -114,3 +114,53 @@ body {
 .image-container img {
     width: 70%;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .scroll-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50vh auto;
+        grid-template-areas: "image" 
+                             "text";
+    }
+    
+    .container {
+        padding-top: 60px;
+    }
+
+    .view {
+        height: 50vh;
+        max-height: 50vh;
+        width: 100vw;
+        background: #FFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .view-content {
+        padding: 0;
+        width: 70%;
+        max-width: 70%;
+    }
+
+
+    .image-container {
+        height: 50vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FFF;
+    }
+
+    .will-scroll {
+        grid-area: text;
+    }
+
+    .sticky-image {
+        grid-area: image;
+        width: 100vw;
+    }
+}
