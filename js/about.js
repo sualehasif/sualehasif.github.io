@@ -226,14 +226,13 @@ var teamArr = [
     },
 ];
 
-window.addEventListener('load', () => {
-    teamArr.forEach((value) => {
-        var html = '    <a target="' + (value.linkedin ? '_blank' : '') + '" href="' + (value.linkedin || 'javascript:void(0)') + '" class="team_box" title="' + value.name + '">';
-        html += '       <div class="team_img"><img src="images/team/' + (value.img || 'placeholder.png') + '" alt="' + value.name + '"></div>';
-        html += '       <div class="team_title">' + value.name + '</div>';
-        html += '       <div class="team_position">' + value.position + '</div>';
-        html += value.location ? '<div class="team_location">' + value.location + '</div>' : "";
-        html += '   </a>';
-        teamElement.innerHTML += html;
-    });
+teamArr.forEach((value) => {
+    var html = '    <a target="' + (value.linkedin ? '_blank' : '') + '" href="' + (value.linkedin || 'javascript:void(0)') + '" class="team_box" title="' + value.name + '">';
+    html += '       <div class="team_img"><img src="images/team/' + (value.img || 'placeholder.png') + '" alt="' + value.name + '"></div>';
+    html += '       <div class="team_title">' + value.name + '</div>';
+    html += '       <div class="team_position">' + value.position + '</div>';
+    html += value.credentials ? '<div class="team_credential">' + value.credentials + '</div>' : "";
+    html += value.location ? '<div class="team_location">' + value.location + '</div>' : "";
+    html += '   </a>';
+    teamElement.innerHTML += html;
 });
