@@ -104,6 +104,10 @@ body {
     color: #FFF;
 }
 
+#navigation .nav-underline {
+    border-bottom: 3px solid #0DAB76;
+}
+
 #tutorials iframe {
     width: 30%;
     margin: 0 10px 30px 0;
