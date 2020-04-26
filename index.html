@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="styles/font-awesome-all.min.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/glide.core.min.css" rel="stylesheet"/>
+    <link href="styles/glide.theme.min.css" rel="stylesheet"/>
     <link href="index.css" rel="stylesheet">
     <title>Mask Banao</title>
 </head>
@@ -83,10 +85,38 @@
                 <div class="frame-image beautiful-man"></div>
             </div>
         </div>
-        <div class="frame">
-            <div class="frame-content">
-                <div>CAROUSEL</div>
-                <div>social links</div>
+        <div class="frame" animation-threshold="-150">
+            <div class="frame-content visible">
+                <div class="glide hero">
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<" title="Previous"><i class="fas fa-2x fa-chevron-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">" title="Next"><i class="fas fa-2x fa-chevron-right"></i></button>
+                    </div>
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides" style="margin-bottom: 0; margin-top: 0px;">
+                            <li class="glide__slide">
+                                <div style="width: 500px; height: 300px; background: blue;">
+                                    Really cool stuff
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="">
+                                    Some more stuff
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="">
+                                    Yeahhh bro
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="tweet">
+                                    Give it to me
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -95,83 +125,9 @@
 <script src="js/anime.min.js"></script>
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/glide.js"></script>
 <script src="js/counter.js"></script>
 <script src="js/util.js"></script>
-<script>
-
-    // If user is a non first-timer, show them a Visit main page button
-    if (localStorage.getItem('session-id')) {
-        $('#main-btn').show();
-    }
-
-    // Add some bounce to the arrows
-    anime({
-        targets: '#arrows',
-        bottom: '70px',
-        easing: 'easeInOutSine',
-        direction: 'alternate',
-        loop: true
-    });
-
-    // On click of the arrows, scroll into first frame
-    $('#arrows').click(function () {
-        $(window).scrollTo($('.frame:eq(1)'), 1000);
-    });
-
-    // Handle frame animations on scroll
-    var counterAnimationStarted = false;
-    var counterAnimationCompleted = false;
-    var activeIndex = 0;
-
-    function counterDone() {
-        $('#counter').addClass('c-danger');
-        setTimeout(function () {
-            $('#counter-seconds').fadeIn(1000).css("display", "inline-block");
-            setTimeout(function () {
-                $('.counter-additional').addClass('visible');
-                counterAnimationCompleted = true;
-            }, 2000)
-        }, 2000)
-    }
-
-    function showVisible() {
-        $('.frame-content').each(function (index, frame) {
-            if (isElementInView(frame, true, parseInt($(frame).attr('animation-threshold')) || 200)) {
-                activeIndex = index;
-
-                $(frame).addClass('visible');
-                if (index === 0) {
-                    $('#arrows').addClass('visible');
-                    return;
-                }
-
-                if (index === 5 && !counterAnimationStarted) {
-                    counterAnimationStarted = true;
-                    animateCounter('counter', 0, 40, 1500, counterDone);
-                    return;
-                }
-
-                return;
-            }
-
-            $(frame).removeClass('visible');
-            if (index === 0) {
-                $('#arrows').removeClass('visible');
-                return;
-            }
-        });
-
-        if (activeIndex > 5) {
-            $('.container').addClass('primary');
-            localStorage.setItem('session-id', 'maskbanao')
-        } else {
-            $('.container').removeClass('primary');
-        }
-    }
-
-    $(window).scroll(showVisible);
-    $(document).ready(showVisible);
-
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>

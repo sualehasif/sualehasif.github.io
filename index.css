@@ -10,12 +10,8 @@
     transition: all 1s ease-in-out;
 }
 
-.container.primary {
+.container.light {
     background: #ffffff;
-}
-
-.container.primary #counter {
-    color: #2D2D2D;
 }
 
 /*.container {*/
@@ -115,6 +111,7 @@ a:hover {
     color: #AA4C4C;
     font-size: 88px;
     margin-bottom: 10px;
+    font-family: 'Uni Sans';
 }
 
 #arrows {
