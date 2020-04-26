@@ -190,3 +190,40 @@ a:hover {
 .counter-additional.visible {
     opacity: 1;
 }
+
+.final-frame,
+.final-frame a {
+    color: #356E67;
+}
+
+.final-frame .make-a-mask {
+    font-size: 25px;
+    text-transform: inherit;
+}
+
+.final-frame .hashtag {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.mask-example {
+    width: 400px;
+    height: 300px;
+    background: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials .social-icons {
+    margin: 10px auto 0 auto;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.socials .social-icons i {
+    font-size: 20px;
+}
+

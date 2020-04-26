@@ -17,6 +17,15 @@ $('#arrows').click(function () {
     $(window).scrollTo($('.frame:eq(1)'), 1000);
 });
 
+// create mount
+new Glide('.glide', {
+    autoplay: 8000,
+    hoverpause: true,
+    perView: 3,
+    peek: 100,
+    type: "carousel"
+}).mount();
+
 // Handle frame animations on scroll
 var counterAnimationStarted = false;
 var activeFrameIndex = 0;
@@ -33,9 +42,11 @@ function counterDone() {
     }, 2000)
 }
 
-function showVisible() {
+function showVisibleFrame() {
     $('.frame-content').each(function (index, frame) {
-        if (isElementInView(frame, true, parseInt($(frame).attr('animation-threshold')) || 200)) {
+        var pixelThreshold = parseInt($(frame).attr('animation-threshold')) || 200;
+
+        if (isElementInView(frame, true, pixelThreshold)) {
             activeFrameIndex = index;
 
             $(frame).addClass('visible');
@@ -70,5 +81,5 @@ function showVisible() {
     }
 }
 
-$(window).scroll(showVisible);
-$(document).ready(showVisible);
+$(window).scroll(showVisibleFrame);
+$(document).ready(showVisibleFrame);
