@@ -1,7 +1,7 @@
-axios.get('https://storage.googleapis.com/static-covid/static/data-main-v4.json')
+axios.get('https://storage.googleapis.com/static-covid/static/data-balochistan-v4.json')
     .then(function (res) {
         var pakistanData = res && res.data && res.data.regions && res.data.regions.PK;
-        var estimatedCases = pakistanData && pakistanData.CurrentEstimate;
+        var estimatedCases = pakistanData && pakistanData.CurrentEstimate && pakistanData.CurrentEstimate.Infectious_mean;
         if (estimatedCases) {
             document.getElementById('estimated-infections-num').innerText = estimatedCases.toLocaleString('en-pk');
             if (res.data.created){
