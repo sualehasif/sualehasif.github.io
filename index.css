@@ -162,6 +162,7 @@ a:hover {
 }
 
 #counter {
+    font-family: 'Uni Sans';
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -ms-transition: opacity 1s ease-in-out;
@@ -207,7 +208,7 @@ a:hover {
 }
 
 .mask-example {
-    width: 400px;
+    width: 450px;
     height: 300px;
     background: #dddddd;
     display: flex;
