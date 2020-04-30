@@ -43,7 +43,7 @@ function tweetsGlideResize () {
 document.getElementById("tab-button1").addEventListener("click", function () {openTab("tab-button1","option1")});
 document.getElementById("tab-button2").addEventListener("click", function () {openTab("tab-button2","option2")});
 document.getElementById("tab-button3").addEventListener("click", function () {openTab("tab-button3","option3")});
-
+document.getElementById("tab-button4").addEventListener("click", function () {openTab("tab-button4","option4")});
 
 function openTab(id1, id2) {
     var i, tabContents, tabs;
