@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>https://maskbanao.com/</loc>
+        <lastmod>2020-04-30</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://maskbanao.com/index.html</loc>
+        <lastmod>2020-04-30</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://maskbanao.com/science.html</loc>
+    </url>
+    <url>
+        <loc>https://maskbanao.com/data.html</loc>
+    </url>
+    <url>
+        <loc>https://maskbanao.com/social.html</loc>
+    </url>
+    <url>
+        <loc>https://maskbanao.com/about.html</loc>
+    </url>
+</urlset>
