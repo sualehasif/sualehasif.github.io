@@ -290,7 +290,7 @@
 
 #counts .section-divider {
     height: 50px;
-    border-left: 1px solid #000;
+    border-left: 1px solid #2D2D2D;
     margin: 0 50px;
 }
 
@@ -710,7 +710,7 @@
     #counts .section-divider {
         height: 1px;
         width: 150px;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid #2D2D2D;
         margin: 20px 0;
     }
 

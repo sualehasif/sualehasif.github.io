@@ -171,7 +171,7 @@
 }
 
 .team_box:hover .team_img img{
-	border: 5px solid #000;
+	border: 5px solid #2D2D2D;
 }
 
 
@@ -224,7 +224,7 @@
     right: 0;
     display: none;
     overflow: auto;
-    background-color: #000000;
+    background-color: #2D2D2D;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 9999;
 }
@@ -252,7 +252,7 @@
 
 .close:hover,
 .close:focus {
-    color: #000000;
+    color: #2D2D2D;
     cursor: pointer;
 }
 

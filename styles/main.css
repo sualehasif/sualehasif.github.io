@@ -186,7 +186,7 @@ body {
 .divider {
     width: 60%;
     max-width: 733px;
-    border: 1px solid #000;
+    border: 1px solid #2D2D2D;
     text-align: center;
     margin: 0 auto;
 }
@@ -201,7 +201,7 @@ body {
 }
 
 .black {
-    color: #000;
+    color: #2D2D2D;
 }
 
 .green {
