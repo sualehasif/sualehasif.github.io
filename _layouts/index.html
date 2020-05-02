@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+    {% include head.html %}
+    <link href="styles/glide.core.min.css" rel="stylesheet"/>
+    <link href="styles/glide.theme.min.css" rel="stylesheet"/>
+    <link href="styles/index.css" rel="stylesheet">
+    <title>Mask Banao</title>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://maskbanao.com/#organization",
+                    "name": "Mask Banao",
+                    "url": "https://maskbanao.com/",
+                    "sameAs": [
+                        "https://www.facebook.com/maskbanao",
+                        "https://www.instagram.com/maskbanao/",
+                        "https://www.linkedin.com/company/maskbanao/",
+                        "https://twitter.com/maskbanao"
+                    ],
+                    "logo": {
+                        "@type": "ImageObject",
+                        "@id": "https://www.maskbanao.com/#logo",
+                        "inLanguage": "en-US",
+                        "url": "https://maskbanao.com/images/Web-Preview.jpg",
+                        "caption": "Mask Banao"
+                    },
+                    "@context": "http://schema.org",
+                    "description": "Here’s how you can use ten minutes, a piece of cloth and an old sewing machine to save someone's life.",
+                    "foundingDate": "2020-04-16",
+                    "foundingLocation": "Cambridge, USA",
+                    "founders": [
+                        "Sualeh Asif",
+                        "Adan Ali",
+                        "Turab Abbas",
+                        "Amar Lal"
+                    ]
+                },
+                {
+                    "@context": "http://schema.org",
+                    "@type": "WebSite",
+                    "url": "https://www.maskbanao.com"
+                }
+            ]
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <a href="#">share campaign</a>
+        <a href="#">learn more</a>
+        <a href="home" id="main-btn">visit main page</a>
+    </div>
+    <div class="frames">
+        <div class="frame">
+            <div class="frame-content visible">
+                <div>
+                    <div class="num-infected">12,644</div>
+                    <div>Pakistani people are currently infected</div>
+                </div>
+            </div>
+            <div id="arrows" class="visible">
+                <img src="images/arrows-explore.svg"/>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="frame-content" animation-threshold="-250">
+                <div class="frame-image recovery-center"></div>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="frame-content">
+                <div>
+                    <span class="u-danger uppercase">You</span>
+                    <span>could be next.</span>
+                </div>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="frame-content" animation-threshold="-250">
+                <div class="frame-image man-with-mask"></div>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="frame-content">
+                <div>
+                    Guess how long it takes to stop the spread?
+                </div>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="frame-content">
+                <div class="counter-additional">with just</div>
+                <div id="counter">0</div>
+                <div id="counter-seconds">seconds</div>
+                <div class="counter-additional">you can save a life</div>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="frame-content" animation-threshold="-250">
+                <div class="frame-image beautiful-man"></div>
+            </div>
+        </div>
+
+        <div class="frame final-frame">
+            <div class="frame-content" animation-threshold="-150">
+
+                <h2>Join us in our quest to bring homemade masks to everyone in Pakistan</h2>
+                <div class="glide">
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<" title="Previous"><i class="fas fa-2x fa-chevron-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">" title="Next"><i class="fas fa-2x fa-chevron-right"></i></button>
+                    </div>
+                    <div data-glide-el="track" class="glide__track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="mask-example">
+                                    MASK 1
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="mask-example">
+                                    MASK 2
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="mask-example">
+                                    MASK 3
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <a href="#make-a-mask" class="make-a-mask">make a mask</a>
+
+                <div class="socials">
+                    <h3 class="hashtag">#maskbanao</h3>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/maskbanao" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/maskbanao/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/maskbanao" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/company/maskbanao/" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/anime.min.js"></script>
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+<script src="js/glide.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/util.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

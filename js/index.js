@@ -80,7 +80,8 @@ function showVisibleFrame() {
         $('.container').addClass('light');
 
         // note this user as non first-timer
-        localStorage.setItem('session-id', 'maskbanao')
+        localStorage.setItem('session-id', 'maskbanao');
+        console.log('set local storage')
     } else {
         $('.container').removeClass('light');
     }

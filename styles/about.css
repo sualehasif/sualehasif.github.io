@@ -1,0 +1,273 @@
+#main a {
+    color: #fff;
+}
+
+#footer {
+    height: 300px;
+    color: #ffffff;
+}
+
+#footer h1 {
+    margin-top: 100px;
+    color: #ffffff;
+}
+
+#footer .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer i {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+#footer a+a {
+    margin-left: 40px;
+}
+
+#our-mission {
+    text-align: justify;
+}
+
+@media only screen and (min-width: 2400px) {
+    #our-mission {
+        padding: 50px 600px;
+    }
+}
+
+@media only screen and (min-width: 2200px) and (max-width: 2400px) {
+    #our-mission {
+        padding: 50px 450px;
+    }
+}
+
+@media only screen and (min-width: 1900px) and (max-width: 2200px) {
+    #our-mission {
+        padding: 50px 360px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #our-mission {
+        padding: 50px 70px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    #our-mission {
+        padding: 50px 50px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #our-mission {
+        padding: 50px 100px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    #our-mission {
+        padding: 50px 50px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #our-mission {
+        padding: 50px 20px;
+        /* padding-top: 150px; */
+        grid-gap: 10px;
+    }
+}
+
+.team_header{
+	text-align: center;
+}
+.team{
+	width: 80%;
+    /* margin-left: 10%; */
+    margin: 0 auto 30px auto;
+	padding: 0 1em;
+	overflow: hidden;
+	display: flex;
+	/* align-items: center; */
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.team_box>* {
+    /* flex: 0 0 25%; */
+}
+
+.team_box{
+	/* width: 22%; */
+	/* margin-left: 5px; */
+	/* margin-right:5px; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    min-height: 300px;
+    padding: 10px 0;
+    transition: all 0.5s;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.team_box:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+}
+
+.team_box:active {
+    box-shadow: 0 0.1rem .1rem rgba(0,0,0,0.15) !important;
+    transition: unset;
+    -webkit-tap-highlight-color: transparent;
+    outline: none !important;
+}
+
+.team_title {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    /* float: left; */
+    width: 100%;
+    color: #121212;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.team_position,
+.team_location,
+.team_credential {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    /* float: left; */
+    /* width: 100%; */
+    color: #121212;
+    text-decoration: none;
+    margin-top: 5px;
+    padding: 0 15px;
+}
+
+.team_img{
+	width: auto;
+}
+.team_img img {
+    border: 5px solid #0DAB76;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+}
+
+.team_box:hover .team_img img{
+	border: 5px solid #000;
+}
+
+
+@media only screen and (max-width:500px){
+    .team_box {
+        width: 100%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+    }
+}
+
+@media only screen and (min-width:500px){
+    .team_box {
+        width: 50%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .team_box {
+        width: 33%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .team_box {
+        width: 25%;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+    }
+}
+
+/*MODAL */
+/**************************\
+  Basic Modal Styles
+\**************************/
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    overflow: auto;
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+.modal-window {
+	transition: transform .3s ease-out;
+    position: relative;
+    background-color: #FFFFFF;
+    width: 50%;
+    margin: 10% auto;
+    padding: 20px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: rgba(0,0,0,0.3);
+    height: 30px;
+    width: 30px;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.close:hover,
+.close:focus {
+    color: #000000;
+    cursor: pointer;
+}
+
+.open {
+    display: block;
+    transition: transform .3s ease-out;
+}
+
+.modal-content{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.modal-text{
+	margin-left: 10px;
+}
+/*Modal end*/

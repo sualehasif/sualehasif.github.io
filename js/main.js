@@ -2,13 +2,13 @@ new Glide('.glide', {
     autoplay: 8000,
     hoverpause: true,
     type: "carousel"
-}).mount()
+}).mount();
 
 new Glide('.news-carousel', {
     hoverpause: true,
     type: "carousel",
     autoplay: 8000
-}).mount()
+}).mount();
 
 document.getElementById("tab-button1").addEventListener("click", function () {openTab("tab-button1","option1")});
 document.getElementById("tab-button2").addEventListener("click", function () {openTab("tab-button2","option2")});

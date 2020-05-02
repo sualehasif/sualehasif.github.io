@@ -8,7 +8,7 @@ if (width <= 768) {
 }
 
 
-$( window ).resize(function() {
+$(window).resize(function() {
     height = $(window).height();
     halfHeight = height/2;
     width = $(window).width();
@@ -16,7 +16,7 @@ $( window ).resize(function() {
         height = ($( window ).height()/2);
         halfHeight = height/2;
     }
-  });
+});
 
 $(window).scroll(function (event) {
     var scroll = $(window).scrollTop();

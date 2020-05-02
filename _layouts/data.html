@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        {% include head.html %}
+        <link rel="stylesheet" href="styles/data.css" type="text/css">
+        <title>Mask Banao - The Science</title>
+    </head>
+    <body>
+    {% include navigation.html %}
+
+    <div class="container">
+        <h2 class="dark-green center-text graph-title">Pakistan COVID-19 cases</h2>
+        <div class="epidemic-graph">
+            <iframe src="https://datastudio.google.com/embed/reporting/1PLVi5amcc_R5Gh928gTE8-8r8-fLXJQF/page/R24IB"
+                    allowfullscreen frameborder="0"></iframe>
+            <!-- <iframe src="http://epidemicforecasting.org/?selection=PK" scrolling="no" frameborder="0"></iframe> -->
+        </div>
+        <div class="graph-source">
+            Source:
+            <!-- <a class="green" href="http://epidemicforecasting.org/">epidemicforecasting.org</a> -->
+            <a class="green" target="_blank" href="http://covid.gov.pk/">covid.gov.pk</a>
+        </div>
+    </div>
+
+    <div class="backdrop"></div>
+
+    {% include share.html %}
+    {% include scripts.html %}
+
+    <button onclick="scrollToTopFn()" id="scrollToTop" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+    <script src="js/pagescroll.js"></script>
+    <script src="js/navbar.js"></script>
+    </body>
+</html>
