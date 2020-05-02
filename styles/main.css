@@ -38,6 +38,16 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+body *::selection {
+    background-color: #147066;
+    color: #ffffff;
+}
+
+body *::-moz-selection {
+    background-color: #147066;
+    color: #ffffff;
+}
+
 .c-primary {
     color: #147066;
 }
