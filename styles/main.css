@@ -447,6 +447,10 @@ h2 {
     background-color: #aeaeae;
 }
 
+#scrollToTop:focus {
+    outline: none;
+}
+
 .mb-0, .my-0 {
     margin-bottom: 0 !important;
 }
