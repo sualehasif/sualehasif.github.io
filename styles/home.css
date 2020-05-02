@@ -454,13 +454,13 @@
 }
 
 #news-carousel .glide__bullet--active {
-    background-color: #0DAB76;
+    background-color: #147066;
 }
 
 #news-carousel .glide__bullet:hover,
 #news-carousel .glide__bullet:focus {
-    border: 2px solid #0DAB76;
-    background-color: #0DAB76;
+    border: 2px solid #147066;
+    background-color: #147066;
 }
 
 #news-carousel .glide__arrows .glide__arrow,

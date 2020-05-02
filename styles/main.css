@@ -102,7 +102,7 @@ body {
 
 .navbar-logo {
     font-family: 'Uni Sans';
-    color: #0DAB76;
+    color: #147066;
     font-weight: bold;
     text-decoration: none;
     font-size: 18px;
@@ -149,7 +149,7 @@ body {
 }
 
 #navigation .nav-underline {
-    border-bottom: 3px solid #0DAB76;
+    border-bottom: 3px solid #147066;
 }
 
 #tutorials iframe {
@@ -205,7 +205,7 @@ body {
 }
 
 .green {
-    color: #0DAB76;
+    color: #147066;
 }
 
 .dark-green {
@@ -217,7 +217,7 @@ body {
 }
 
 .danger {
-    color: #970303;
+    color: #AA4C4C;
 }
 
 .small {
@@ -225,7 +225,7 @@ body {
 }
 
 .button {
-    background-color: #0DAB76;
+    background-color: #147066;
     border-radius: 8px;
     padding: 12px 24px;
     font-family: Open Sans;
@@ -246,7 +246,7 @@ body {
 
 .button-secondary {
     background-color: #FFF;
-    color: #0DAB76;
+    color: #147066;
     transition: color .5s ease-in-out;
 }
 
@@ -262,7 +262,7 @@ body {
 }
 
 .button-secondary-outline:hover {
-    color: #0DAB76;
+    color: #147066;
     background-color: #FFF;
 }
 
@@ -301,7 +301,7 @@ body {
 
 
 .background-secondary {
-    background-color: #0DAB76;
+    background-color: #147066;
 }
 
 .background-tertiary {
@@ -341,7 +341,7 @@ h2 {
 }
 
 #footer {
-    background-color: #0DAB76;
+    background-color: #147066;
     padding: 10px 24px;
 }
 
@@ -538,7 +538,7 @@ h2 {
 
     #navbar-hamburger:before {
         content: "\f0c9";
-        color: #0DAB76;
+        color: #147066;
         font-weight: 600;
         font-size: 36px;
         font-family: "Font Awesome 5 Free";
