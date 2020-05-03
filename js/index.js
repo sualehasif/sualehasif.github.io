@@ -26,8 +26,8 @@ function returnPeek(width) {
         view = 3;
         peek = 0;
     } else if (width >= 1200) {
-        peek = 2;
-        view = 100;
+        peek = 100;
+        view = 2;
     } else if (width > 992) {
         peek = 50;
         view = 2;
@@ -46,7 +46,7 @@ var width = window.innerWidth;
 
 
 // create mount
-new Glide('.glide', {
+var glide = new Glide('.glide', {
     autoplay: 8000,
     hoverpause: true,
     perView: view,
@@ -55,7 +55,7 @@ new Glide('.glide', {
 }).mount();
 
 window.onresize = function(event) {
-    var width = window.innerWidth;
+    var width = window.innerWidth;  
     const sliderValues = returnPeek(width);
     var peek = sliderValues[0];
     var view = sliderValues[1];
