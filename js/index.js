@@ -106,8 +106,3 @@ function scrollToNextSection() {
 
 $(window).scroll(scrollToNextSection);
 // $(document).ready(showVisibleFrame);
-
-// if (activeFrameIndex === 5 && !counterAnimationStarted) {
-//     counterAnimationStarted = true;
-//     animateCounter('counter', 0, 40, 1500, counterDone);
-// }
