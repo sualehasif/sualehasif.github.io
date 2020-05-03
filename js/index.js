@@ -63,9 +63,7 @@ function showVisibleFrame() {
             if (index === 5 && !counterAnimationStarted) {
                 counterAnimationStarted = true;
                 animateCounter('counter', 0, 40, 1500, counterDone);
-                return;
             }
-
             return;
         }
 
@@ -81,7 +79,6 @@ function showVisibleFrame() {
 
         // note this user as non first-timer
         localStorage.setItem('session-id', 'maskbanao');
-        console.log('set local storage')
     } else {
         $('.container').removeClass('light');
     }
@@ -108,15 +105,10 @@ function scrollToNextSection() {
             scrollY = st <= 0 ? 0 : st;
         }, 100);
 
-        $(`.frame-content:eq(${activeFrameIndex-1})`).removeClass('visible');
-
-        $(`.frame-content:eq(${activeFrameIndex})`).addClass('visible');
-        if (activeFrameIndex === 0) {
-            $('#arrows').addClass('visible');
-            return;
-        } else {
-            $('#arrows').removeClass('visible');
+        if(activeFrameIndex !== 1) {
+            $(`.frame-content:eq(${activeFrameIndex-1})`).removeClass('visible');
         }
+        $(`.frame-content:eq(${activeFrameIndex})`).addClass('visible');
 
         if (activeFrameIndex === 5 && !counterAnimationStarted) {
             counterAnimationStarted = true;
