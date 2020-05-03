@@ -1,3 +1,7 @@
+$("#index-navbar-hamburger").click(function() {
+    $("#navbar-list").toggleClass("active");
+})
+
 // If user is a non first-timer, show them a Visit main page button
 if (localStorage.getItem('session-id')) {
     $('#main-btn').show();

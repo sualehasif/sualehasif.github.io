@@ -308,6 +308,61 @@ a:hover {
 }
 
 @media only screen and (max-width: 992px) {
+    .navbar-hamburger {
+        display: block;
+        height: 40px;
+        width: 40px;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 44px;    
+    }
+
+    .navbar-hamburger::before {
+        content: "\f0c9";
+        color: #cfc7c7;
+        font-weight: 600;
+        font-size: 36px;
+        font-family: "Font Awesome 5 Free";
+    }
+
+    .header-contents {
+        position: relative;
+        width: 100%;
+        text-align: right;
+    }
+
+    .header-contents ul {
+        display: block;
+        position: absolute;
+        width: 100%;
+        background: #232323;
+        right: -10px;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height .5s ease-in-out;
+
+    }
+
+    .header-contents ul.active {
+        max-height: 500px;
+        transition: max-height .5s ease-in-out;
+    }
+
+    #new-header.white .navbar-hamburger::before {
+        color: #147066;
+    }
+
+    #new-header.white .header-contents ul {
+        background: white;
+    }
+
+    #new-header ul li {
+        display: block;
+        padding: 20px;
+    }
+
     .num-infected {
         font-size: 44px;
     }
