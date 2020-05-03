@@ -338,6 +338,15 @@ h2 {
     color: #2E2E2E;
 }
 
+h2.opensans {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 34px;
+    color: #2E2E2E
+}
+
 .section {
     padding: 50px 150px;
 }
