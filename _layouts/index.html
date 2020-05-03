@@ -97,8 +97,10 @@
                 <div class="frame" id="frame6">
                     <div class="frame-content">
                         <div class="counter-additional">with just</div>
-                        <div id="counter">0</div>
-                        <div id="counter-seconds">seconds</div>
+                        <div id="counter-container">
+                            <div id="counter">0</div>
+                            <div id="counter-seconds">seconds</div>
+                        </div>
                         <div class="counter-additional">you can save a life</div>
                     </div>
                 </div>
@@ -178,6 +180,7 @@
         <script src="js/tweenmax.min.js"></script>
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script> -->
         <script src="/js/anime.min.js"></script>
+        <script src="js/scroll-magic-anime.js"></script>
         <script src="/js/jquery.scrollTo.min.js"></script>
         <script src="/js/glide.js"></script>
         <script src="/js/counter.js"></script>
@@ -215,6 +218,7 @@
 
             var scene5 = new ScrollMagic.Scene({
                 triggerElement: "#frame5",
+                reverse: true
             })
             .setTween("#frame5 .frame-content", 1, {opacity: 1}) 
 
@@ -222,9 +226,14 @@
             .reverse(true)
             .on("enter", function () {   
                 $("#frame6 .frame-content").css("opacity", 100);
+                animateCounter('counter', 0, 40, 1500, counterDone);
+
             })  
             .on("leave", function () {
                 $("#frame6 .frame-content").css("opacity", "");
+                $('#counter').val(0);
+                $('.counter-additional').removeClass('visible');
+                $('.counter-seconds').removeClass('full-width');
             })
 
             var scene7 = new ScrollMagic.Scene({triggerElement: "#frame7"})

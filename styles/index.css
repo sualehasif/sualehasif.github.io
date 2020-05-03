@@ -163,27 +163,45 @@ a:hover {
     background-image: url('/images/beautiful-man.png');
 }
 
+#counter-container {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    align-items: center;
+}
+
 #counter, #counter-seconds {
     display: inline-block;
 }
 
 #counter {
+    display: inline;
     font-family: 'Uni Sans';
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -ms-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+    -webkit-transition: font-size .5s ease-in-out;
+    -moz-transition: font-size .5s ease-in-out;
+    -ms-transition: font-size .5s ease-in-out;
+    -o-transition: font-size .5s ease-in-out;
+    transition: font-size .5s ease-in-out;
 }
 
 #counter.c-danger {
     font-size: 84px;
+    transition: font-size .5s ease-in-out;
 }
 
 #counter-seconds {
-    display: none;
+    overflow: hidden;
     font-size: 64px;
+    width: 0;
+    margin-left: 20px;
+    transition: width 1s ease-in-out;
 }
+
+#counter-seconds.full-width {
+    width: 100%;
+    transition: width 1s ease-in-out;
+}
+
 
 .counter-additional {
     opacity: 0;

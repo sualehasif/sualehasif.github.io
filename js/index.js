@@ -37,7 +37,7 @@ var numFrames = $('.frame').length;
 function counterDone() {
     $('#counter').addClass('c-danger');
     setTimeout(function () {
-        $('#counter-seconds').fadeIn(1000).css("display", "inline-block");
+        $('#counter-seconds').addClass('full-width');
         setTimeout(function () {
             counterAnimationCompleted = true;
 
@@ -82,7 +82,7 @@ function showVisibleFrame() {
 }
 
 function scrollToNextSection() {
-    if (scrollActive || (counterAnimationStarted && !counterAnimationCompleted)) {
+    if (scrollActive) {
         return false;
     }
 
@@ -101,13 +101,13 @@ function scrollToNextSection() {
             var st = window.pageYOffset || document.documentElement.scrollTop;
             scrollY = st <= 0 ? 0 : st;
         }, 100);
-
-        if (activeFrameIndex === 5 && !counterAnimationStarted) {
-            counterAnimationStarted = true;
-            animateCounter('counter', 0, 40, 1500, counterDone);
-        }
     });
 }
 
 $(window).scroll(scrollToNextSection);
 // $(document).ready(showVisibleFrame);
+
+// if (activeFrameIndex === 5 && !counterAnimationStarted) {
+//     counterAnimationStarted = true;
+//     animateCounter('counter', 0, 40, 1500, counterDone);
+// }
