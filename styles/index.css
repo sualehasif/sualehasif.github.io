@@ -61,6 +61,7 @@ a:hover {
 }
 
 .frame {
+    overflow: hidden;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -206,3 +207,20 @@ a:hover {
     font-size: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+    .num-infected {
+        font-size: 44px;
+    }
+
+    .frame .frame-content {
+        font-size: 36px;
+    }   
+
+    #counter.c-danger {
+        font-size: 36px;
+    }
+
+    #counter-seconds {
+        font-size: 36px;
+    }
+}
