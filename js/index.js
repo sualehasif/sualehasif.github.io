@@ -49,16 +49,17 @@ function counterDone() {
 
 function showVisibleFrame() {
     $('.frame-content').each(function (index, frame) {
+
+        // the first frame should always be visible
+        if (index === 0) {
+            return;
+        }
+
         var pixelThreshold = parseInt($(frame).attr('animation-threshold')) || 200;
 
         if (isElementInView(frame, true, pixelThreshold)) {
             activeFrameIndex = index;
-
             $(frame).addClass('visible');
-            if (index === 0) {
-                $('#arrows').addClass('visible');
-                return;
-            }
 
             if (index === 5 && !counterAnimationStarted) {
                 counterAnimationStarted = true;
@@ -68,10 +69,6 @@ function showVisibleFrame() {
         }
 
         $(frame).removeClass('visible');
-        if (index === 0) {
-            $('#arrows').removeClass('visible');
-            return;
-        }
     });
 
     if (activeFrameIndex > 5) {
