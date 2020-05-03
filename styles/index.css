@@ -36,6 +36,7 @@ a:hover {
 #animate3 {
     position: relative;
     width: fit-content;
+    margin-right: 15px;
 }
 
 #animate3::before {
@@ -252,7 +253,15 @@ a:hover {
     font-size: 20px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
+    .mask-example {
+        width: 400px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 992px) {
     .num-infected {
         font-size: 44px;
     }
@@ -267,5 +276,26 @@ a:hover {
 
     #counter-seconds {
         font-size: 36px;
+    }
+
+    .inline-flex {
+        display: block;
+    }
+
+    #animate3 {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .final-frame {
+        background-color: #FFF;
+    }
+
+    h2.opensans {
+        font-size: 25px;
+    }
+
+    .mask-example {
+        margin: 0 auto;
     }
 }

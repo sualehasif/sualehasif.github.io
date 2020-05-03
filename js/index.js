@@ -17,14 +17,56 @@ $('#arrows').click(function () {
     $(window).scrollTo($('.frame:eq(1)'), 1000);
 });
 
+
+function returnPeek(width) {
+    var peek = 100;
+    var view = 1;
+
+    if (width > 1440) {
+        view = 3;
+        peek = 0;
+    } else if (width >= 1200) {
+        peek = 2;
+        view = 100;
+    } else if (width > 992) {
+        peek = 50;
+        view = 2;
+    } else {
+        peek = 0;
+        view = 1;
+    }
+
+    return [peek, view];
+}
+
+var width = window.innerWidth;
+    const sliderValues = returnPeek(width);
+    var peek = sliderValues[0];
+    var view = sliderValues[1];
+
+
 // create mount
 new Glide('.glide', {
     autoplay: 8000,
     hoverpause: true,
-    perView: 3,
-    peek: 100,
+    perView: view,
+    peek: peek,
     type: "carousel"
 }).mount();
+
+window.onresize = function(event) {
+    var width = window.innerWidth;
+    const sliderValues = returnPeek(width);
+    var peek = sliderValues[0];
+    var view = sliderValues[1];
+
+    glide.update({
+        perView: view,
+        peek: peek
+    })
+};
+
+
 
 // Handle frame animations on scroll
 var counterAnimationStarted = false;
@@ -106,3 +148,74 @@ function scrollToNextSection() {
 
 $(window).scroll(scrollToNextSection);
 // $(document).ready(showVisibleFrame);
+
+var controller = new ScrollMagic.Controller();
+            var scene2 = new ScrollMagic.Scene({
+                triggerElement: "#frame2",
+                triggerHook: .3, 
+                duration: "100%",
+            })
+            .setClassToggle("#frame2 .frame-content", "visible")
+            // .setTween("#frame2 .frame-content", 1, {opacity: 1}) 
+
+            var scene3 = new ScrollMagic.Scene({triggerElement: "#frame3"})
+            .reverse(true)
+            // .setTween("#frame3 .frame-content", 1, {opacity: 1})
+            // .setClassToggle("#animate3", "add-border") 
+
+            var timeline3 = new TimelineMax();
+            var tween3_1 = TweenMax.to("#frame3 .frame-content", 1, {opacity: 1});
+            var tween3_2 = TweenMax.to(".add-border", 1, {width: "100%"});
+            timeline3.add(tween3_1).add(tween3_2);
+
+            scene3.setTween(timeline3);
+
+            var scene4 = new ScrollMagic.Scene({
+                triggerElement: "#frame4",
+                triggerHook: .3, 
+                duration: "100%",
+            })
+            .setClassToggle("#frame4 .frame-content", "visible")
+
+            var scene5 = new ScrollMagic.Scene({
+                triggerElement: "#frame5",
+                reverse: true
+            })
+            .setTween("#frame5 .frame-content", 1, {opacity: 1}) 
+
+            var scene6 = new ScrollMagic.Scene({triggerElement: "#frame6"})
+            .reverse(true)
+            .on("enter", function () {   
+                $("#frame6 .frame-content").css("opacity", 100);
+                animateCounter('counter', 0, 40, 1500, counterDone);
+
+            })  
+            .on("leave", function () {
+                $("#frame6 .frame-content").css("opacity", "");
+                $('#counter').val(0);
+                $('.counter-additional').removeClass('visible');
+                $('#counter-seconds').removeClass('full-width');
+            })
+
+            var scene7 = new ScrollMagic.Scene({triggerElement: "#frame7"})
+            .reverse(true)
+            .on("enter", function () {   
+                $("#frame7 .frame-content").css("opacity", 100);
+            })  
+            .on("leave", function () {
+                $("#frame7 .frame-content").css("opacity", "");
+            })
+
+            var scene8 = new ScrollMagic.Scene({triggerElement: "#frame8"}  )
+            .reverse(true)
+            .on("enter", function () {   
+                $("#frame8 .frame-content").css("opacity", 100);
+            })  
+            .on("leave", function () {
+                $("#frame8 .frame-content").css("opacity", "");
+            })
+                            
+
+
+                    
+            controller.addScene([scene2, scene3, scene4, scene5, scene6, scene7, scene8]);
