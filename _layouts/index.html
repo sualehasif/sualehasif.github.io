@@ -56,7 +56,7 @@
                 <a href="home" id="main-btn">visit main page</a>
             </div>
             <div class="frames">
-                <div class="frame">
+                <div class="frame" id="frame1">
                     <div class="frame-content visible">
                         <div>
                             <div class="num-infected">12,644</div>
@@ -67,32 +67,34 @@
                         <img src="/images/arrows-explore.svg"/>
                     </div>
                 </div>
-                <div class="frame">
-                    <div class="frame-content" animation-threshold="-250">
+                <div class="frame" id="frame2">
+                    <div class="frame-content">
                         <div class="frame-image recovery-center"></div>
                     </div>
                 </div>
-                <div class="frame">
+                <div class="frame" id="frame3">
                     <div class="frame-content">
-                        <div>
-                            <span class="u-danger uppercase">You</span>
+                        <div class="inline-flex">
+                            <div class="uppercase" id="animate3">You &nbsp;
+                                <div class="add-border"></div>
+                            </div>
                             <span>could be next.</span>
                         </div>
                     </div>
                 </div>
-                <div class="frame">
-                    <div class="frame-content" animation-threshold="-250">
+                <div class="frame" id="frame4">
+                    <div class="frame-content">
                         <div class="frame-image man-with-mask"></div>
                     </div>
                 </div>
-                <div class="frame">
+                <div class="frame" id="frame5">
                     <div class="frame-content">
                         <div>
                             Guess how long it takes to stop the spread?
                         </div>
                     </div>
                 </div>
-                <div class="frame">
+                <div class="frame" id="frame6">
                     <div class="frame-content">
                         <div class="counter-additional">with just</div>
                         <div id="counter">0</div>
@@ -100,13 +102,13 @@
                         <div class="counter-additional">you can save a life</div>
                     </div>
                 </div>
-                <div class="frame">
+                <div class="frame" id="frame7">
                     <div class="frame-content" animation-threshold="-250">
                         <div class="frame-image beautiful-man"></div>
                     </div>
                 </div>
 
-                <div class="frame final-frame">
+                <div class="frame final-frame" id="frame8">
                     <div class="frame-content" animation-threshold="-150">
 
                         <h2 class="opensans">Join us in our quest to bring homemade masks to <span class="c-primary">everyone</span> in Pakistan</h2>
@@ -170,12 +172,85 @@
         {% include share.html %}
 
         <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="  crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+        <script src="js/scroll-magic-gsap.js"></script>
+        <script src="js/tweenmax.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script> -->
         <script src="/js/anime.min.js"></script>
         <script src="/js/jquery.scrollTo.min.js"></script>
         <script src="/js/glide.js"></script>
         <script src="/js/counter.js"></script>
-        <script src="/js/util.js"></script>
-        <script src="/js/share.js"></script>
+        <!-- <script src="/js/util.js"></script> -->
+        <!-- <script src="/js/share.js"></script> -->
         <script src="/js/index.js"></script>
+        <script>
+           var controller = new ScrollMagic.Controller();
+            var scene2 = new ScrollMagic.Scene({
+                triggerElement: "#frame2",
+                triggerHook: .3, 
+                duration: "100%",
+            })
+            .setClassToggle("#frame2 .frame-content", "visible")
+            // .setTween("#frame2 .frame-content", 1, {opacity: 1}) 
+
+            var scene3 = new ScrollMagic.Scene({triggerElement: "#frame3"})
+            .reverse(true)
+            // .setTween("#frame3 .frame-content", 1, {opacity: 1})
+            // .setClassToggle("#animate3", "add-border") 
+
+            var timeline3 = new TimelineMax();
+            var tween3_1 = TweenMax.to("#frame3 .frame-content", 1, {opacity: 1});
+            var tween3_2 = TweenMax.to(".add-border", 1, {width: 100});
+            timeline3.add(tween3_1).add(tween3_2);
+
+            scene3.setTween(timeline3);
+
+            var scene4 = new ScrollMagic.Scene({
+                triggerElement: "#frame4",
+                triggerHook: .3, 
+                duration: "100%",
+            })
+            .setClassToggle("#frame4 .frame-content", "visible")
+
+            var scene5 = new ScrollMagic.Scene({
+                triggerElement: "#frame5",
+            })
+            .setTween("#frame5 .frame-content", 1, {opacity: 1}) 
+
+            var scene6 = new ScrollMagic.Scene({triggerElement: "#frame6"})
+            .reverse(true)
+            .on("enter", function () {   
+                $("#frame6 .frame-content").css("opacity", 100);
+            })  
+            .on("leave", function () {
+                $("#frame6 .frame-content").css("opacity", "");
+            })
+
+            var scene7 = new ScrollMagic.Scene({triggerElement: "#frame7"})
+            .reverse(true)
+            .on("enter", function () {   
+                $("#frame7 .frame-content").css("opacity", 100);
+            })  
+            .on("leave", function () {
+                $("#frame7 .frame-content").css("opacity", "");
+            })
+
+            var scene8 = new ScrollMagic.Scene({triggerElement: "#frame8"}  )
+            .reverse(true)
+            .on("enter", function () {   
+                $("#frame8 .frame-content").css("opacity", 100);
+            })  
+            .on("leave", function () {
+                $("#frame8 .frame-content").css("opacity", "");
+            })
+                            
+
+
+                    
+            controller.addScene([scene2, scene3, scene4, scene5, scene6, scene7, scene8]);
+
+            
+        </script>
     </body>
 </html>

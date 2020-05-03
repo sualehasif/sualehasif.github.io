@@ -102,11 +102,6 @@ function scrollToNextSection() {
             scrollY = st <= 0 ? 0 : st;
         }, 100);
 
-        if(activeFrameIndex !== 1) {
-            $(`.frame-content:eq(${activeFrameIndex-1})`).removeClass('visible');
-        }
-        $(`.frame-content:eq(${activeFrameIndex})`).addClass('visible');
-
         if (activeFrameIndex === 5 && !counterAnimationStarted) {
             counterAnimationStarted = true;
             animateCounter('counter', 0, 40, 1500, counterDone);
@@ -115,4 +110,4 @@ function scrollToNextSection() {
 }
 
 $(window).scroll(scrollToNextSection);
-$(document).ready(showVisibleFrame);
+// $(document).ready(showVisibleFrame);

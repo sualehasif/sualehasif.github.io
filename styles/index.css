@@ -29,6 +29,33 @@ a:hover {
     border-bottom: 4px solid #AA4C4C;
 }
 
+.inline-flex {
+    display: inline-flex;
+}
+
+#animate3 {
+    position: relative;
+    width: fit-content;
+}
+
+#animate3::before {
+    content: "";
+    width: 0;
+    height: 4px;
+    background: #AA4C4C;
+    position: absolute;
+    bottom: 0;
+}
+
+.add-border {
+    width: 0;
+    height: 4px;
+    background: #AA4C4C;
+    position: absolute;
+    bottom: 0;  
+}
+
+
 .header {
     position: absolute;
     top: 20px;
