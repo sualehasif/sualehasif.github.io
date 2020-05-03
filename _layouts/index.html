@@ -51,7 +51,7 @@
     <body>
         <div class="container">
             <div class="header">
-                <a href="#">share campaign</a>
+                <a href="#" class="share-button">share campaign</a>
                 <a href="#">learn more</a>
                 <a href="home" id="main-btn">visit main page</a>
             </div>
@@ -165,12 +165,17 @@
             </div>
         </div>
 
+        <div class="backdrop"></div>
+
+        {% include share.html %}
+
         <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="  crossorigin="anonymous"></script>
-        <script src="js/anime.min.js"></script>
-        <script src="js/jquery.scrollTo.min.js"></script>
-        <script src="js/glide.js"></script>
-        <script src="js/counter.js"></script>
-        <script src="js/util.js"></script>
-        <script src="js/index.js"></script>
+        <script src="/js/anime.min.js"></script>
+        <script src="/js/jquery.scrollTo.min.js"></script>
+        <script src="/js/glide.js"></script>
+        <script src="/js/counter.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/share.js"></script>
+        <script src="/js/index.js"></script>
     </body>
 </html>
