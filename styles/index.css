@@ -57,18 +57,49 @@ a:hover {
 }
 
 
-.header {
-    position: absolute;
-    top: 20px;
-    right: 10%;
+#new-header {
+    position: fixed;
     font-size: 10px;
+    width: 100%;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 1s linear;
+    cursor: pointer;
+    background: #232323;
 }
 
-.header a + a {
+#new-header:hover {
+    opacity: 100;
+    transition: opacity 1s linear;
+}
+
+#new-header.visible {
+    opacity: 100;
+    transition: opacity 1s linear;
+}
+
+#new-header .header-contents {
+    margin-right: 30px;
+}
+
+#new-header ul {
+    list-style-type: none;
+}
+
+#new-header ul li {
+    display: inline;
     margin-left: 20px;
 }
 
-.header #main-btn {
+#new-header a + a {
+    margin-left: 20px;
+}
+
+#new-header #main-btn {
     border-radius: 5px;
     border: 1px solid #BBB3B3;
     padding: 10px;
@@ -76,7 +107,7 @@ a:hover {
     display: none;
 }
 
-.header #main-btn:hover {
+#new-header #main-btn:hover {
     border: 1px solid #cfc7c7;
     color: #cfc7c7;
     background: #373737;
@@ -258,7 +289,7 @@ a:hover {
         width: 400px;
     }
 
-    
+
 }
 
 @media only screen and (max-width: 992px) {

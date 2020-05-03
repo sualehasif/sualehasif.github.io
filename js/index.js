@@ -150,72 +150,85 @@ $(window).scroll(scrollToNextSection);
 // $(document).ready(showVisibleFrame);
 
 var controller = new ScrollMagic.Controller();
-            var scene2 = new ScrollMagic.Scene({
-                triggerElement: "#frame2",
-                triggerHook: .3, 
-                duration: "100%",
-            })
-            .setClassToggle("#frame2 .frame-content", "visible")
-            // .setTween("#frame2 .frame-content", 1, {opacity: 1}) 
+var scene1 = new ScrollMagic.Scene({
+    triggerElement: "#frame1",
+    reverse: true,
+    duration: "100%",
+    triggerHook: .3
+})
+.on("enter", function() {
+    $("#new-header").addClass("visible");
+})
+.on("leave", function() {
+    $("#new-header").removeClass("visible");
+})
 
-            var scene3 = new ScrollMagic.Scene({triggerElement: "#frame3"})
-            .reverse(true)
-            // .setTween("#frame3 .frame-content", 1, {opacity: 1})
-            // .setClassToggle("#animate3", "add-border") 
+var scene2 = new ScrollMagic.Scene({
+    triggerElement: "#frame2",
+    triggerHook: .3, 
+    duration: "100%",
+})
+.setClassToggle("#frame2 .frame-content", "visible")
+// .setTween("#frame2 .frame-content", 1, {opacity: 1}) 
 
-            var timeline3 = new TimelineMax();
-            var tween3_1 = TweenMax.to("#frame3 .frame-content", 1, {opacity: 1});
-            var tween3_2 = TweenMax.to(".add-border", 1, {width: "100%"});
-            timeline3.add(tween3_1).add(tween3_2);
+var scene3 = new ScrollMagic.Scene({triggerElement: "#frame3"})
+.reverse(true)
+// .setTween("#frame3 .frame-content", 1, {opacity: 1})
+// .setClassToggle("#animate3", "add-border") 
 
-            scene3.setTween(timeline3);
+var timeline3 = new TimelineMax();
+var tween3_1 = TweenMax.to("#frame3 .frame-content", 1, {opacity: 1});
+var tween3_2 = TweenMax.to(".add-border", 1, {width: "100%"});
+timeline3.add(tween3_1).add(tween3_2);
 
-            var scene4 = new ScrollMagic.Scene({
-                triggerElement: "#frame4",
-                triggerHook: .3, 
-                duration: "100%",
-            })
-            .setClassToggle("#frame4 .frame-content", "visible")
+scene3.setTween(timeline3);
 
-            var scene5 = new ScrollMagic.Scene({
-                triggerElement: "#frame5",
-                reverse: true
-            })
-            .setTween("#frame5 .frame-content", 1, {opacity: 1}) 
+var scene4 = new ScrollMagic.Scene({
+    triggerElement: "#frame4",
+    triggerHook: .3, 
+    duration: "100%",
+})
+.setClassToggle("#frame4 .frame-content", "visible")
 
-            var scene6 = new ScrollMagic.Scene({triggerElement: "#frame6"})
-            .reverse(true)
-            .on("enter", function () {   
-                $("#frame6 .frame-content").css("opacity", 100);
-                animateCounter('counter', 0, 40, 1500, counterDone);
+var scene5 = new ScrollMagic.Scene({
+    triggerElement: "#frame5",
+    reverse: true
+})
+.setTween("#frame5 .frame-content", 1, {opacity: 1}) 
 
-            })  
-            .on("leave", function () {
-                $("#frame6 .frame-content").css("opacity", "");
-                $('#counter').val(0);
-                $('.counter-additional').removeClass('visible');
-                $('#counter-seconds').removeClass('full-width');
-            })
+var scene6 = new ScrollMagic.Scene({triggerElement: "#frame6"})
+.reverse(true)
+.on("enter", function () {   
+    $("#frame6 .frame-content").css("opacity", 100);
+    animateCounter('counter', 0, 40, 1500, counterDone);
 
-            var scene7 = new ScrollMagic.Scene({triggerElement: "#frame7"})
-            .reverse(true)
-            .on("enter", function () {   
-                $("#frame7 .frame-content").css("opacity", 100);
-            })  
-            .on("leave", function () {
-                $("#frame7 .frame-content").css("opacity", "");
-            })
+})  
+.on("leave", function () {
+    $("#frame6 .frame-content").css("opacity", "");
+    $('#counter').val(0);
+    $('.counter-additional').removeClass('visible');
+    $('#counter-seconds').removeClass('full-width');
+})
 
-            var scene8 = new ScrollMagic.Scene({triggerElement: "#frame8"}  )
-            .reverse(true)
-            .on("enter", function () {   
-                $("#frame8 .frame-content").css("opacity", 100);
-            })  
-            .on("leave", function () {
-                $("#frame8 .frame-content").css("opacity", "");
-            })
-                            
+var scene7 = new ScrollMagic.Scene({triggerElement: "#frame7"})
+.reverse(true)
+.on("enter", function () {   
+    $("#frame7 .frame-content").css("opacity", 100);
+})  
+.on("leave", function () {
+    $("#frame7 .frame-content").css("opacity", "");
+})
+
+var scene8 = new ScrollMagic.Scene({triggerElement: "#frame8"}  )
+.reverse(true)
+.on("enter", function () {   
+    $("#frame8 .frame-content").css("opacity", 100);
+})  
+.on("leave", function () {
+    $("#frame8 .frame-content").css("opacity", "");
+})
+                
 
 
-                    
-            controller.addScene([scene2, scene3, scene4, scene5, scene6, scene7, scene8]);
+        
+controller.addScene([scene1, scene2, scene3, scene4, scene5, scene6, scene7, scene8]);
