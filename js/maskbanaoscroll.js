@@ -24,12 +24,12 @@ $(window).scroll(function (event) {
     var newPos = pos+1;
 
     if ((pos > 0) && (pos < 10)) {
-        $('.image-container img').attr("src","images/mask/"+ newPos +".png");
+        $('.image-container img').attr("src","/images/mask/"+ newPos +".png");
     }
     else if (pos >= 10) {
-        $('.image-container img').attr("src","images/mask/10.png");
+        $('.image-container img').attr("src","/images/mask/10.png");
     }
     else {
-        $('.image-container img').attr("src","images/mask/1.png");
+        $('.image-container img').attr("src","/images/mask/1.png");
     }
 });
