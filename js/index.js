@@ -223,9 +223,14 @@ var scene8 = new ScrollMagic.Scene({triggerElement: "#frame8"}  )
 .reverse(true)
 .on("enter", function () {   
     $("#frame8 .frame-content").css("opacity", 100);
+    $("#new-header").addClass("white");
+    $("#new-header").addClass("visible");
+
 })  
 .on("leave", function () {
     $("#frame8 .frame-content").css("opacity", "");
+    $("#new-header").removeClass("white");
+    $("#new-header").removeClass("visible");
 })
                 
 

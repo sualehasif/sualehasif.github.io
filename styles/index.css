@@ -72,6 +72,21 @@ a:hover {
     background: #232323;
 }
 
+#new-header.white {
+    background: white;
+}
+
+#new-header.white a:hover{
+    color: #356E67;
+}
+
+#new-header.white #main-btn:hover {
+    border: 1px solid #356E67;
+    color: white;
+    background: #356E67;
+    transition: all .5s linear;
+}
+
 #new-header:hover {
     opacity: 100;
     transition: opacity 1s linear;
@@ -104,7 +119,7 @@ a:hover {
     border: 1px solid #BBB3B3;
     padding: 10px;
     color: #BBB3B3;
-    display: none;
+    transition: all .5s linear;
 }
 
 #new-header #main-btn:hover {
