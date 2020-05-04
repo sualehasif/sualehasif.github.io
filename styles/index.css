@@ -199,15 +199,15 @@ a:hover {
 }
 
 .recovery-center {
-    background-image: url('/images/recovery-center.png');
+    background-image: url('/images/recovery-center.jpg');
 }
 
 .man-with-mask {
     background-image: url('/images/man-with-mask.jpeg');
 }
 
-.beautiful-man {
-    background-image: url('/images/beautiful-man.png');
+.measuring-temperature {
+    background-image: url('/images/measuring-temperature.jpg');
 }
 
 #counter-container {
