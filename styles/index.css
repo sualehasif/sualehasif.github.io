@@ -6,6 +6,21 @@
     align-items: center;
 }
 
+#media {
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+
+.media a {
+margin: 0 10px;
+}
+
+.media img,
+.media-carousel img {
+    height: 100px;
+}
+
 .main-text h1 {
     line-height: 48px;
 }

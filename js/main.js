@@ -1,3 +1,10 @@
+var mediaGlide = new Glide('.media-carousel', {
+  autoplay: 8000,
+  hoverpause: true,
+  type: "carousel",
+  perView: 2
+}).mount()
+
 new Glide('.glide', {
     autoplay: 8000,
     hoverpause: true,
