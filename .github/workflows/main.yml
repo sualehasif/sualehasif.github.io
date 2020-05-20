@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Import data
       id: dataimport
-      uses: eohomegrownapps/masks-update-action@v0.1.2
+      uses: eohomegrownapps/masks-update-action@v0.1.4
     
     - name: Checkout repo
       uses: actions/checkout@v2
