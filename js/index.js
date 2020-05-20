@@ -1,4 +1,4 @@
-axios.get('https://storage.googleapis.com/static-covid/static/data-balochistan-v4.json')
+/*axios.get('https://storage.googleapis.com/static-covid/static/data-balochistan-v4.json')
     .then(function (res) {
         var pakistanData = res && res.data && res.data.regions && res.data.regions.PK;
         var estimatedCases = pakistanData && pakistanData.CurrentEstimate && pakistanData.CurrentEstimate.Infectious_mean;
@@ -11,7 +11,7 @@ axios.get('https://storage.googleapis.com/static-covid/static/data-balochistan-v
     })
     .catch(function () {
         console.error('Error fetching data from epidemicforecasting.org');
-    });
+    });*/
 
 axios.get('files/gov_data.json')
     .then(function (res) {
@@ -31,6 +31,13 @@ axios.get('files/gov_data.json')
 
         if (res.data.lastupdated){
             document.getElementById('confirmed-infections-date').innerText = new Date(res.data.lastupdated).toLocaleString('en-PK',{year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute:'2-digit'});
+        }
+
+        if (res.data.estimated && res.data.estimated.cases) {
+            document.getElementById('estimated-infections-num').innerText = res.data.estimated.cases.toLocaleString('en-pk');
+            if (res.data.estimated.date){
+                document.getElementById('estimated-infections-date').innerText = new Date(res.data.estimated["predicted-date"]).toLocaleString('en-PK',{year: 'numeric', month: '2-digit', day: '2-digit'});
+            }
         }
     })
     .catch(function () {
