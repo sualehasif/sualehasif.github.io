@@ -1,15 +1,8 @@
-var mediaGlide = new Glide('.media-carousel', {
-  autoplay: 8000,
-  hoverpause: true,
-  type: "carousel",
-  perView: 2
-}).mount()
-
 new Glide('.glide', {
     autoplay: 8000,
     hoverpause: true,
     type: "carousel"
-}).mount()
+}).mount();
 
 new Glide('.news-carousel', {
     hoverpause: true,
@@ -17,14 +10,16 @@ new Glide('.news-carousel', {
     autoplay: 8000,
     swipeThreshold: false,
     dragThreshold: false
-}).mount()
+}).mount();
 
 var tweetsGlide = new Glide('.tweets', {
   autoplay: 8000,
   type: "carousel",
   perView: 3,
-}).mount()
+}).mount();
+
 tweetsGlideResize();
+
 window.addEventListener('resize', function () {
   tweetsGlideResize();
 });
