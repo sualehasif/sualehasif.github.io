@@ -8,12 +8,21 @@
 
 #media {
     padding: 2em;
+}
+
+#media h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.media {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .media a {
-margin: 0 10px;
+    margin: 0 10px;
 }
 
 .media img,
