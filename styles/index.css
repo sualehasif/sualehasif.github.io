@@ -25,6 +25,18 @@
     margin: 0 10px;
 }
 
+@media (max-width: 620px) {
+    .media {
+        flex-wrap: wrap;
+    }
+    .media a {
+        margin: 10px 0;
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+    }
+}
+
 .media img,
 .media-carousel img {
     height: 100px;
