@@ -25,15 +25,23 @@
     margin: 0 10px;
 }
 
-@media (min-width: 400px) and (max-width: 620px) {
+@media (min-width: 725px) and (max-width: 965px) {
     .media {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
-    .media a {
-        margin: 10px 0;
-        flex: 0 0 50%;
-        max-width: 50%;
-        text-align: center;
+    .media a, .media img {
+        justify-self: center;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 725px) {
+    .media {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .media a, .media img {
+        justify-self: center;
     }
 }
 
