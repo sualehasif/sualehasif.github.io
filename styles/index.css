@@ -7,51 +7,22 @@
 }
 
 #media {
-    padding: 2em;
+    padding: 1em 2em;
 }
 
 #media h2 {
     text-align: center;
     margin-top: 0;
 }
-
 .media {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .media a {
     margin: 0 10px;
-}
-
-@media (min-width: 725px) and (max-width: 965px) {
-    .media {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .media a, .media img {
-        justify-self: center;
-    }
-}
-
-@media (min-width: 400px) and (max-width: 725px) {
-    .media {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .media a, .media img {
-        justify-self: center;
-    }
-}
-
-@media (max-width: 400px) {
-    .media {
-        flex-direction: column;
-    }
-    .media a {
-        margin: 10px 0;
-    }
 }
 
 .media img,

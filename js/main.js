@@ -1,8 +1,39 @@
-new Glide('.glide', {
-    autoplay: 8000,
+
+var mediaCarousel = new Glide('.media-carousel', {
+    autoplay: 5000,
     hoverpause: true,
-    type: "carousel"
+    type: "carousel",
+    perView: 5,
 }).mount();
+
+mediaCarouselResize();
+
+window.addEventListener('resize', function () {
+    mediaCarouselResize();
+});
+
+function mediaCarouselResize () {
+    if (window.innerWidth < 500) {
+        mediaCarousel.update({
+            perView: 1
+        })
+    }
+    else if (window.innerWidth < 768) {
+        mediaCarousel.update({
+            perView: 2
+        })
+    }
+    else if (window.innerWidth < 1342) {
+        mediaCarousel.update({
+            perView: 3
+        })
+    }
+    else {
+        mediaCarousel.update({
+            perView: 5
+        })
+    }
+}
 
 new Glide('.news-carousel', {
     hoverpause: true,
