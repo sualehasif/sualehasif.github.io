@@ -224,6 +224,14 @@ var teamArr = [
         img: '',
         linkedin: ''
     },
+    {
+        name: 'Bilal Hasan',
+        position: 'Financial Advisor',
+        location: '',
+        credentials: '',
+        img: 'Bilal Hasan.jpg',
+        linkedin: 'https://linkedin.com/in/bnba'
+    },
 ];
 
 teamArr.forEach((value) => {
