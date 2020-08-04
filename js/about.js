@@ -10,7 +10,7 @@ var teamArr = [
     },
     {
         name: 'Adan Ali',
-        position: 'Head of Marketing and Promotions',
+        position: 'Campaign Director and Head of Creative',
         location: 'Doha, Qatar',
         credentials: "Northwestern University'22",
         img: 'Adan.png',
@@ -26,7 +26,7 @@ var teamArr = [
     },
     {
         name: 'Amar Lal',
-        position: 'Head of Public Relations and Quality Assurance',
+        position: 'Head of Public Relations and Operations ',
         location: 'Hyderabad, Pakistan',
         credentials: "Lahore University of Management Sciences'22",
         img: 'Amar.png',
@@ -41,12 +41,76 @@ var teamArr = [
         linkedin: 'https://www.linkedin.com/in/ali-sulaiman-m-4b85a3b8/'
     },
     {
-        name: 'Falah Shazib',
+        name: 'Rujul Gandhi',
         position: 'Head of Content Development',
-        location: 'Montreal, Canada',
-        credentials: "University of Waterloo'21",
-        img: 'Falah.png',
-        linkedin: 'https://www.linkedin.com/in/falahshazib/'
+        location: 'Cambridge, USA',
+        credentials: "Massachusetts Institute of Technology'22",
+        img: 'Rujul.png',
+        linkedin: 'https://www.linkedin.com/in/rujul-gandhi-7010a819b/'
+    },
+    {
+        name: 'Iffah Abid Kitchlew',
+        position: 'Copy Lead',
+        location: 'Lahore, Pakistan',
+        credentials: "Northwestern University'22",
+        img: '',
+        linkedin: 'https://www.linkedin.com/in/iffah-kitchlew-849024189/'
+    },
+    {
+        name: 'Hashir Ali Awan',
+        position: 'Translation Lead',
+        location: 'Karachi, Pakistan',
+        credentials: "Dow University of Health Sciences'23",
+        img: '',
+        linkedin: ''
+    },
+    {
+        name: 'Abdul Rahman Abid',
+        position: 'Video Lead',
+        location: 'Doha, Qatar',
+        credentials: "Northwestern University'22",
+        img: 'abdulrahman.png',
+        linkedin: 'https://www.linkedin.com/in/abdul-rahman-abid-1547a2163/'
+    },
+    {
+        name: 'Natasha Hirt',
+        position: 'Art Lead',
+        location: 'Cambridge, USA',
+        credentials: "Massachusetts Institute of Technology'22",
+        img: 'natasha.png',
+        linkedin: 'https://www.natashahirtportfolios.com'
+    },
+    {
+        name: 'Saad Aftab',
+        position: 'Design Lead',
+        location: 'Tampa, USA',
+        credentials: "University of South Florida'23",
+        img: 'Saad.png',
+        linkedin: 'https://www.linkedin.com/in/saad-aftab-783a24183/'
+    },
+    {
+        name: 'Sania Irfan',
+        position: 'Editor',
+        location: 'New York City, USA',
+        credentials: "New York University'22",
+        img: '',
+        linkedin: 'https://www.linkedin.com/in/saniairfan/'
+    },
+    {
+        name: 'Zeest Mariam',
+        position: 'Social Media Manager',
+        location: 'Doha, Qatar',
+        credentials: "Northwestern University'23",
+        img: 'zeest.png',
+        linkedin: 'https://www.linkedin.com/in/zeest-m-572090128/'
+    },
+    {
+        name: 'Afaq Ahmed',
+        position: 'On-ground Strategist',
+        location: 'Karachi, Pakistan',
+        credentials: "Institute of Business Administration'22",
+        img: '',
+        linkedin: 'https://www.linkedin.com/in/iafaqahmed/'
     },
     {
         name: 'Mateo Simonovic',
@@ -105,14 +169,6 @@ var teamArr = [
         linkedin: ''
     },
     {
-        name: 'Saad Aftab',
-        position: 'Marketing',
-        location: 'Tampa, USA',
-        credentials: "University of South Florida'23",
-        img: 'Saad.png',
-        linkedin: 'https://www.linkedin.com/in/saad-aftab-783a24183/'
-    },
-    {
         name: 'Talha Ahmed Siddiqui',
         position: 'Marketing',
         location: 'Karachi, Pakistan',
@@ -152,15 +208,7 @@ var teamArr = [
         img: 'Zeeshan.png',
         linkedin: 'https://www.linkedin.com/in/zeeshan-ahmed-khan-851b65191/'
     },
-    {
-        name: 'Rujul Gandhi',
-        position: 'Content Writer',
-        location: 'Cambridge, USA',
-        credentials: "Massachusetts Institute of Technology'22",
-        img: 'Rujul.png',
-        linkedin: 'https://www.linkedin.com/in/rujul-gandhi-7010a819b/'
-    },
-    {
+        {
         name: 'M. Shaheer Malik',
         position: 'Content Writer',
         location: 'Turin, Italy',
@@ -232,6 +280,15 @@ var teamArr = [
         img: 'Bilal Hasan.jpg',
         linkedin: 'https://linkedin.com/in/bnba'
     },
+    {
+        name: 'Falah Shazib',
+        position: 'Volunteer',
+        location: 'Montreal, Canada',
+        credentials: "University of Waterloo'21",
+        img: 'Falah.png',
+        linkedin: 'https://www.linkedin.com/in/falahshazib/'
+    },
+ 
 ];
 
 teamArr.forEach((value) => {
