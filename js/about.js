@@ -53,7 +53,7 @@ var teamArr = [
         position: 'Copy Lead',
         location: 'Lahore, Pakistan',
         credentials: "Northwestern University'22",
-        img: '',
+        img: 'Ifflah Abid.png',
         linkedin: 'https://www.linkedin.com/in/iffah-kitchlew-849024189/'
     },
     {
@@ -61,7 +61,7 @@ var teamArr = [
         position: 'Translation Lead',
         location: 'Karachi, Pakistan',
         credentials: "Dow University of Health Sciences'23",
-        img: '',
+        img: 'Hashir.png',
         linkedin: ''
     },
     {
@@ -69,7 +69,7 @@ var teamArr = [
         position: 'Video Lead',
         location: 'Doha, Qatar',
         credentials: "Northwestern University'22",
-        img: 'abdulrahman.png',
+        img: 'Abdul Rahman.png',
         linkedin: 'https://www.linkedin.com/in/abdul-rahman-abid-1547a2163/'
     },
     {
@@ -77,7 +77,7 @@ var teamArr = [
         position: 'Art Lead',
         location: 'Cambridge, USA',
         credentials: "Massachusetts Institute of Technology'22",
-        img: 'natasha.png',
+        img: 'Natasha.png',
         linkedin: 'https://www.natashahirtportfolios.com'
     },
     {
@@ -92,8 +92,8 @@ var teamArr = [
         name: 'Sania Irfan',
         position: 'Editor',
         location: 'New York City, USA',
-        credentials: "New York University'22",
-        img: '',
+        credentials: "New York University'21",
+        img: 'Sania Irfan.png',
         linkedin: 'https://www.linkedin.com/in/saniairfan/'
     },
     {
@@ -101,7 +101,7 @@ var teamArr = [
         position: 'Social Media Manager',
         location: 'Doha, Qatar',
         credentials: "Northwestern University'23",
-        img: 'zeest.png',
+        img: 'Zeest.png',
         linkedin: 'https://www.linkedin.com/in/zeest-m-572090128/'
     },
     {
@@ -151,6 +151,22 @@ var teamArr = [
         credentials: "Caltech'24",
         img: 'Pranav.png',
         linkedin: 'https://www.linkedin.com/in/pranav-patil-a57182188/'
+    },
+    {
+        name: 'Syed Shaheryar Hussain',
+        position: 'Copy Writer',
+        location: 'Karachi, Pakistan',
+        credentials: "Lahore University of Management Sciences'22",
+        img: 'Shaheryar.png',
+        linkedin: ''
+    },
+    {
+        name: 'Kanwar Muhammad Areeb',
+        position: 'Video Producer',
+        location: 'Karachi, Pakistan',
+        credentials: "Nixor College'21",
+        img: 'Shaheryar.png',
+        linkedin: ''
     },
     {
         name: 'Ulan Seitkaliyev',
@@ -222,6 +238,14 @@ var teamArr = [
         location: 'Yardley, USA',
         credentials: "University of Pennsylvania'22",
         img: 'Diya.png',
+        linkedin: ''
+    },
+    {
+        name: 'Abdul Moiz',
+        position: 'Content Writer',
+        location: 'Karachi, Pakistan',
+        credentials: "Institute of Business Administration'22",
+        img: 'Abdul Moiz.png',
         linkedin: ''
     },
     {
