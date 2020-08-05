@@ -165,7 +165,7 @@ var teamArr = [
         position: 'Video Producer',
         location: 'Karachi, Pakistan',
         credentials: "Nixor College'21",
-        img: 'Shaheryar.png',
+        img: 'Kanwar.png',
         linkedin: ''
     },
     {
