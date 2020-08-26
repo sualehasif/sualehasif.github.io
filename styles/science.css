@@ -107,6 +107,24 @@
     padding: 150px 0;
 }
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.science-section{
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+.science-header{
+  margin: 150px 0 20px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 /* DIRT FIXES */
 .card.card-2 {
     height: 285px
